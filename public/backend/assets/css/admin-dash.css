@@ -1,0 +1,491 @@
+/*Pending page*/
+
+.pending-wrapper {
+    padding: 150px 0;
+    width: 100%;
+}
+
+.pending__section {
+    width: 100%;
+}
+
+.pending-block {
+    margin: 150px 0;
+}
+
+.pending-payment .pending {
+    width: 120px;
+    margin: auto;
+}
+
+@-webkit-keyframes square-animation {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    10.5% {
+        left: 0;
+        top: 0;
+    }
+
+    12.5% {
+        left: 32px;
+        top: 0;
+    }
+
+    23% {
+        left: 32px;
+        top: 0;
+    }
+
+    25% {
+        left: 64px;
+        top: 0;
+    }
+
+    35.5% {
+        left: 64px;
+        top: 0;
+    }
+
+    37.5% {
+        left: 64px;
+        top: 32px;
+    }
+
+    48% {
+        left: 64px;
+        top: 32px;
+    }
+
+    50% {
+        left: 32px;
+        top: 32px;
+    }
+
+    60.5% {
+        left: 32px;
+        top: 32px;
+    }
+
+    62.5% {
+        left: 32px;
+        top: 64px;
+    }
+
+    73% {
+        left: 32px;
+        top: 64px;
+    }
+
+    75% {
+        left: 0;
+        top: 64px;
+    }
+
+    85.5% {
+        left: 0;
+        top: 64px;
+    }
+
+    87.5% {
+        left: 0;
+        top: 32px;
+    }
+
+    98% {
+        left: 0;
+        top: 32px;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes square-animation {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    10.5% {
+        left: 0;
+        top: 0;
+    }
+
+    12.5% {
+        left: 32px;
+        top: 0;
+    }
+
+    23% {
+        left: 32px;
+        top: 0;
+    }
+
+    25% {
+        left: 64px;
+        top: 0;
+    }
+
+    35.5% {
+        left: 64px;
+        top: 0;
+    }
+
+    37.5% {
+        left: 64px;
+        top: 32px;
+    }
+
+    48% {
+        left: 64px;
+        top: 32px;
+    }
+
+    50% {
+        left: 32px;
+        top: 32px;
+    }
+
+    60.5% {
+        left: 32px;
+        top: 32px;
+    }
+
+    62.5% {
+        left: 32px;
+        top: 64px;
+    }
+
+    73% {
+        left: 32px;
+        top: 64px;
+    }
+
+    75% {
+        left: 0;
+        top: 64px;
+    }
+
+    85.5% {
+        left: 0;
+        top: 64px;
+    }
+
+    87.5% {
+        left: 0;
+        top: 32px;
+    }
+
+    98% {
+        left: 0;
+        top: 32px;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes hue-rotate {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes hue-rotate {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+.pending-payment .loading {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: hue-rotate 10s linear infinite both;
+    animation: hue-rotate 10s linear infinite both;
+}
+
+.pending-payment .loading__square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+    border-radius: 2px;
+    background: #07a;
+    background-image: linear-gradient(45deg, #fa0 40%, #0c9 60%);
+    background-image: -moz-linear-gradient(#fa0, #fa0);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-animation: square-animation 10s ease-in-out infinite both;
+    animation: square-animation 10s ease-in-out infinite both;
+}
+
+.pending-payment .loading__square:nth-of-type(0) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.pending-payment .loading__square:nth-of-type(1) {
+    -webkit-animation-delay: -1.42857143s;
+    animation-delay: -1.42857143s;
+}
+
+.pending-payment .loading__square:nth-of-type(2) {
+    -webkit-animation-delay: -2.85714286s;
+    animation-delay: -2.85714286s;
+}
+
+.pending-payment .loading__square:nth-of-type(3) {
+    -webkit-animation-delay: -4.28571429s;
+    animation-delay: -4.28571429s;
+}
+
+.pending-payment .loading__square:nth-of-type(4) {
+    -webkit-animation-delay: -5.71428571s;
+    animation-delay: -5.71428571s;
+}
+
+.pending-payment .loading__square:nth-of-type(5) {
+    -webkit-animation-delay: -7.14285714s;
+    animation-delay: -7.14285714s;
+}
+
+.pending-payment .loading__square:nth-of-type(6) {
+    -webkit-animation-delay: -8.57142857s;
+    animation-delay: -8.57142857s;
+}
+
+.pending-payment .loading__square:nth-of-type(7) {
+    -webkit-animation-delay: -10s;
+    animation-delay: -10s;
+}
+
+.pending-payment .pending-text {
+    text-align: center;
+}
+
+.pending-payment .pending-text h2 {
+    margin-bottom: 0;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: .2;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: .2;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+.pending-payment .pending-text .saving span {
+    /**
+         * Use the blink animation, which is defined above
+         */
+    -webkit-animation-name: blink;
+    animation-name: blink;
+    /**
+         * The animation should take 1.4 seconds
+         */
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+    /**
+         * It will repeat itself forever
+         */
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    /**
+         * This makes sure that the starting style (opacity: .2)
+         * of the animation is applied before the animation starts.
+         * Otherwise we would see a short flash or would have
+         * to set the default styling of the dots to the same
+         * as the animation. Same applies for the ending styles.
+         */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.pending-payment .pending-text .saving span:nth-child(2) {
+    /**
+         * Starts the animation of the third dot
+         * with a delay of .2s, otherwise all dots
+         * would animate at the same time
+         */
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.pending-payment .pending-text .saving span:nth-child(3) {
+    /**
+         * Starts the animation of the third dot
+         * with a delay of .4s, otherwise all dots
+         * would animate at the same time
+         */
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+.prog-bar__dash {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    border-radius: 13px;
+    border: 1px solid rgba(119, 75, 146, 0.3);
+    width: 170px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.prog-bar__uploading {
+    position: relative;
+    background-color: #774b92;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.modal-body {
+    text-align: center;
+    position: relative;
+
+}
+
+.cancel-upl {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+.excel-controls {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.excel-controls form {
+    float: right;
+}
+
+.form-inline .form-control {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-inline button {
+    color: #fff;
+    background: #774b92;
+    border: 1px solid #774b92;
+    border-radius: 5px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.form-inline button:hover {
+    color: #774b92;
+    background: #fff;
+}
+
+.excel-import {
+    color: #fff;
+    background: #774b92;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #774b92;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.excel-import:hover {
+    background: #fff;
+    color: #774b92;
+}
+
+.invalid-feedback {
+    text-align: left;
+    font-family: "Roboto" !important;
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    color: rgba(204, 0, 0, 0.8) !important;
+}
+
+.admin-image__block{
+    position: relative;
+    width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+}
+.admin-image__block img{
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+}
+.admin-image__block .img-remove{
+    cursor: pointer;
+    color: #774b92;
+    background: #fff;
+    position: absolute;
+    padding: 0 8px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+}

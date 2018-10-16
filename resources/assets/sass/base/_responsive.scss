@@ -1,0 +1,927 @@
+@media (max-width: 1250px) {
+  .news__block .single-news .single-blog__content .single-blog__text {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    position: relative;
+  }
+  .body-wrapper {
+    padding: 0;
+  }
+  .newsletter-email {
+    input {
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      margin-left: 0;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+  .signin-section {
+    padding: 150px 50px;
+  }
+  .signup-section {
+    padding: 150px 50px;
+  }
+  .upload-photo__button {
+    padding: 7px 25px;
+  }
+  .navbar-main {
+    .form-logo {
+      img {
+        width: 20%;
+      }
+    }
+  }
+  .signup-section__block {
+    .upload-photo__button {
+      padding: 0;
+    }
+  }
+  .campaign-section__block {
+    .upload-photo__button {
+      padding: 0;
+      label {
+        padding: 7px 18px;
+      }
+    }
+  }
+  .campaign_dashboard__block {
+    .update-form__section {
+      .upload-photo__button {
+        padding: 0;
+      }
+    }
+  }
+  .funeral-alert, .funeral-alert__error, .message-alert {
+    left: calc((100vw - 910px) / 2);
+    right: calc((100vw - 960px) / 2);
+  }
+  .donate-share {
+    padding-left: 50px;
+  }
+  .fee-page__block {
+    ul {
+      columns: 4;
+      -webkit-columns: 4;
+      -moz-columns: 4;
+    }
+  }
+  .single-blog {
+    .admin-image__block {
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .blog-text__block {
+      width: 100%;
+      p {
+        width: 100%;
+      }
+    }
+    .post_author {
+      .post_text {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    width: 100% !important;
+    header {
+      width: 100% !important;
+    }
+  }
+  .campaign-detail__header {
+    h1 {
+      word-break: normal;
+    }
+  }
+  header {
+    position: relative;
+  }
+  .campaign-detail__content {
+    img {
+      float: none;
+    }
+  }
+  .body-wrapper {
+    padding-top: 0;
+  }
+  .navbar .navbar-main__section .navbar-signin {
+    display: none;
+  }
+  .navbar-main {
+    text-align: center;
+    width: 100%;
+    float: none;
+    .form-logo {
+      img {
+        width: 22%;
+      }
+    }
+  }
+  .signin__mobile {
+    display: block;
+  }
+  .navbar-brand {
+    margin-right: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .hero-section__text {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 17px;
+    }
+
+  }
+  .latest-campaigns {
+    .owl-item {
+      padding: 25px;
+    }
+  }
+  .owl-nav {
+    display: none;
+  }
+  .hero-section__text {
+    img {
+      width: 12%;
+    }
+  }
+  .signin-section {
+    padding: 80px 0;
+    .signin-section__block {
+      padding: 40px 60px;
+    }
+  }
+  .signup-section {
+    padding: 80px 0;
+    .signin-section__block {
+      padding: 40px 60px;
+    }
+  }
+  .footer-single__list {
+    margin-bottom: 30px;
+  }
+  .share-fb {
+    margin-bottom: 20px;
+  }
+  .share-twitter {
+    margin-bottom: 20px;
+  }
+  .share-mail {
+    margin-bottom: 20px;
+  }
+
+  .news__block {
+    padding: 60px 40px;
+    .single-news {
+      img {
+        height: 300px;
+      }
+    }
+    .single-news__details {
+      img {
+        height: 300px;
+      }
+    }
+  }
+  .search__block {
+    padding: 60px 60px;
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+  .single-search__text {
+    p {
+      text-align: center;
+    }
+  }
+  .single-search {
+    .read-more__link {
+      text-align: center;
+    }
+    h2 {
+      word-break: normal !important;
+    }
+  }
+  .campaign-detail__about {
+    h3 {
+      word-break: normal;
+      text-align: left;
+    }
+  }
+  .dash-detail__section {
+    .dash-detail__text {
+      span {
+        float: none;
+        display: inline-block;
+        width: 100%;
+
+      }
+    }
+  }
+  .campaign-detail__section {
+    .campaign-donate__block {
+      display: none;
+    }
+    .campaign-detail__stats {
+      display: none;
+    }
+    .campaign-brief__blockP {
+      display: none;
+    }
+    .col-lg-5 {
+      display: none;
+    }
+  }
+  .funeral-alert, .funeral-alert__error, .message-alert {
+    position: absolute;
+    top: 135px;
+    left: calc((100vw - 750px) / 2);
+    right: calc((100vw - 750px) / 2);
+  }
+  .donate-share {
+    padding-top: 50px;
+    h1 {
+      font-size: 32px;
+    }
+  }
+  .campaign-detail__section {
+    h1 {
+      font-size: 32px;
+    }
+  }
+  .fee-page__block {
+    ul {
+      columns: 3;
+      -webkit-columns: 3;
+      -moz-columns: 3;
+    }
+  }
+  .fee-chart {
+    p {
+      padding: 20px;
+    }
+  }
+  .footer-single__list {
+    .detail-share__links {
+      li {
+        a {
+          font-size: 34px;
+          padding: 0 10px;
+          &:first-of-type {
+            padding-left: 0;
+          }
+
+        }
+      }
+    }
+  }
+  .single-blog {
+    .admin-image__block {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .blog-text__block {
+      width: 100%;
+      p {
+        width: 100%;
+      }
+    }
+    .post_author {
+      .post_text {
+        width: 200px;
+      }
+    }
+  }
+  .campaign-detail__header {
+    h3 {
+      text-align: left;
+    }
+    .detail-share__links {
+      display: block;
+    }
+  }
+  .news__block {
+    .single-news {
+      .single-blog__content {
+        .single-blog__text {
+          width: 100% !important;
+        }
+        .single-blog__img {
+          margin-bottom: 30px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+  }
+  .footer-list {
+    &__img {
+      display: none;
+    }
+  }
+  .newsletter-img {
+    display: none;
+  }
+
+  footer .footer-single__list li {
+    line-height: 2.5;
+  }
+  .footer-single__list .detail-share__links li a {
+    width: 35px;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .latest-campaigns {
+    margin-bottom: 10px;
+    .owl-item {
+      padding: 50px;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+  .funeral-home__buttons {
+    text-align: center;
+  }
+  .hero-section__text {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    img {
+      width: 15%;
+    }
+  }
+  .single-partner {
+    margin-bottom: 20px;
+  }
+  .family-msg__section {
+    .owl-item {
+      padding: 30px 10px;
+    }
+  }
+  .start-campaign__section {
+    padding: 40px 0;
+  }
+  .navbar-main {
+    .form-logo {
+      img {
+        width: 26%;
+      }
+    }
+  }
+  .news__block {
+    h1 {
+      text-align: center;
+      word-break: break-all;
+    }
+  }
+  .campaign-detail__section {
+    padding: 60px 20px;
+  }
+  .campaign-detail__section {
+    padding: 40px 20px;
+    .campaign-detail__header {
+      text-align: center;
+      img {
+        display: none;
+      }
+    }
+    .campaign-title__details {
+      margin-bottom: 20px;
+    }
+  }
+  .checklist-header {
+    p.check-share {
+      text-align: left;
+    }
+  }
+  .single-checklist__img {
+    margin-bottom: 20px;
+  }
+  .select-radio {
+    .radio-box {
+      &:nth-of-type(1) {
+        label {
+          border-radius: 5px 5px 0 0;
+        }
+      }
+      &:nth-of-type(2) {
+        label {
+          border-radius: 0;
+          border-left: 1px solid $color;
+        }
+      }
+      &:nth-of-type(3) {
+        label {
+          border-radius: 0;
+          border-left: 1px solid $color;
+        }
+      }
+      &:nth-of-type(4) {
+        label {
+          border-radius: 0;
+          border-left: 1px solid $color;
+        }
+      }
+    }
+  }
+  .funeral-alert, .funeral-alert__error, .message-alert {
+    top: 145px;
+    left: calc((100vw - 550px) / 2);
+    right: calc((100vw - 550px) / 2);
+  }
+  .donate-share {
+    h1 {
+      font-size: 28px;
+    }
+  }
+  .campaign-detail__section {
+    h1 {
+      font-size: 28px;
+    }
+  }
+  .form-check {
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  .signup-button {
+    display: inline-block;
+    width: 100%;
+  }
+  .upload-photo {
+    text-align: left;
+  }
+  .signup-section__block {
+    .upload-photo__button {
+      display: inline-block;
+    }
+  }
+  .fee-chart {
+    p {
+      margin: 0 10px;
+    }
+  }
+  .single-blog {
+    .admin-image__block {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .blog-text__block {
+      width: 100%;
+      p {
+        width: 100%;
+      }
+    }
+  }
+  .campaign-detail__header {
+    h3 {
+      text-align: left;
+    }
+    .detail-share__links {
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .hero-section__text {
+    margin-top: -50px;
+  }
+  .latest-campaigns {
+    .owl-item {
+      padding: 20px;
+    }
+  }
+  .funeral-home__section {
+    padding: 0 40px;
+  }
+  .funeral-home__buttons {
+    text-align: center;
+  }
+  .single-partner {
+    text-align: center;
+  }
+  .navbar-main {
+    .navbar-main__right {
+      padding-left: 0;
+    }
+  }
+  .footer-single__list {
+    text-align: center;
+    h1 {
+      line-height: 1.5;
+    }
+  }
+  .single-partner {
+    text-align: center;
+  }
+  .navbar-main {
+    .form-logo {
+      img {
+        width: 34%;
+      }
+    }
+  }
+  .campaign-section__block {
+    .upload-photo__button {
+      label {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .campaign-donate__buttons {
+    li {
+      width: 45%;
+    }
+  }
+  .verify-section {
+    .contact-button {
+      text-align: center;
+      button {
+        width: 100%;
+      }
+    }
+    .load_more_button {
+      text-align: center;
+      button {
+        width: 100%;
+      }
+    }
+  }
+  .checklist-header {
+    .donation-block {
+      .radio-box {
+        .single-radio-box {
+          label {
+            border-radius: 0 0 5px 5px;
+          }
+        }
+        &:first-of-type label {
+          border-radius: 5px 5px 0 0;
+        }
+      }
+    }
+  }
+  .dash-detail__section .dash-detail__text span {
+    text-align: left;
+  }
+  .dash-detail__section .dash-detail__text a {
+    text-align: left;
+  }
+  .funeral-alert, .funeral-alert__error, .message-alert {
+    top: 145px;
+    left: calc((100vw - 500px) / 2);
+    right: calc((100vw - 500px) / 2);
+  }
+  .upload-photo__button {
+    text-align: center;
+  }
+  .dash-date__block {
+    .next-button {
+      text-align: center;
+    }
+  }
+  .fee-page__block {
+    ul {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+  }
+  .fee-chart {
+    span {
+      display: inline-block;
+      font-size: 25px;
+      padding: 10px 0;
+    }
+    p {
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+  .dash-detail__section .dash-detail__text span.description-detail {
+    text-align: left;
+  }
+  .news__block {
+    .single-news {
+      .single-blog__content {
+        .single-blog__img {
+          width: 100%;
+          margin-bottom: 20px;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .news__block {
+    .single-news {
+      .single-blog__content {
+        .single-blog__text {
+          width: 100%;
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .cat-tags {
+    span {
+      display: inline-block;
+      margin: 10px 0;
+    }
+  }
+  .detail-share__links {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .body-wrapper {
+    padding-top: 0;
+  }
+  .latest-campaigns {
+    padding: 0 60px;
+    img {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .signin-section {
+    padding: 150px 0;
+  }
+  .signin-section {
+    .signin-section__block {
+      padding: 30px 40px;
+    }
+  }
+  .signup-section {
+    .signup-section__block {
+      padding: 30px 40px;
+    }
+  }
+  .verify-mail__block {
+    padding: 35px;
+  }
+  .navbar-main {
+    .navbar-main__section {
+      margin-bottom: 20px;
+    }
+    .form-logo {
+      img {
+        width: 40%;
+      }
+    }
+    #search input[type="search"] {
+      font-size: 30px;
+    }
+  }
+  .news__block {
+    padding: 40px 20px;
+  }
+  .campaign-donate__buttons {
+    li {
+      width: 43%;
+    }
+  }
+  #search input[type="text"] {
+    margin-top: 100px !important;
+    font-size: 30px !important;
+  }
+  #search input[type="text"] {
+    font-size: 30px !important;
+  }
+  ul.funeral-home__buttons {
+    padding: 0 10px;
+    &:first-of-type li {
+      a {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .dropdown-menu {
+    right: 0;
+  }
+  .checklist-header {
+    h1 {
+      text-align: center;
+    }
+  }
+  .funeral-alert, .funeral-alert__error, .message-alert {
+    top: 150px;
+    left: calc((100vw - 400px) / 2);
+    right: calc((100vw - 400px) / 2);
+  }
+  .campaign-detail__section {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .donate-img {
+    img {
+      width: 100%;
+    }
+  }
+  .prog-bar__dash {
+    left: 30%;
+  }
+  .funeral-home__section {
+    ul {
+      li {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  .fee-page__block {
+    padding: 30px;
+  }
+  .blog-page__section {
+    padding: 40px 20px;
+  }
+  .detail-share__links {
+    text-align: center;
+  }
+  .newsletter-email .clear {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .body-wrapper {
+    padding-top: 0;
+  }
+  .navbar {
+    .navbar-main__section {
+      margin-bottom: 20px;
+      ul {
+        text-align: center;
+        &:first-of-type li {
+          a {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  .latest-campaigns {
+    padding: 30px;
+    .owl-item {
+      padding: 30px;
+    }
+  }
+  .family-msg__section {
+    p {
+      padding: 0 30px;
+    }
+  }
+  .funeral-home__section {
+    padding: 0 20px;
+    li:first-of-type a {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  .hero-section__text {
+    img {
+      width: 25%;
+    }
+  }
+
+  .navbar-main {
+    .form-logo {
+      img {
+        width: 50%;
+      }
+    }
+    #search input[type="search"] {
+      font-size: 28px;
+      margin-top: 200px;
+    }
+    #search input[type="text"] {
+      margin-top: 150px;
+      font-size: 28px;
+    }
+  }
+
+  .funeral-home__info {
+    .upload-photo {
+      text-align: center;
+    }
+  }
+  .campaign_dashboard__block {
+    padding: 40px 20px;
+  }
+  .campaign-detail__section {
+    padding: 40px 20px;
+    .campaign-detail__header {
+      text-align: center;
+      img {
+        width: 70%;
+      }
+    }
+    .campaign-title__details {
+      margin-bottom: 20px;
+    }
+  }
+  ul.funeral-home__buttons {
+    padding: 0 15px;
+  }
+  .dropdown-menu {
+    right: -60px;
+  }
+  .search__block {
+    padding: 60px 20px;
+    h1 {
+      text-align: center;
+      font-size: 26px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+  .footer-link__list {
+    padding: 40px 20px;
+  }
+  .funeral-alert, .funeral-alert__error, .message-alert {
+    top: 185px;
+    left: calc((100vw - 320px) / 2);
+    right: calc((100vw - 330px) / 2);
+  }
+  .prog-bar__dash {
+    left: 20%;
+  }
+  .fee-page__block {
+    ul {
+      columns: 1;
+      -webkit-columns: 1;
+      -moz-columns: 1;
+      li {
+        text-align: center;
+      }
+    }
+  }
+  .fee-chart {
+    p {
+      margin: 0 5px;
+    }
+  }
+  .newsletter-email h1 {
+    font-size: 25px;
+  }
+  .blog-share{
+    &__list{
+      li{
+        a{
+          padding: 0 5px!important;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1500px) {
+  .news__block .single-news .single-blog__content .single-blog__text {
+    width: 55%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .news__block .single-news .single-blog__content .single-blog__text {
+    width: 50%;
+  }
+}
+

@@ -1,0 +1,557 @@
+/* Desktop Layout: 970px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+	#profile-heading ul li a.send_us_btn_he, #profile-heading ul.social.aldous_funeraal li a.edit, #profile-heading ul.social li{font-size: 12px;padding: 3px;margin-top: 10px;}
+ .header_sticky_fundrising.fix { margin-right: 2%;}
+ .header_sticky_social_givenow.fix { float: left; width: 46%; margin-top: 30px;}
+.for_mobile{display:none}
+.for_desktop{display:block}
+ul#main_menu li a, .header_signuplgin.fix ul li a {font-size: 14px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li a.dropdown-toggle { padding: 0 5px;}
+a#search {padding: 0;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li a img, a#search img{ margin-top: 0;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active.open img.cros_img {width: 25px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active img.bar_img { margin-top: 0px;}
+a#search img {max-width: 25px;position: relative;bottom: 5px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right {}
+.header_searcharea.fix {margin-top: 43px;}
+#banner .bxslider li.slide h2 {font-size: 24px;}
+#banner .bxslider li.slide {}
+#banner a.start-fund {font-size: 15px;line-height: 22px;}
+#banner .textbox {}
+.campaign .more a {padding: 5px 4px 5px 3px;font-size: 8px;}
+.campaign .more p {font-size: 11px;}
+.campaign .more p small{font-size: 11px;}
+.tools-quote .text {max-width: 360px;margin-right: 10px;}
+#footer h4 {font-size: 20px;}
+#copyrights {padding: 9px 0px;height: 60px;}
+section.cuurent_support-title h1 {font-size: 28px;bottom: -7px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active.open ul.dropdown-menu {
+    margin-left: -94px;top: 20px; width: 181px; }
+#banner .bxslider li.slide h2.small {font-size: 23px;}
+.funeral-list { margin: 5px 0px;}
+.campaign .textbox h4 {font-size: 20px; line-height: 22px;}
+.campaign .image span { font-size: 11px; padding: 0px 10px; line-height: 25px; margin-top: -25px;}
+.campaign .rangeslider { margin-top: 40px;}
+#tools h2 {font-size: 31px;}
+ #tools h2 span { font-size: 56px;}
+#newsletter h4 {font-size: 25px;line-height: 30px;}
+#footer ul li a { font-size: 12px;}
+.dropdown-menu > li > a {font-size: 14px;line-height: 17px;}
+#support-campaign {}
+.campaign .textbox p { font-size: 11px;   color: #5c5c5c;  font-family: 'helvetica'; line-height: 15px; margin-bottom: 6px;}
+header#header.profile_page .header_maenuarea.fix {width: 44%;margin-top: 10px;}
+header#header.profile_page .header_searcharea.fix {width: 31%;margin-top: 21px;}
+header#header.profile_page ul#main_menu li a, .header_signuplgin.fix ul li a {font-size: 14px;}
+.header_search_icon.fix {margin-top:12px}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown_bar a { padding-top: 3px;}
+header#header.profile_page .header_logoarea.fix {margin-top: 0;}
+.header_sticky_givenow.fix a.sticky_give_btn {font-size: 22px;}
+.header_sticky_social.fix {width: 63%;}
+.header_sticky_social.fix ul li a {display: block;width: 113px;}
+.header_sticky_social.fix ul li a img { width: 100%;}
+.header_sticky_givenow.fix {    width: 37%;}
+.sticky_funeral_right.fix h4 {font-size: 14px;}
+.sticky_funeral_right.fix h3 {font-size: 20px;}
+.sticky_funeral_left.fix {    margin-right: 1%;    margin-left: 2%;}
+.sticky_funeral_right.fix { width: 83%;}
+.sticky_funeral.fix {margin-top: 20px;}
+.sidebar a.givenow {padding: 10px 50px 17px 50px;font-size: 35px;}
+.funeral-details h3 { font-size: 26px;}
+.funeral-details p {    font-size: 12px; line-height: 15px;}
+.funeral-details a {    font-size: 9px; line-height: 37px;    padding: 2px 4px 1px 4px;    width: 57px;}
+.left-time h4 {  font-size: 14px;}
+.left-time h3 {    font-size: 25px;    color: #cdb357;}
+.sticky_give_now_input.fix input.give_input_sticky {padding: 6px;width: 200px;}
+a.sticky_give_nowsub {font-size: 24px;padding: 5px 10px;bottom: -2px;}
+.sticky_give_now_input.fix label { font-size: 25px;    line-height: 40px;}
+ .header_sticky_social_givenow.fix {margin-top: 25px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active { margin-right: 20px;}
+img.bar_img { width: 40px;}
+.navbar-nav .open .dropdown-menu {border: 1px solid transparent;}
+.banner-bottom { height: 90px;}
+.bx-wrapper .bx-pager { bottom: -24px;}
+.newsletter_right_content.fix {}
+.newsletter_left {padding: 30px 10px 47px 10px;}
+#newsletter input[type="submit"], #newsletter a {font-size: 13px;line-height: 35px; padding: 0px 10px;}
+#copyrights p { position:relative;top: -6px;}
+.topbar form {  width: 265px;}
+.topbar input {  width: 183px;}
+#profile-heading ul.social li a.edit{    font-size: 12px;    padding: 10px 14px 9px 14px;}
+#profile-heading ul.contactlist li{margin-right:5px}
+#profile-heading ul.contactlist li a img {    margin-right: 2px;    width: 15px;}
+#profile-heading ul.contactlist li a {font-size:12px}
+#profile-heading h3 { font-size: 27px;margin-bottom: 5px;}
+.sticky_give_now_input.fix { margin-right: 10px;    margin-left: 10px;}
+ul.support li h5 {font-size: 16px;}
+ul.support li h5 span { font-size: 22px;}
+#tools_two .title.col-xs-12 h2 {font-size: 28px;}
+#tools_two .title {  padding-top: 3%;  padding-bottom: 30px;}
+#tools_two .tools-quote .text h4 { font-size: 20px;line-height: 26px; margin-top: 10px;}
+#tools_two .tools-quote .text { max-width: 320px;  margin-right: 40px;}
+#banner .bxslider li.slide .heading:after {right:35px;}
+.pull-right.newsletter_right {padding: 40px 10px 95px 20px;}
+.newsletter_cont_right.fix {width: 72%;}
+#newsletter .newsarea_width.newsletter_first ul li a {font-size: 13px;line-height: inherit;}
+#newsletter h5 {font-size: 14px;}
+.list_funeral_left_title.fix h2, .list_funeral_right_title.fix h2 {font-size: 23px;}
+button.addmore_btn { font-size: 12px;padding: 10px 10px;}
+.list_funeral_bottom_submit.fix { width: 50%;}
+.title_btn_ara.fix a.title_btn_lnk {font-size: 15px;padding: 10px 15px;}
+
+
+
+
+}
+
+
+
+/* Desktop Layout: 1200px. */
+@media (min-width: 1200px) {
+#newsletter h5 {font-size: 14px;}
+#newsletter .newsarea_width.newsletter_first ul li a {font-size: 15px;}   
+section.cuurent_support-title h1 { font-size: 35px;    bottom: 7px;}
+.container{width:1230px}
+#banner a.start-fund { font-size: 20px;    line-height: 28px;}
+.banner-bottom { height:125px;}
+.dropdown-menu > li > a { font-size: 17px;  line-height: 23px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active.open ul.dropdown-menu {
+    margin-left: -114px; top: 50px;  width: 220px;    }
+.navbar-nav .open .dropdown-menu {border: 0px solid transparent;}
+img.bar_img { width: 45px;}
+a#search img {position: relative;  bottom: 0px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active.open img.cros_img {
+   width: 31px;}
+ul#main_menu li a, .header_signuplgin.fix ul li a, {  font-size: 16px;    line-height: 18px;}
+header#header.profile_page ul#main_menu li a, .header_signuplgin.fix ul li a { font-size: 16px;}
+.header_searcharea.fix {margin-top: 44px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active {  margin-right: 40px;}
+a#search img { max-width: 33px;}
+.for_mobile{display:none}
+.for_desktop{display:block}
+ul#main_menu li a, .header_signuplgin.fix ul li a {}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li a.dropdown-toggle {padding: 0 10px;}
+a#search {padding: 0px;position: relative;bottom: 3px;}
+.header_searcharea.fix {}
+#banner .bxslider li.slide h2 {font-size: 32px;}
+#banner .bxslider li.slide {}
+#banner a.start-fund {}
+#banner .textbox {}
+.campaign .more a {padding: 5px 6px 5px 5px;font-size: 11px;}
+.campaign .more p {font-size: 14px;}
+.tools-quote .text {max-width: 380px;}
+#footer h4 {font-size: 24px;}
+#copyrights {padding: 7px 0px;height: 90px;}
+section.cuurent_support-title h1 {}
+section.cuurent_support-title {}
+header#header.profile_page .header_maenuarea.fix {width: 45%;}
+header#header.profile_page .header_searcharea.fix {    width: 30%;}
+.header_sticky_givenow.fix a.sticky_give_btn {font-size: 27px;}
+.header_sticky_social.fix {width: 63%;}
+.header_sticky_social.fix ul li a {    display: block;    width: 140px;}
+.header_sticky_social.fix ul li a img { width: 100%;}
+.header_sticky_givenow.fix {    width: 37%;}
+.sticky_funeral_right.fix h4 { font-size: 17px;}
+.sticky_funeral_right.fix h3 { font-size: 26px;}
+.sticky_funeral_left.fix {margin-right: 2%;margin-left: 2%;}
+.sticky_funeral_right.fix {}
+.sticky_give_now_input.fix input.give_input_sticky {padding: 8px;width: 210px;}
+a.sticky_give_nowsub {font-size: 25px;padding: 4px 15px;bottom: -2px;}
+.header_search_icon.fix {margin-top:7px}
+#banner .bxslider li.slide .heading:after {right:35px;}
+
+}
+
+
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.for_mobile{display:none}
+.for_desktop{display:block}
+ul#main_menu li a, .header_signuplgin.fix ul li a {font-size: 11px;padding-top: 32px;line-height: 30px;}
+ul#main_menu li:before, ul#main_menu li:hover:before {width: 20px;height: 30px;margin-left: -11px;background-size: 20px 30px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li a.dropdown-toggle, a#search { padding: 0;}
+a#search img{width:20px;position:relative;bottom:5px}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right {margin-top: 0;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active img.bar_img { margin-top: 0; width: 30px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active.open ul.dropdown-menu:before {
+   top: -14px;}
+header#header.profile_page .header_maenuarea.fix ul#main_menu li a {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active.open ul.dropdown-menu li a {
+  font-size: 12px;line-height: 14px;}
+.header_searcharea.fix {margin-top: 32px;}
+.header_search_icon.fix {margin-top: 10px;}
+#banner .bxslider li.slide h2 {font-size: 17px;}
+#banner .bxslider li.slide {}
+#banner a.start-fund {padding: 4px 10px;font-size: 9px;line-height: 18px;    margin-bottom: 10px;}
+#banner .textbox {}
+.campaign .more a {padding: 3px 2px 3px 1px;font-size: 7px;}
+.campaign .more p {font-size: 8px;}
+.tools-quote .text {max-width: 270px;margin-right: 16px;}
+#footer h4 {font-size: 15px;line-height: 15px;}
+#copyrights {padding: 1px 0px;height: 50px;}
+section.cuurent_support-title h1 {font-size: 21px;bottom: -10px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active.open ul.dropdown-menu {
+    width: 160px; margin-left: -84px;    }
+#banner .bxslider li.slide h2.small {    font-size: 16px;}
+.funeral-list {    margin: 5px 0px;}
+.campaign .textbox h4 { font-size: 17px; line-height: 19px; }
+.campaign .image span { font-size: 11px; padding: 0px 10px; line-height: 25px; margin-top: -25px;}
+.campaign .rangeslider { margin-top: 40px;}
+#tools h2 {font-size: 23px;}
+#tools h2 span {font-size: 40px;}
+#newsletter h4 {font-size: 17px;line-height: 30px;margin-bottom: 0;}
+#footer ul li a {  font-size: 10px;    line-height: 12px;}
+.dropdown-menu > li > a {    font-size: 17px;    line-height: 21px;}
+#support-campaign {}
+ul#main_menu li {    margin: 0 2px;}
+.header_maenuarea.fix {    width: 37%;    margin-top: 0;}
+.header_logoarea.fix {}
+.header_signuplgin.fix ul li.signup a {    padding: 0 5px 0 0;}
+.topbar form {width: 220px;}
+.topbar input {width: 155px;height: 28px;line-height: 28px;font-size: 10px;}
+.topbar input[type="submit"]{height: 28px;line-height: 28px;padding:2px;width: 20px;background: url(../images/arrow_search.png) no-repeat scroll 4px center #f6f2ef;background-size: 14px 10px;}
+.funeral-list li {    font-size: 12px;}
+.banner-bottom {height: 68px;}
+.bx-wrapper .bx-pager {    bottom: -15px;}
+.campaign .textbox {    padding: 0px 5px;}
+.campaign .more p small {    font-size: 8px;}
+.newsletter_left {padding: 20px 10px 65px 10px;}
+#newsletter input[type="submit"], #newsletter a {font-size: 11px;line-height: 25px;border: 0px solid #e3e0de;padding: 0px 10px;}
+.tools-quote .text h4 {font-size: 20px;line-height: 23px;margin-top: 40px;}
+#copyrights p a { font-size: 13px;}
+header#header.profile_page .header_maenuarea.fix {width: 38%;}
+header#header.profile_page .header_searcharea.fix {width: 32%;margin-top: 28px;}
+.header_sticky_givenow.fix a.sticky_give_btn {font-size: 15px;}
+.header_sticky_social.fix {width: 63%;}
+.header_sticky_social.fix ul li a {display: block;width: 80px;}
+.header_sticky_social.fix ul li a img { width: 100%;}
+.header_sticky_givenow.fix {    width: 37%;}
+.sticky_funeral_right.fix h4 {font-size: 11px;}
+.sticky_funeral_right.fix h3 {font-size: 16px;}
+.sticky_funeral_left.fix {    margin-right: 1%;    margin-left: 2%;}
+.sticky_funeral_right.fix { width: 83%;}
+header#header.profile_page ul#main_menu li a{    padding: 60px 0 0 0;}
+header#header.profile_page .header_signuplgin.fix ul li.login a {padding: 0 0px 0 5px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown_bar a {    padding: 0 10px;}
+.sticky_funeral.fix {margin-top: 10px;}
+.header_sticky_social_givenow.fix {    margin-top: 30px;}
+#profile-heading h3 {    font-size: 23px;}
+.left-time h3 { font-size: 17px;}
+.profile-info h3 {font-size: 26px;color: #cdb357;margin-top: 10px;margin-bottom: 5px;}
+.profile-info a, ul.support a.more,
+ .get-updates input[type="submit"] {font-size: 13px;line-height: 25px;padding: 5px 30px;margin: 20px 0px;}
+.left-time h4 {    font-size: 15px;    margin-bottom: 10px;}
+body p {    font-size: 13px;}
+.left-time h4 b { font-size: 20px;}
+.sticky_give_now_input.fix input.give_input_sticky {padding: 6px;width: 160px;height: 30px;}
+a.sticky_give_nowsub {font-size: 15px;padding: 5px 10px;bottom: -6px;}
+.sticky_give_now_input.fix label {font-size: 25px;line-height: 40px;}
+.header_sticky_social_givenow.fix {margin-top: 20px;width: 46%;}
+.sticky_give_now_input.fix {float: left;margin-right: 10px;margin-left: 10px;}
+.header_signuplgin.fix ul li.login a {padding-top: 0;padding-left: 5px;}
+.bx-wrapper .bx-pager.bx-default-pager a {width: 7px;height: 7px;border-radius: 100%; padding-right: 0; margin-right: 0;}
+#banner .bxslider li.slide .heading:after,#banner .bxslider li.slide .heading:before { width: 1px;}
+section.cuurent_support-title { margin-top: -43px;}
+#banner .textbox {top: 35px;}
+.campaign .textbox p {font-size: 11px;line-height: 15px;margin-bottom: 5px;}
+.header_search_icon.fix ul.nav.navbar-nav.navbar-right li.dropdown.active { margin-right: 20px;}
+.topbar form label { height: 28px;line-height: 28px; padding: 0px 10px;font-size: 10px;}
+#tools h2 a#backtotop img {width: 25px;}
+.tools-quote img.leftborder,.tools-quote img.rightborder {top: 47px;height: 1px;}
+#newsletter h5 {font-size: 13px;}
+.newsletter_right_content.fix {}
+#newsletter input[type="email"] {line-height: 29px;border-radius: 7px;margin-bottom: 13px;padding: 0 7px;margin-top: 10px;}
+#tools .title {padding-bottom: 0;}
+.header_sticky_fundrising.fix {  margin-right: 2%;}
+.funeral-details h3 { font-size: 18px;margin-bottom: 0px;}
+.funeral-details a {font-size: 8px;line-height: 20px;padding: 2px 6px 5px 4px;margin-top: 5px;width: 45px;}
+.funeral-details a img {max-width:10px;display:block;margin-top: 3px;}
+.sidebar a.givenow {padding: 0px 30px;font-size: 32px;line-height: 55px;}
+.get-updates .col-xs-10.col-xs-offset-1 {    margin-left: 0px;   padding-left: 0px;}
+.header_sticky_social_givenow.fix.profile_stickygive_now_onput_prea { margin-top: 10px;}
+#tools_two .title.col-xs-12 h2 {font-size: 20px;}
+#tools_two .title {  padding-top: 3%;  padding-bottom: 30px;}
+#tools_two .tools-quote .text h4 {font-size: 16px;line-height: 20px;margin-top: 0px;}
+#tools_two .tools-quote .text {max-width: 220px;margin-right: 30px;}
+#tools_two .title.col-xs-12 h2 span{font-size:35px}
+#tools_two h2 a#backtotop img {  width: 25px;}
+#tools_two h2 a#backtotop { margin-top: 7px;}
+#tools_two .tools-quote .text h6 {    line-height: 25px;    font-size: 14px;}
+#tools_two .tools-quote .text img { width: 40px;}
+#tools_two .tools-quote img.leftborder, #tools_two .tools-quote img.rightborder{   top: 12px;}
+#banner .bxslider li.slide .heading:after {right:14px;}
+.pull-right.newsletter_right {padding: 25px 10px 100px 15px;}
+.newsletter_cont_right.fix {  width: 65%;}
+#newsletter p {font-size: 11px;line-height: 15px; margin-bottom: 5px;}
+#newsletter .newsarea_width.newsletter_first ul li a {font-size: 11px;padding: 0; line-height: 14px;}
+.newsarea_width.newsletter_first ul li {    margin-bottom: 0;}
+.newsarea_width.newsletter_first {padding-top: 20px;    padding-left: 2px;}
+.page_title_are.fix h1 {font-size: 28px;}
+.start_campagn_titleara.fix {width: 60%;}
+.list_funeral_left_title.fix h2, .list_funeral_right_title.fix h2 {font-size: 17px;}
+button.addmore_btn {font-size: 10px;padding: 7px 5px;}
+.form_input_area.fix label {    font-size: 12px;}
+input.form_input_field {padding: 7px 10px;}
+.list_funeral_bottom_submit.fix {    width: 70%; margin: 0 auto;}
+select.form_select_field {padding: 6px 10px;}
+button.browse_btn {font-size: 11px;padding: 7px 15px;}
+.form_input_area.fix.form_input_profilephto_area p {    font-size: 11px;}
+.form_input_area.fix.form_input_profilephto_area label {   line-height: 30px;}
+.title_btn_ara.fix { position: relative; margin-top: 10px;}
+.title_btn_ara.fix a.title_btn_lnk{font-size: 14px;}
+.start_campaign_steptitle.fix h1 {font-size: 26px;}
+.page_planing_are.fix h2 {font-size: 22px;}
+
+
+
+
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+.for_mobile{display:block}
+.for_desktop{display:none}
+#banner a.start-fund {font-size: 13px;padding: 2px 8px;margin-bottom: 10px;}
+.bx-wrapper .bx-pager.bx-default-pager a {width: 8px;height: 8px;}
+section.cuurent_support-title h1 {font-size: 18px;}
+.banner-bottom {height: 60px;}
+.bx-wrapper .bx-pager {bottom: -15px;}
+section.cuurent_support-title {bottom: 0;margin-top: -20px;}
+.campaign .more p {font-size: 14px;}
+.campaign .more a {font-size: 13px;}
+.tools-quote .text {width: 100%;max-width: 100%;margin-right: 0;}
+.tools-quote .text h4 {font-size: 22px;line-height: 26px;margin-top: 0px;}
+.tools-quote {padding-bottom: 15px;}
+#tools {margin-top: 10px;}
+.newsletter_left {border-right: 0px solid #c5c5c5;padding: 15px 0px 20px 0px;}
+#newsletter input[type="submit"], #newsletter a {font-size: 13px;line-height: 40px;
+    border: 0px solid #e3e0de;padding: 0px 15px;margin-left: 15px;}
+#copyrights { background: #ccb257; padding: 5px 0px; height: 30px;}
+#header_sticky {  display: none;}
+a.ReadMore, ul.support a.more, .get-updates input[type="submit"] { font-size: 12px; line-height: 30px;}
+.comments h2 {font-size: 23px;}
+.sidebar a.givenow {line-height: 54px;font-size: 35px;padding-bottom: 6px;}
+.left-time h3 {font-size: 21px;}
+#banner .textbox {top: 0; position: relative;}
+#banner .bxslider li.slide {}
+.funeral-list li {font-size: 13px;}
+.funeral-list {margin: 0px 0px 5px 0;}
+.banner-bottom { top: 0px;}
+#support-campaign {margin-top: 0;margin-bottom: 0;}
+.mob_footer_logo.fix img {  bottom: 64px;  width: 140px;}
+.mob_footer_logo.fix {height: 110px;}
+footer.footer_mobile_main_Area.fix.for_mobile {margin-top: 70px;}
+.mob_footer_signup_right.fix input {    width: 200px;border-radius: 7px;    clear: both;}
+.mob_footer_funeral_right.fix a{width: 105px;font-size: 12px;line-height: 30px;margin: 8px auto 5px auto;}
+.mob_footer_signup_right.fix input[type="submit"] {width: 115px;font-size: 12px;line-height: 30px;margin: 8px auto 5px auto;}
+.mob_footer_funeral_left.fix, .mob_footer_signup_left.fix { width: 60px;}
+#copyrights p a {font-size: 11px;margin: 0px 2px;}
+#copyrights p {line-height: 12px;}
+#banner .bxslider li.slide h2 {font-size: 18px;margin-right: 10px;}
+#banner .bxslider li.slide h2.small{font-size: 17px;margin-top: 0;}
+ #banner a.start-fund {font-size: 13px;margin-top: 0;}
+#banner .bxslider li.slide .heading {padding-left: 10px;padding-right: 0; margin-top: 10px;}
+#banner .textbox .row .col-sm-10.pull-right { float: left !important;}
+.topbar input[type="submit"] {width: 10%;}
+.topbar.mobile_top form input[type="search"] {width: 118px;}
+.topbar.mobile_top form label {width: 52px;padding-left: 5px;}
+.topbar.mobile_top form {margin-top: 0px;width: 200px;}
+.topbar.mobile_top form input.bglight[type="submit"] {width: 30px;}
+#tools .title {  padding-left: 0;}
+.spl-title h2, #tools h2, #newsletter h4 {font-size: 20px;}
+#tools h2 span {font-size: 28px;}
+#tools h2 a#backtotop {margin-top: 2px; margin-left: 0;}
+#tools h2 a#backtotop img { width: 29px;}
+.tools-quote .text h6 {line-height: 30px;margin-top: 0px;margin-bottom: 0px;}
+.profile-info .row div {  padding: 0px 7px;    text-align: center;    margin-bottom: 3%;}
+.profile-image { float: left;}
+#profile-heading h3 {  font-size: 20px;  margin-bottom: 3px;}
+#profile-heading h6 { font-size: 15px;}
+#profile-heading ul.social {  margin-top: 5px;    text-align: center;}
+#profile-heading ul.social li a.edit {padding: 10px 35px;font-size: 14px;width: auto;}
+.profile-info h3 {font-size: 23px; margin-top: 10px; margin-bottom: 5px;}
+.profile-info a.ReadMore {margin: 0 auto;width: 169px;margin-bottom:3px}
+.left-time h4 b, .left-time h4 { font-size: 15px;}
+.funeral-details > .row > .col-sm-3 { text-align: center;}
+.get-updates .col-xs-10.col-xs-offset-1 { margin-left: 0; padding-left: 0;    width: 100%;}
+.get-updates input[type="email"] {width: 100%;line-height: 40px;}
+#profile-heading ul.contactlist li {margin-right: 21px; margin-bottom: 5px;}
+.topbar.mobile_top .search_area.fix { box-shadow: 0px 1px 6px #000;}
+#tools_two .title.col-xs-12 h2 {font-size: 12px;}
+#tools_two .title.col-xs-12 h2 span {font-size: 25px;}
+#tools_two .title {padding-top: 2%;padding-bottom: 0;padding-right: 0%;padding-left: 0;    }
+#tools_two h2 a#backtotop { margin-top: 0;}
+#tools_two h2 a#backtotop img {    width: 20px;}
+#tools_two .tools-quote .text h4 {font-size: 15px; line-height: 18px;    margin-top: 0px;}
+#tools_two .tools-quote .text h6 {font-size: 15px; line-height:18px}
+#tools_two .tools-quote .text img{width:40px}
+#tools_two .tool_ara_content_wrapper.fix { position: relative;}
+.page_title_are.fix h1 {font-size: 25px;}
+.start_campagn_titleara.fix {width: 100%;}
+.title_btn_ara.fix {position: relative; margin-top: 10px; margin-bottom: 10px;}
+.page_title_are.fix.start_campagn_pgtitle h1:before {position: absolute;top: 0px;   left: -30px; width: 20px;  height: 24px;}
+.title_btn_ara.fix a.title_btn_lnk, button.browse_btn, button.example_btn, button.search_btn, button.connect_btn {font-size: 14px; padding: 8px 15px;}
+button.strt_camp_step_conti {font-size: 20px;}
+.step_form_submit.fix {margin-left: -68px;bottom: -40px;}
+.start_campaign_steptitle.fix h1 {font-size: 25px;}
+label.your_goal_label {font-size: 24px; top: -10px;}
+.step_four_location.fix {  margin-bottom: 20px;}
+textarea.textarea_tellstory {height: 120px;}
+.start_campaign_stepone.fix { margin-bottom: 12%;}
+.start_campaign_stepcontent.fix {background-size: 250% auto;}
+button.browse_btn {}
+.serc_btn_area label{    display: none;}
+textarea.list_funera_textarea {height: 147px;}
+.list_funeral_bottom_submit.fix {width: 100%;}
+.list_funeral_check.fix label {    width: 85%;}
+.list_funeral_right_title.fix h2 {
+font-size: 20px;}
+.add_more_btnarea.fix { position: relative;}
+.list_funeral_right.fix { padding: 0;    margin-top: 10px;}
+.form_input_area.fix.form_input_socialarea {  margin-bottom: 0;}
+input.form_submtbtn {font-size: 25px;}
+.sidebar.col-sm-5 .left-time h3 img {    width: 20%;}
+.mr_donate_step_three.fix {padding: 10px;float: left;    width: 100%;    margin-bottom: 10px;}
+.mr_donate_step_three_send.fix a.sticky_give_nowsub {  padding: 8px 20px;    font-size: 20px;}
+.sidebar.col-sm-5 {    padding: 0;}
+section.container_donate_step {    float: left;}
+section.container_donate_step { float: left;}
+a.need_help_btn, a.donate_updatebtn {font-size: 12px;padding: 8px 12px;}
+section.container_donate_step .col-sm-6 {float: left;margin: 10px 0;padding: 0;}
+.mr_donate_step_three_title.fix h2 {  font-size: 25px;}
+.sidebar_donate_range_left {width: 100%;margin-bottom: 10px;}
+.sidebar_donate_range_right {width: 100%;}
+.mr_donate_step_three_title.fix h2:before {top: 0px;left: -20px;width: 17px;height: 21px;}
+section.container_donate_step .col-sm-6 {padding: 0px 15px;}
+.your_doncheckbox_titl.fix h2 {  font-size: 23px; margin-bottom: 10px;}
+.donate_step_chek.fix {  float: left;  width: 100%;}
+.mr_donate_step_onee_form.fix .form_input_area.fix {float: left;  width: 100%;}
+.donate_step_left.fix.col-sm-6 {    width: 100%; margin: 0;}
+button.addmore_btn {font-size: 14px;}
+.form_input_area.fix.form_input_socialarea i { font-size: 20px;}
+.list_funeral_left_title.fix h2 {font-size: 20px;}
+input.form_input_field {padding: 8px 10px;}
+.rofile_content_social.fix ul li { margin-left: 0; margin-bottom: 5px;}
+.funeral-details a.map_btn {width: 65px;}
+.thanks_botom_social.fix a.send_us_btn_he {
+    padding: 13px 19px;
+    margin-left: 0;
+    margin-top: 5px;
+    float: left;}
+.thanks_botom_social.fix ul li {margin-top: 5px;}
+a#loadmore.show_btn {font-size: 14px;}
+.col-sm-2.flush.mobil_sotokoro {
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.col-sm-2.flush.mobil_sotokoro a {
+    width: 80px;
+    display: block;
+}
+.col-sm-12.thanks_title.fix h1 {font-size: 30px;}
+.col-sm-12.thanks_title.fix h1 span { font-size: 20px;}
+.col-md-12.back_to_main a.send_us_btn_he {font-size: 13px;padding: 8px 20px;}
+.mr_donate_step_thanks.fix h2 {    font-size: 18px;}
+.mr_donate_step_thanks.fix .thanks_amount_social.fix h2 {font-size: 18px;}
+.mr_donate_step_thanks.fix h1 {  font-size: 30px;}
+.mr_thanks_sharearea.fix h2 {font-size: 20px;}
+form.faqsearch.fix {    width: 100%;}
+.faq_input.fix {  width: 63%;    margin-right: 2%;}
+.faq_input.fix input {border: 1px solid #e5e2df;padding: 7px 10px;}
+.faq_submit.fix { width: 35%; }
+.faq_submit.fix input { font-size: 14px;padding: 8px 10px;}
+button.accor_close.acbtn_play,button.accor_open {font-size: 12px;padding: 5px 6px;}
+.temp_accor_title.fix h2,.temp_accor_tab_content.fix h2 {
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 0;
+    margin-top: 3px;}
+a#faqMore {font-size: 14px;padding: 8px 15px;}
+.checlist_titleara.fix {width: 100%;}
+a.sticky_give_nowsub {font-size: 20px;padding: 5px 13px;}
+.page_planing_are.fix h2 {font-size: 20px;line-height: 23px; margin-bottom: 5px;}
+.checklist_social_ara.fix {float: none; width: 100%;  margin-bottom: 3%;}
+.checklist_sendbtn_ara.fix { float: none; width: 100%; text-align: center;margin-bottom: 3%;}
+a.btn_linkmore {font-size: 14px;padding: 7px 15px;}
+.checklist_content_thumb.fix {float: none;width: 100%;margin-right: 0;min-height: inherit;}
+.checklist_content_text.fix {float: none;width: 100%;padding: 1.5% 3% 0 3%;}
+.checklist_content_thumb.fix img { min-height: inherit;}
+.page_banner_img_title h1 {    font-size: 20px;}
+.presstitle_btn_ara.fix {position: relative;top: 0;left: 0;width: 100%;text-align: center;}
+.presstitle_btn_ara.fix a.title_btn_lnk {font-size: 14px;    padding: 8px 15px;}
+.presspage_title_areaall.fix {width: 100%;}
+.press_content_thumb.fix {float: none; width: 100%;margin-right: 0; margin-bottom: 2%;}
+.press_content_detail.fix {    float: none;    width: 100%;     padding: 2%;  }
+.press_content_detail.fix h1 {    font-size: 21px;line-height: 22px; margin-bottom: 3px;}
+h2.date_title { font-size: 18px;}
+.press_content_single_wrap.fix a.press_read {font-size: 14px; padding: 8px 15px;}
+body p {font-size: 14px;}
+.page_planing_are.middle_width_koro {width: 100%;margin: 1% auto;}
+.partnr_content_text.fix {float: none;width: 100%;padding-right: 0;margin-bottom: 2%;}
+.partnr_content_thumb.fix { float: none; width: 100%; margin-bottom: 1%;}
+.partnr_content_text.fix h1 {font-size: 21px;line-height: 26px;margin-bottom: 3px;}
+.partner_acmpain_title h1 {
+    font-size: 23px;
+    line-height: 23px;
+    padding-top: 12px;
+}
+.fees_servic_list.fix {  width: 50%;   margin-bottom: 2%;}
+a.fees_read { font-size: 14px;padding: 8px 15px;}
+.campain_fees_left_div.fix {
+    float: left;
+    width: 100%;
+    margin-right: 0;
+    display: block;
+    vertical-align: inherit;    text-align: center;
+}
+.campain_fees_first_div.fix, .campain_fees_middle_div.fix, .campain_fees_last_div.fix {
+    float: left;
+    width: 100%;
+    margin-right: 0;
+    display: block;
+}
+.campain_fees_right_div.fix h1 {font-size: 32px;line-height: 28px;margin-bottom: 6px;}
+.campain_fees_right_div.fix h3 {font-size: 19px;}
+.campain_fees_plus_div.fix {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 7% 0;
+}
+
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.for_mobile{display:block}
+.for_desktop{display:none}
+
+
+
+
+
+
+
+}
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,226 @@
+/*Dashboard*/
+
+.dashboard-fund__ammount {
+  padding: 10px 0;
+  border: 2px solid $color;
+  border-radius: 5px;
+  font-family: $font1;
+  font-weight: 400;
+  font-size: 26px;
+  color: $color;
+
+  text-align: center;
+  margin-bottom: 20px;
+  p {
+    color: #a8a8a8;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+}
+
+.dashboard-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 5px;
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+      &.active {
+        a {
+          color: #fff;
+          background: $color;
+        }
+      }
+      a {
+        font-family: $font1;
+        text-transform: capitalize;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        padding: 5px 20px;
+        color: $color;
+        border: 1px solid $color;
+        border-radius: 5px;
+        &:hover {
+          color: #fff;
+          background: $color;
+        }
+        &:active {
+          color: #fff;
+          background: $color;
+        }
+      }
+      &.dashboard-calendar a {
+        padding: 0.2em;
+      }
+    }
+  }
+  .ui-datepicker {
+    width: 100%;
+  }
+}
+
+/*Partner Dash Acordion*/
+
+.acordion-nav {
+  .card:last-of-type {
+    margin-bottom: 20px;
+  }
+  .card-header {
+    padding: 0;
+    background: $color;
+    border: 0;
+    border-radius: 5px 5px 0 0;
+    button {
+      text-align: left;
+      width: 100%;
+      color: #fff;
+      text-decoration: none;
+      font-family: $font1;
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: capitalize;
+      &:focus{
+        outline: none;
+      }
+    }
+    a{
+      text-align: left;
+      width: 100%;
+      color: #fff;
+      text-decoration: none;
+      font-family: $font1;
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+  }
+  .card-body {
+    border-left: 1px solid $color;
+    border-right: 1px solid $color;
+    border-bottom: 1px solid $color;
+    border-radius: 0 0 5px 5px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin-bottom: 5px;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      a {
+        font-family: $font1;
+        font-size: 16px;
+        font-weight: 400;
+        color: $color;
+        text-decoration: none;
+      }
+    }
+    .partner-info__section {
+      p {
+        margin-bottom: 0;
+        font-family: $font1;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.5);
+        a {
+          color: $color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .ac-toggle-on {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+  .ac-toggle-off {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+  .btn-link {
+    position: relative;
+    background: $color;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid $color !important;
+    color: #fff !important;
+    &:focus {
+      outline: none;
+    }
+    &:active{
+      outline: none;
+    }
+    span {
+      color: #fff;
+    }
+    .ac-toggle-off {
+      display: none;
+    }
+    .ac-toggle-on {
+      display: block;
+    }
+    &.collapsed {
+      background: #fff;
+      color: $color !important;
+      span {
+        color: $color;
+      }
+      .ac-toggle-off {
+        display: block;
+      }
+      .ac-toggle-on {
+        display: none;
+      }
+    }
+  }
+}
+
+.dashboard-nav ul li.dashboard-calendar a {
+  border: 1px solid $color;
+  &.ui-state-active {
+    background: $color;
+  }
+  &.ui-state-highlight {
+    background: #fffa90;
+  }
+}
+
+.hasDatepicker {
+  border-radius: 5px;
+}
+
+.ui-datepicker-next,
+.ui-datepicker-prev {
+  cursor: pointer;
+  &:hover {
+    background: none !important;
+  }
+}
+
+.ui-datepicker-next-hover {
+  right: 2px !important;
+  top: 2px !important;
+}
+
+.ui-datepicker-prev-hover {
+  left: 2px !important;
+  top: 2px !important;
+}
+
+.ui-datepicker .has-reminder a {
+  background: #ff6666;
+  color: #fff;
+}
+
+

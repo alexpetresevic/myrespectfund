@@ -1,0 +1,1559 @@
+/*======================================
+    Fonts and Thypography
+====================================== */
+
+@font-face {
+    font-family: 'Contax';
+    src: url('../fonts/Contax.eot');
+    src: url('../fonts/Contax.eot') format('embedded-opentype'),
+         url('../fonts/Contax.woff2') format('woff2'),
+         url('../fonts/Contax.woff') format('woff'),
+         url('../fonts/Contax.ttf') format('truetype'),
+         url('../fonts/Contax.svg#Contax') format('svg');
+}
+
+@font-face {
+    font-family: 'DINMedium';
+    src: url('../fonts/DINMedium.eot');
+    src: url('../fonts/DINMedium.eot') format('embedded-opentype'),
+         url('../fonts/DINMedium.woff2') format('woff2'),
+         url('../fonts/DINMedium.woff') format('woff'),
+         url('../fonts/DINMedium.ttf') format('truetype'),
+         url('../fonts/DINMedium.svg#DINMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'DINRegular';
+    src: url('../fonts/DINRegular.eot');
+    src: url('../fonts/DINRegular.eot') format('embedded-opentype'),
+         url('../fonts/DINRegular.woff2') format('woff2'),
+         url('../fonts/DINRegular.woff') format('woff'),
+         url('../fonts/DINRegular.ttf') format('truetype'),
+         url('../fonts/DINRegular.svg#DINRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'DINLight';
+    src: url('../fonts/DINLight.eot');
+    src: url('../fonts/DINLight.eot') format('embedded-opentype'),
+         url('../fonts/DINLight.woff2') format('woff2'),
+         url('../fonts/DINLight.woff') format('woff'),
+         url('../fonts/DINLight.ttf') format('truetype'),
+         url('../fonts/DINLight.svg#DINLight') format('svg');
+}
+
+@font-face {
+    font-family: 'DINBold';
+    src: url('../fonts/DINBold.eot');
+    src: url('../fonts/DINBold.eot') format('embedded-opentype'),
+         url('../fonts/DINBold.woff2') format('woff2'),
+         url('../fonts/DINBold.woff') format('woff'),
+         url('../fonts/DINBold.ttf') format('truetype'),
+         url('../fonts/DINBold.svg#DINBold') format('svg');
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../Helvetica.eot');
+    src: url('../Helvetica.eot') format('embedded-opentype'),
+         url('../Helvetica.woff2') format('woff2'),
+         url('../Helvetica.woff') format('woff'),
+         url('../Helvetica.ttf') format('truetype'),
+         url('../Helvetica.svg#Helvetica') format('svg');
+}
+/*======================================
+    Dashboard  css start
+====================================== */
+
+.top-top-bg > .top {
+    max-height: 15px;
+}
+.dashboard-top-logo {
+  display: flex;
+}
+.dashboard-top-logo-content {
+  margin: 10px 0 0 10px;
+}
+.dashboard-contactlist {
+  margin-top: 10px;
+}
+.logout a {
+  color: #720089;
+  float: right;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.dashboard-help-btn {
+  font-size: 12px !important;
+  margin-left: 5px !important;
+}
+.dashboard-menu-area {
+  background-color: #322d6d;
+  display: inline-block;
+  padding: 15px 0;
+  width: 100%;
+}
+.dash h2 {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.dash-menu ul {
+  margin-top: 0;
+}
+.lft-brd {
+  border-left: 1px dotted #fff;
+}
+.dash-menu a {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.dash-menu a:hover, .d_active > a {
+    background-color: transparent !important;
+    color: #CCBA51 !important;;
+}
+.dash-menu a:focus{
+    background-color: transparent !important;
+}
+.dropdown-menu.d-drop {
+  margin-top: 15px !important;
+}
+.d-drop {
+  background-color: #F6F2EE;
+  padding: 20px !important;
+}
+.d-drop::before {
+  border-bottom: 11px solid #fff !important;
+  border-left: 16px solid transparent !important;
+  border-right: 16px solid transparent !important;
+  position: absolute;
+  top: -10px !important;
+}
+.dashcont-area {
+    position: relative;
+    padding: 15px 0px;
+}
+
+
+
+/* dashboard sidebar menu */
+
+.home-icon a img {
+  display: inline-block;
+  margin-top: -10px;
+}
+.home-icon h4 {
+  color: #cdb357;
+  display: inline;
+  font-family: Volkhov;
+  font-size: 28px;
+  line-height: 24px;
+  margin-left: 12px;
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+.sdo {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 229% 2%;
+  padding-top: 12px;
+  position: relative;
+}
+.sdo > li {
+  border-bottom: 3px dotted #fff;
+}
+.sdo > li > a {
+  color: #62007a;
+  display: block;
+  font-size: 15px;
+  padding: 18px 0 18px 15px;
+}
+.sdo > li > a:hover{
+  color: #cdb357;
+}
+.sdo > .active > a {
+    background: #EFE7AC;
+}
+.sdo::after {
+  background-image: url("../images/half_logo.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: "";
+  height: 60px;
+  position: absolute;
+  right: 15px;
+  width: 88px;
+  z-index: 2147483647;
+}
+
+.sdo::before {
+  background-image: url("../images/sdoheart.png");
+  background-size: 100% auto;
+  content: "";
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: 50px;
+  width: 50px;
+}
+.mobile-dash-menu.fix {
+  display: none;
+}
+/* dashboard right sidebar css */
+.draise.fix {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 200% 13%;
+  padding: 12px 5px;
+  text-align: center;
+}
+.drsh {
+  color: #cdb357;
+  font-size: 28px;
+}
+.hdn > img {
+  margin-top: -8px;
+}
+
+.draise.fix > p {
+  color: #62007a;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.msg.fix {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 200% 11%;
+  margin-top: 18px;
+  padding-bottom: 20px;
+  padding-left: 14px;
+  padding-top: 22px;
+}
+.msg.sdmdgn.fix {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 268% 3%;
+}
+.hdn {
+  margin-bottom: 18px;
+  padding-left: 10px;
+}
+.hdn > img {
+  display: inline;
+  width: 23px;
+}
+.drsh {
+  display: inline;
+  font-family: "Volkhov",serif;
+  font-size: 28px;
+  margin-left: 4px;
+}
+.drsh > span {
+  color: #62007a;
+}
+.msg.fix > p > a {
+  color: #62007a;
+  font-size: 15px;
+  padding-left: 10px;
+  text-transform: capitalize;
+}
+.dfrom {
+  background: #ede2dc none repeat scroll 0 0;
+  margin-top: 25px;
+}
+.dfrom {
+  background: #ede2dc none repeat scroll 0 0;
+  margin-top: 25px;
+  padding: 18px 10px;
+}
+.dfrom > h4 {
+  color: #582179;
+  font-size: 16px;
+}
+.dfrom > h5 {
+  color: #cdb357;
+  font-size: 12px;
+}
+.dfrom > p {
+  font-size: 13px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.ccbtn {
+  background: #582179 none repeat scroll 0 0;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 16px;
+  text-transform: uppercase;
+}
+.vbtn {
+  padding: 17px 10px;
+}
+.dclender.fix {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 220% 8%;
+  margin-top: 20px;
+  padding: 22px 20px;
+}
+.dclender.fix a {
+  color: #582179;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.set-cal {
+ margin-top: 20px;
+  display: flex;
+}
+.dgc > p {
+  color: #582179;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+/*======================================
+    mr-campgain-part css
+====================================== */
+
+/* mr-canpgion-profile css */
+.dsdo {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 200% auto;
+  padding: 20px 18px 20px 20px;
+  position: relative;
+}
+.dthdn {
+  margin: 20px 0;
+}
+.dthdn > img {
+  display: inline;
+  margin-top: -8px;
+}
+.dthdn > h2 {
+  color: #cdb357;
+  display: inline;
+  font-family: "Volkhov",serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+.des {
+  text-transform: capitalize;
+}
+.deshp {
+  height: 160px;
+  margin: 0 !important;
+  width: 95% !important;
+  padding: 20px;
+}
+.prof-pic {
+  position: relative;
+}
+.ebtn.ppebtn {
+  right: 20px;
+  top: 20px;
+}
+.upp {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+}
+.upp > label {
+  float: left;
+  line-height: 40px;
+  text-transform: capitalize;
+
+}
+.brw {
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 24px;
+  padding: 9px 20px;
+}
+label {
+  font-size: 14px !important;
+}
+
+.ink {
+  line-height: 39px;
+  margin-left: 20px;
+  color: #582179;
+}
+.upp img {
+  height: 41px;
+  margin-left: 20px;
+}
+.uppsocial img {
+  margin-top: 60px;
+}
+.ebbed {
+  height: 91px;
+  width: 75% !important; 
+}
+.se-btn > .ccbtn {
+  background: rgba(0, 0, 0, 0) url("../images/bg_givenow.png") no-repeat scroll 0 0 / 100% auto;
+  color: #e88448;
+  display: inline-block;
+  font-family: abel;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 8px 70px;
+  text-transform: uppercase;
+}
+
+/* mr- campion-profile-dashboard-part-1 css */
+.goalt{
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 200% auto;
+  display: block;
+  min-height: 650px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-top: 40px;
+}
+.goalh.fix > h2 {
+  color: #cdb357;
+  font-family: "Volkhov",serif;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.form_input_area.goal-input.fix > label {
+  float: left;
+  width: 20%;
+}
+.form_input_field.gput {
+  float: left;
+  margin-left: 20px;
+  width: 35%;
+}
+.form_input_field.gput-2 {
+  float: left;
+  margin-left: 20px;
+  width: 60%;
+}
+.form_input_area.goal-input.fix > label {
+  font-size: 17px;
+  line-height: 37px;
+}
+.form_input_area.goal-input.fix span {
+  color: #cdb357;
+}
+.save-btn > .ccbtn {
+  color: #f99898;
+  display: inline-block;
+  font-size: 19px;
+  margin-top: 20px;
+  padding: 5px 35px;
+}
+/* mr- campion-profile-dashboard-part-2 css */
+
+.susan-pd-img {
+  margin-bottom: 15px;
+}
+.dthdn.campgal-h {
+  margin-top: 50px;
+}
+.uploadled-view {
+  margin-top: 20px;
+}
+.sinup-image {
+  float: left;
+  margin-top: 20px;
+  position: relative;
+  width: 20%;
+}
+.sinup-image > img {
+  min-height: 70px;
+  padding: 5px;
+  width: 100%;
+}
+.cros {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+}
+/* mr- campion-profile-dashboard-part-3 css */
+.cam-str {
+  background: #ffffff none repeat scroll 0 0;
+  border: medium none;
+  height: 400px;
+  margin-top: 0;
+  padding: 20px;
+  width: 95%;
+}
+.dsame-btn > .ccbtn {
+  color: #f99898;
+  display: inline-block;
+  font-size: 18px;
+  height: 44px;
+  margin-top: 20px;
+  padding: 11px 0;
+  text-align: center;
+  width: 130px;
+}
+
+
+/* mr- campion-profile-dashboard-part-4 css */
+.set > h2 {
+  padding-left: 15px;
+}
+
+/* mr- campion-profile-dashboard-part-5 css */
+.stolk-hd {
+  margin-top: 10px;
+}
+.stolk-hd > h4 {
+  color: #62007a;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.tolk-ul {
+  margin-top: 7px;
+}
+.singl-tll {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+}
+.singl-tll li {
+  margin-top: 5px;
+}
+.singl-tll a {
+  color: #6a6a6a;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.dwnpdf.fix {
+  margin-top: 20px;
+}
+.dwnpdf.fix > a {
+  display: inline-flex;
+}
+.dwnpdf.fix img {
+  height: 50px;
+  width: 41px;
+}
+.dwnpdf.fix h2 {
+  color: #cdb357;
+  font-family: Volkhov;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 50px;
+  margin-left: 10px;
+}
+/* mr- campion-profile-dashboard-part-6 css */
+
+.dthdn.funureh {
+  display: inline-block;
+  margin: 0;
+}
+.home-info {
+  background: #f6f2ef url("images/shadow_withbg.png") no-repeat scroll center top / 200% auto;
+  display: inline-block;
+  padding: 20px;
+} 
+
+.home-info > .content {
+  float: left;
+  width: 50%;
+}
+.content {
+  float: left;
+  width: 50%;
+}
+.funeral-home-info .img {
+  display: inline-block;
+  width: 50%;
+}
+.funeral-home-info > .content > h4 {
+  color: #582179;
+  margin-bottom: 15px;
+}
+.funeral-home-info > .content > p {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.content span {
+  color: #582179;
+  font-size: 15px;
+}
+.content a {
+  color: #582179;
+  font-family: Roboto;
+}
+.funeral-home-info .img {
+  display: inline-block;
+  width: 38%;
+}
+.home-edit {
+  top: 27px !important;
+}
+.iclai img {
+  height: 30px;
+  margin-top: 5px;
+  width: 26px;
+}
+.dfr-home {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 200% auto;
+  padding: 20px;
+}
+
+.dfr-home > .upp > label {
+  line-height: 21px;
+}
+.dfr-home > .upp > input , .dfr-date > .upp > input{
+  width: 40%;
+}
+.dfr-date {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 200% auto;
+  padding: 20px;
+}
+.popul-in {
+  position: relative;
+}
+.popup {
+  background-image: url("../images/pupupsdo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: none;
+  left: 50%;
+  margin-top: -20px;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  transform: translate(-88%, 0px);
+  z-index: 99999999;
+}
+.popup > ul {
+  padding: 4px;
+}
+.popup li {
+  color: #582179;
+  font-family: abel;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* mr- campion-profile-dashboard-part-7 css */
+.dth-2 {
+  display: inline-block !important;
+margin: 30px 0px !important;
+}
+.single-det > h2 {
+  color: #582179;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.single-det span {
+  font-size: 31px;
+}
+.twtrit {
+  font-size: 16px !important; 
+}
+.single-det > p {
+  font-size: 14px;
+}
+.single-det {
+  padding: 35px 0;
+  position: relative;
+}
+
+.single-det::after {
+  background: rgba(0, 0, 0, 0) url("../images/border_with_heart.png") no-repeat scroll 0 0;
+  bottom: -20px;
+  content: "";
+  height: 45px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.single-det.frs-sing-det {
+  margin-top: -10px;
+  padding-top: 0;
+}
+.single-det:nth-last-child()::after {
+display: none;
+}
+.last{
+  border-bottom: 0px dotted #ffffff;
+}
+.respcbtn > .ccbtn {
+  padding: 18px 63px;
+}
+.ccbtn.viemore {
+  margin-bottom: 50px;
+  padding-top: 17px;
+  transform: translate(60%, 50%);
+}
+/* mr- campion-profile-dashboard-part-9 css */
+
+.form-mtcl {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 200% auto;
+  padding: 20px;
+}
+.form-mtcl > .mtcl > h4 {
+  color: #582179;
+  font-size: 21px;
+  line-height: 30px;
+  margin-top: 10px;
+}
+.mtcl > h5 {
+  color: #cdb357;
+}
+.form-mtcl > .mtcl > p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+textarea {
+  height: 160px;
+  margin: 40px 0;
+  width: 100%;
+}
+.form-mtcl > .mtcl > .ccbtn {
+  padding: 13px 22px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: .5px;
+  font-size: 16px;
+}
+.form-mtcl > .mtcl > .ccbtn:hover {
+  background:#723099;
+  color:#fff;
+}
+/*======================================
+    withdrow part css
+====================================== */
+
+
+/* withdrow funds meue css */
+.withdraw.active {
+  background: #EFE7AC none repeat scroll 0 0;
+}
+.withdrw-sub {
+  margin-top: -20px;
+  padding: 0 0 20px 40px;
+}
+.withdrw-sub {
+  margin-top: -14px;
+  padding: 0 0 20px 35px;
+  position: relative;
+}
+.withdrw-sub::after {
+  background: rgba(0, 0, 0, 0) url("../images/tala_pop.png") no-repeat scroll 0 0 / 100% auto;
+  bottom: 5px;
+  content: "";
+  height: 27px;
+  position: absolute;
+  right: 12px;
+  width: 19px;
+}
+.withdrw-sub > li {
+  margin-top: 5px;
+}
+.withdrw-sub a {
+  color: #582179;
+  font-size: 15px;
+}
+
+.wimaro {
+  width: 15px;
+  margin-left: 5px;
+}
+.withdrw-sub > .active > a {
+  font-size: 12px;
+  font-weight: 600;
+}
+/* withdrow center css */
+.dthdn > img {
+  display: inline;
+  margin-top: 8px;
+}
+.dthdn-2 {
+  color: #cdb357;
+  font-family: "Volkhov",serif;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.dolrimg {
+  width: 65px;
+  margin-top: 0px !important;
+}
+.ccbtn.submit {
+  background: rgba(0, 0, 0, 0) url("../images/bg_givenow.png") no-repeat scroll 0 0 / 100% auto;
+  font-family: abel;
+  line-height: 48px;
+  padding-bottom: 13px;
+  padding-left: 63px;
+  padding-right: 63px;
+  text-transform: uppercase;
+}
+
+/*mr-campgai-withdro-funds-1 css */
+
+.verification {
+  margin-top: 25px;
+}
+.verification > p {
+  font-size: 14px;
+  line-height: 26px;
+}
+.verfic {
+  margin-top: 30px;
+}
+.verfic > label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 14px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.verfic input {
+  background: #ffffff none repeat scroll 0 0;
+  margin: 0 !important;
+  width: 268px !important;
+}
+.note {
+  width: 100% !important;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.note > p {
+  font-size: 14px;
+}
+
+
+/*mr-campgai-withdro-funds-2 css */
+
+.dthdn > p {
+  font-size: 14px;
+}
+.wit-info {
+  margin-top: 40px;
+}
+
+/*mr-campgai-withdro-funds-3 css */
+.fund-trn-bt {
+  float: left;
+  margin-top: 30px;
+  max-width: 170px;
+  width: 50%;
+}
+.need_help_btn.fun-ex-btn.noom.fix {
+  margin-left: 0;
+}
+.btndc {
+  text-align: center;
+}
+.btndc > h4 {
+  color: #cdb357;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.need_help_btn.fun-ex-btn.lr {
+  float: left;
+  min-width: 157px;
+  text-align: center;
+}
+.dro-icn {
+  margin-bottom: 10px;
+}
+.fundtrnscontent.fix {
+  display: inline-block;
+  margin-top: 55px;
+  width: 100%;
+}
+.fundtrnscontent.fix > h4 {
+  color: #cdb357;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.fundtrnscontent.fix > p {
+  font-size: 15px;
+}
+.fbankdet {
+  float: left;
+  margin-top: 35px;
+  width: 50%;
+}
+
+.cheack-pic {
+  float: left;
+  margin-top: 35px;
+  padding: 20px;
+  width: 50%;
+  min-height: 253px;
+}
+.cheack-pic > img {
+  transform: translate(0px, 60%);
+}
+.fnr-ban-inp{
+  margin-top: 20px !important;
+}
+.funr-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+/*mr-campgai-withdro-funds-4 css */
+.sendmsg {
+  margin-top: 35px;
+}
+.sendmsg > .form_input_area.fix {
+  margin-top: 36px;
+}
+.form_input_field.title-input {
+  margin-top: 10px;
+}
+.snddmsgt {
+  background: #fff none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 8px;
+  height: 300px;
+  margin-top: 10px;
+  padding: 20px;
+  width: 100%;
+}
+.cheack {
+  display: inline-block;
+}
+.cheack > input {
+  float: left;
+}
+.cheack > p {
+  float: left;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+.extra-padding {
+  padding: 60px 0;
+  width: 100%;
+}
+
+/*mr-campgai-withdro-funds-5 css */
+.dthdn > p {
+  font-size: 14px;
+  margin-top: 25px;
+}
+.donner-info {
+  position: relative;
+}
+.donner-info > h3 {
+  color: #582179;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.donner-info li {
+  display: block;
+  margin-top: 3px;
+}
+.donner-info a {
+  color: #777676;
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 500;
+}
+.ebtn {
+  display: inline-block;
+  position: absolute;
+  right: -5px;
+  top: 10px;
+}
+.ebtn > .ccbtn {
+  color: #fff;
+  padding: 9px 14px;
+  text-transform: uppercase;
+}
+.donner-info span {
+  font-size: 13px;
+  font-weight: normal;
+}
+.home-info {
+  float: left;
+  padding: 20px 0 0;
+  width: 50%;
+}
+.home-img {
+  display: inline-block;
+  margin-top: 0;
+  padding: 13px;
+  width: 50%;
+}
+.home-img > img {
+  min-height: 190px;
+  width: 80%;
+}
+.ebtn.hbtn {
+  right: 12px;
+  top: 40px;
+}
+.hbtn > .ccbtn {
+}
+.donner-info > p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 21px;
+}
+.donner-info span {
+  font-size: 13px;
+  font-weight: 400;
+}
+.itap {
+  color: #6e2e8a;
+  font-size: 13px !important;
+  font-style: italic;
+}
+
+
+/*======================================
+    partneet dashboard part start
+====================================== */
+.partner {
+  letter-spacing: 1px;
+}
+.cres.fix {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 400% auto;
+  padding: 20px 0px 20px 20px;
+}
+.resp-h {
+  display: flex;
+  margin-bottom: 20px;
+}
+.hdn-hhh {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.cres.fix a {
+  color: #62007a;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+
+
+/* mr-partner-dashboard */
+.dthdn > img {
+  margin-top: -17px;
+}
+.funhinfo-clm {
+  float: left;
+  margin-top: 14px;
+  width: 40%;
+}
+.ffmb {
+  margin-top: 25px;
+}
+.funhinfo-clm a {
+  color: #5c5c5c;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+textarea{
+  border-radius: 8px;
+  border: none;
+  background: #ffffff;
+  padding: 20px;
+}
+.form_input_field {
+  background: #ffffff none repeat scroll 0 0;
+}
+.ebtn.ebtnbb {
+  right: 20px;
+  top: 20px;
+}
+
+/* mr-partner-dashboard-part-1 css*/
+
+
+/* mr-partner-dashboard-part-2 css*/
+
+/* mr-partner-dashboard-part-3 css*/
+
+/* mr-partner-dashboard-part-4 css*/
+
+
+/* mr-partner-dashboard-part-5 css*/
+
+/* mr-partner-dashboard-part-6 css*/
+
+.fundsce label {
+  float: left;
+  width: 20% !important;
+}
+.fundsce select {
+  display: inline-block;
+  float: left;
+  width: 40%;
+}
+.spmar {
+  margin-top: 60px;
+}
+
+
+/* mr-partner-dashboard-part-7 css*/
+.single-funr-ex {
+  margin-top: 25px;
+}
+.funr-ex-pic {
+  float: left;
+  width: 50%;
+}
+.funr-ex-con {
+  float: left;
+  padding: 20px;
+  width: 50%;
+}
+.funr-ex-con > h4 {
+  color: #62007a;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.funr-ex-con > h3 {
+  color: #cdb357;
+  font-family: "Volkhov",serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 33px;
+  margin-bottom: 16px;
+}
+.fun-ex-btn {
+  font-size: 13px !important;
+}
+.sho-mr-btn.fix {
+  text-align: center;
+}
+.sho-mr-btn > .need_help_btn {
+  margin-top: 30px;
+}
+
+
+/* mr-partner-dashboard-part-8 css*/
+.dthdn.asths > h2 {
+  margin-left: 0;
+}
+.spwith {
+  margin-top: 5px;
+  width: 100%;
+}
+.reqlit-btn {
+  float: left;
+  font-size: 13px !important;
+}
+.reqlit-btn-right {
+  float: right;
+}
+.need_help_btn.reqlit-btn.reqlit-btn-right.spmarr {
+  margin-right: -10px;
+}
+.calchkbox {
+  margin-top: 30px;
+}
+.calchkbox > p {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.cheack.chk-rom {
+  margin-left: -25px;
+}
+.cheack.chk-rom > input {
+  margin-left: 25px;
+}
+.ccbtn.req-sbtn {
+  margin-top: 30px;
+  padding: 12px 63px;
+}
+.capmprolst {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.capmprolst li {
+  display: inline-block;
+}
+.capmprolst li a {
+  display: inline-block;
+  background: #582179;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 300;
+  letter-spacing: .5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.capmprolst li a:hover {
+  background: #66228f;
+  color: #fff;
+}
+.cpdpshp textarea {
+  margin-top: 20px;
+}
+.cpdpshp img {
+  margin-left: 20px;
+}
+.need_help_btn.reqlit-btn.nomar {
+  margin-left: 0 !important;
+}
+
+.mimar{
+  margin-left: -12px;
+}
+.funeral-home-info.paddinnone.parhomrei.fix {
+  position: relative;
+}
+.ebtn.hbtn.hoerrwe {
+  right: -11px;
+  top: -1px;
+}
+.repboxp {
+  display: none;
+}
+.need_help_btn.fun-ex-btn.pd7p {
+  margin-left: 0;
+}
+.cpmdshps {
+  right: 8px !important;
+  margin-top: -8px;
+}
+
+
+
+
+/*======================================
+    Responsive css
+====================================== */
+
+/*======================================
+   laptop responsive css
+====================================== */
+@media screen and ( min-width: 1024px ) and ( max-width: 1240px ){
+ .drsh {
+  font-size: 20px;
+}
+.need_help_btn.reqlit-btn.reqlit-btn-right {
+  float: left;
+}
+.need_help_btn.fun-ex-btn.lr {
+  margin-left: -10px;
+}
+}
+
+
+/*======================================
+   mini-laptop  and tablet responsive css
+====================================== */
+
+@media screen and ( min-width: 768px ) and ( max-width: 991px ){
+
+    /* mr-campagion-profile-dashboard  */
+  .dash-menu {
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .dsdo {
+    margin-top: 20px;
+  }
+  .draise {
+    float: left;
+    width: 32%;
+    margin-top: 20px;
+    min-height: 175px;
+  }
+  .msg, .dclender {
+    float: left;
+    margin-left: 12px;
+    width: 32%;
+  }
+  .goalt ,.start_campaign_stepcontent {
+    margin-top: 20px;
+  }
+
+.susan-pd-img {
+  margin-top: 20px;
+}
+  /*mr-campagin-partner-dashboard*/
+  .cres.fix {
+    float: left;
+    margin-top: 20px;
+    width: 32%;
+  }
+  .need_help_btn.fun-ex-btn.lr {
+  margin-left: 0px;
+}
+.dashboard-help-btn {
+  font-size: 0.8vw !important;
+  padding: 10px 10px !important;
+  margin-left: 5px !important;
+}
+}
+
+
+/*======================================
+   mobile device css
+====================================== */
+@media screen and ( max-width: 767px ){
+
+/* dashboard-menu */
+.dash-menu {
+  margin-top: 30px;
+}
+.dropdown-menu.d-drop {
+  background: #fff none repeat scroll 0 0 !important;
+  width: 90% !important;
+}
+.navbar-nav .open .dropdown-menu::before{
+  display: none;
+}
+
+  /* mr-campagion-profile-dashboard  */
+.dashboard-top-logo-content > h3 {
+  font-size: 14px !important;
+  margin-top: 10px;
+}
+.logout {
+  display: inline-block;
+  margin-top: 32px;
+}
+.dash > h2 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.dsdo, .goalt, .start_campaign_stepcontent {
+  margin-top: 20px;
+}
+.browse_btn {
+  margin-top: 10px;
+  width: 50% !important;
+}
+.goalt {
+  padding: 40px 20px;
+}
+.goalh.fix > h2 {
+  font-size: 25px;
+}
+.form_input_field.gput {
+  width: 70%;
+}
+.form_input_field.gput-2 {
+  width: 70%;
+}
+.se-btn {
+  margin-bottom: 50px;
+}
+.dthdn > h2, .dwnpdf.fix h2 {
+  font-size: 20px;
+}
+.singl-tll {
+  width: 100%;
+}
+.draise.fix {
+  margin-top: 20px;
+  padding: 30px 16px;
+}
+.msg.fix, .dclender.fix{
+  padding: 20px;
+}
+.funeral-home-info > .content, .funeral-home-info > .img  {
+  margin: 20px 0;
+  width: 100%;
+}
+.upp > label {
+  width: 100%;
+}
+.form_input_field.gput {
+  margin: 10px 10px 10px 0;
+  width: 100% !important;
+}
+.susan-pd-img {
+  margin-top: 20px;
+}
+.sinup-image {
+  width: 33%;
+}
+.campffic {
+  width: 29px;
+}
+.camppfp {
+  font-size: 18px !important;
+}
+/*mr-campagin-withdraw-funds*/
+.dolrimg {
+  width: 32px !important;
+}
+.ccbtn.brw {
+  float: left;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.fund-trn-bt.fix {
+  width: 100%;
+}
+.fbankdet, .cheack-pic{
+  width: 100%;
+}
+
+.need_help_btn.fun-ex-btn.lr {
+  margin-left: 0px;
+}
+.donner-info.home-info,  .home-img{
+  width: 100%;
+}
+/*mr-campagin-partner-dashboard*/
+.mbfrh{
+  font-size: 18px !important;
+}
+.ebtn.ebtnbb.frndetbb {
+  top: 70px;
+}
+.funhinfo-clm {
+  width: 100%;
+}
+.goalh.fix > h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.drsh {
+  font-size: 20px;
+}
+.msgimg {
+  margin-top: 0 !important;
+  width: 32px;
+}
+.spremin {
+  font-size: 17px !important;
+}
+.funr-ex-pic, .funr-ex-con {
+  width: 100%;
+}
+.funr-ex-con > h3 {
+  font-size: 23px;
+}
+.cheack.chk-rom > input {
+  margin-left: 13px;
+}
+.cheack > p {
+  margin-left: 2px;
+}
+.need_help_btn.reqlit-btn {
+  margin-top: 10px;
+}
+
+
+}
+
+
+/*======================================
+   big-mobile device css
+====================================== */
+
+@media screen and ( min-width: 460px ) and ( max-width: 767px ){
+
+
+/*mr-campagin-withdraw-funds*/
+.fund-trn-bt.fix {
+  width: 50%;
+}
+.fbankdet, .cheack-pic {
+  width: 50%;
+}
+.campffic {
+  width: 45px;
+}
+.browse_btn {
+  margin-top: 10px;
+  width: 30% !important;
+}
+/*mr-campagin-partner-dashboard*/
+.mbfrh{
+  font-size: 20px;
+}
+.funhinfo-clm {
+  width: 50%;
+}
+.ebtn.ebtnbb.frndetbb {
+  top: 27px;
+}
+.funr-ex-pic, .funr-ex-con {
+  width: 50%;
+}
+.cheack.chk-rom > input {
+  margin-left: 25px;
+}
+.cheack > p {
+  margin-left: 10px;
+}
+
+
+
+
+}
+
+
+/*======================================
+   left-sidebar responsive css
+====================================== */
+/*left-sidebar menu  */
+@media screen and ( max-width: 991px ){
+
+.mobile-dash-menu.fix {
+  display: block;
+}
+.mobile-dash-menu.fix {
+  background: #f6f2ef url("../images/shadow_withbg.png") no-repeat scroll center top / 200% auto;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px;
+  width: 250px;
+}
+.mobile-dash-menu.fix > img {
+  float: left;
+  margin-top: 0;
+}
+.mobile-dash-menu.fix > h4 {
+  color: #CDB356;
+  float: left;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+.dswhite {
+  margin-left: 10px;
+  margin-top: 5px !important;
+}
+.sdo {
+  border-radius: 8px;
+  display: none;
+  left: 15px;
+  position: absolute;
+  top: 70px;
+  width: 300px;
+  z-index: 9999;
+}
+.home-icon {
+  display: none !important;
+}
+.sdo a {
+  padding: 10px 12px !important;
+}
+}
