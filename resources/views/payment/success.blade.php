@@ -62,7 +62,6 @@
         </div>
     </div>
 
-{{--http://my-respects-fund.drag/payment/success/eyJpdiI6IlJXYkM2eTRrXC9mTkxzdXFnM084R1dnPT0iLCJ2YWx1ZSI6Ik8zTUtBbEh4bjV4emUzTWdyQXFzS1E9PSIsIm1hYyI6ImM3MjQ5MjdhNDU4OTllMjI0MTE5OGVhYjZhNjMzNWI3ZmU2NjgwMWI1OWM3ZWI4MGIzNWNlNDdlOTg0YTgzNGQifQ==--}}
 @endsection
 
 @section('script')
