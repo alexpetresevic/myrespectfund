@@ -10186,6 +10186,7 @@ header {
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
+  border-bottom: 5px solid #ccb256;
 }
 
 .navbar {
@@ -10201,6 +10202,7 @@ header {
 .navbar .navbar-main__section {
   display: inline-block;
   text-align: right;
+  margin-top: 8px;
 }
 
 .navbar .navbar-main__section ul {
@@ -10253,13 +10255,13 @@ header {
 
 .navbar-main {
   text-align: right;
-  float: right;
   display: inline-block;
-  padding: 15px 0;
+  position: relative;
+  top: 38px;
+  width: 100%;
 }
 
 .navbar-main .navbar-main__right {
-  padding-left: 20px;
   display: inline-block;
 }
 
@@ -10286,8 +10288,19 @@ header {
   color: #774b92;
 }
 
+.navbar-main .navbar-main__right .navbar-signin {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.navbar-main .navbar-main__right .navbar-signin li {
+  list-style: none;
+}
+
 .navbar-main .navbar-main__right img {
   width: 40px;
+  height: 40px;
 }
 
 .navbar-main button {
@@ -10364,7 +10377,7 @@ header {
 .menu-trigger {
   display: inline-block;
   position: relative;
-  background: #fff;
+  background: #ccb256;
   height: 3px;
   width: 30px;
 }
@@ -10373,18 +10386,18 @@ header {
 .menu-trigger:after {
   display: block;
   position: absolute;
-  background: #fff;
+  background: #ccb256;
   height: 3px;
   width: 30px;
   content: '';
 }
 
 .menu-trigger:before {
-  top: 8px;
+  top: 5px;
 }
 
 .menu-trigger:after {
-  bottom: 8px;
+  bottom: 5px;
 }
 
 .dropdown-toggle {
@@ -10396,6 +10409,38 @@ header {
 
 .dropdown-toggle:after {
   display: none;
+}
+
+.navbar-main__right .nav-link img {
+  display: inline-block;
+}
+
+.navbar-main__right .nav-link p {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.navbar-main__right .navbar-signin a {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar-main__right .navbar-signin .sign-in__button a {
+  padding: 5px 20px;
+}
+
+.navbar-main__right .navbar-signin .sign-up__button a {
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.navbar-main__right .navbar-signin .sign-up__button a:hover {
+  background: #fff;
+  color: #774b92;
 }
 
 .navbar-main__section .navbar-signin a {
@@ -12679,7 +12724,7 @@ h1.blog-header {
   position: fixed;
   top: 75px;
   left: calc((100vw - 1110px) / 2);
-  right: calc((100vw - 1140px) / 2);
+  right: calc((100vw - 1155px) / 2);
   z-index: 500;
   background: #ff4d4d;
   padding: 15px 20px;
@@ -12691,7 +12736,7 @@ h1.blog-header {
   margin-bottom: 0;
   font-family: "Roboto";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .funeral-alert__error span.tagRemove {
@@ -12845,7 +12890,6 @@ h1.blog-header {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 26px;
-  text-transform: capitalize;
   word-break: break-all;
 }
 
@@ -12855,7 +12899,6 @@ h1.blog-header {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 16px;
-  text-transform: capitalize;
 }
 
 .campaign-donate__buttons {
@@ -12896,6 +12939,47 @@ h1.blog-header {
   font-size: 16px;
   font-family: "Roboto";
   font-weight: 300;
+}
+
+.campaign-donate__block-mobile {
+  display: none;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.campaign-donate__block-mobile .raised-donate__header {
+  padding: 10px 0;
+  margin-bottom: 0;
+  border: 2px solid #774b92;
+  border-radius: 5px 5px 0 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 26px;
+  color: #774b92;
+}
+
+.campaign-donate__block-mobile p {
+  color: #a8a8a8;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.campaign-donate__block-mobile a {
+  padding: 10px 0;
+  color: #fff;
+  background: #774b92;
+  border: 2px solid #774b92;
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: -3px;
 }
 
 .campaign-donate__block {
@@ -13665,6 +13749,10 @@ input:disabled {
 .faq__items .faq__item .card-body p {
   color: #000;
   font-weight: 500;
+}
+
+.faq__items .faq__item .collapse.show {
+  display: block;
 }
 
 .faq__items .card:last-of-type {
@@ -14468,13 +14556,24 @@ input:disabled {
   width: 100%;
 }
 
-.pending-block {
-  margin: 150px 0;
+.pending-payment {
+  height: 350px;
 }
 
 .pending-payment .pending {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 120px;
   margin: auto;
+}
+
+.pending-payment .pending-text__wrap {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 @-webkit-keyframes square-animation {
@@ -15560,6 +15659,19 @@ footer a:hover {
   font-size: 28px;
   width: 25px;
   height: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-single__list .detail-share__links li a:before {
+  content: '';
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 3px;
+  z-index: -1;
+  width: 19px;
+  height: 19px;
 }
 
 .footer-single__list .detail-share__links li a svg {
@@ -16435,6 +16547,10 @@ input:focus {
     padding: 7px 25px;
   }
 
+  .navbar-main {
+    top: 25px;
+  }
+
   .navbar-main .form-logo img {
     width: 20%;
   }
@@ -16455,11 +16571,15 @@ input:focus {
     padding: 0;
   }
 
+  .funeral-alert__error {
+    top: 65px;
+  }
+
   .funeral-alert,
   .funeral-alert__error,
   .message-alert {
-    left: calc((100vw - 910px) / 2);
-    right: calc((100vw - 960px) / 2);
+    left: calc((100vw - 920px) / 2);
+    right: calc((100vw - 920px) / 2);
   }
 
   .donate-share {
@@ -16527,6 +16647,7 @@ input:focus {
     text-align: center;
     width: 100%;
     float: none;
+    top: 0;
   }
 
   .navbar-main .form-logo img {
@@ -16625,6 +16746,13 @@ input:focus {
     text-align: center;
   }
 
+  .footer-single__list .detail-share__links li a:before {
+    bottom: 5px;
+    left: 3px;
+    width: 19px;
+    height: 20px;
+  }
+
   .single-search .read-more__link {
     text-align: center;
   }
@@ -16664,9 +16792,9 @@ input:focus {
   .funeral-alert__error,
   .message-alert {
     position: absolute;
-    top: 135px;
-    left: calc((100vw - 750px) / 2);
-    right: calc((100vw - 750px) / 2);
+    top: 150px;
+    left: calc((100vw - 700px) / 2);
+    right: calc((100vw - 700px) / 2);
   }
 
   .donate-share {
@@ -16756,6 +16884,29 @@ input:focus {
   .footer-single__list .detail-share__links li a {
     width: 35px;
     height: auto;
+  }
+
+  .campaign-donate__block-mobile {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .campaign-donate__block-mobile .raised-donate__header {
+    padding: 10px 0;
+    margin-bottom: 0;
+    border: 2px solid #774b92;
+    border-radius: 5px 5px 0 0;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 26px;
+    color: #774b92;
+  }
+
+  .campaign-donate__block-mobile p {
+    color: #a8a8a8;
+    margin: 5px 0;
+    font-size: 16px;
   }
 }
 
@@ -16856,9 +17007,9 @@ input:focus {
   .funeral-alert,
   .funeral-alert__error,
   .message-alert {
-    top: 145px;
-    left: calc((100vw - 550px) / 2);
-    right: calc((100vw - 550px) / 2);
+    top: 160px;
+    left: calc((100vw - 520px) / 2);
+    right: calc((100vw - 520px) / 2);
   }
 
   .donate-share h1 {
@@ -17001,9 +17152,9 @@ input:focus {
   .funeral-alert,
   .funeral-alert__error,
   .message-alert {
-    top: 145px;
-    left: calc((100vw - 500px) / 2);
-    right: calc((100vw - 500px) / 2);
+    top: 160px;
+    left: calc((100vw - 520px) / 2);
+    right: calc((100vw - 520px) / 2);
   }
 
   .upload-photo__button {
@@ -17143,8 +17294,8 @@ input:focus {
   .funeral-alert__error,
   .message-alert {
     top: 150px;
-    left: calc((100vw - 400px) / 2);
-    right: calc((100vw - 400px) / 2);
+    left: calc((100vw - 430px) / 2);
+    right: calc((100vw - 430px) / 2);
   }
 
   .campaign-detail__section h1 {
@@ -17290,9 +17441,14 @@ input:focus {
   .funeral-alert,
   .funeral-alert__error,
   .message-alert {
-    top: 185px;
-    left: calc((100vw - 320px) / 2);
-    right: calc((100vw - 330px) / 2);
+    top: 180px;
+    left: calc((100vw - 350px) / 2);
+    right: calc((100vw - 350px) / 2);
+  }
+
+  .funeral-alert__error span.tagRemove {
+    right: 5px;
+    top: 5px;
   }
 
   .prog-bar__dash {

@@ -818,7 +818,7 @@ h1.blog-header {
   position: fixed;
   top: 75px;
   left: calc((100vw - 1110px) / 2);
-  right: calc((100vw - 1140px) / 2);
+  right: calc((100vw - 1155px) / 2);
   z-index: 500;
   background: #ff4d4d;
   padding: 15px 20px;
@@ -828,7 +828,7 @@ h1.blog-header {
     margin-bottom: 0;
     font-family: $font1;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
   }
   span.tagRemove {
     position: absolute;
@@ -955,7 +955,6 @@ h1.blog-header {
     font-family: $font1;
     font-weight: 400;
     font-size: 26px;
-    text-transform: capitalize;
     word-break: break-all;
   }
   p {
@@ -964,7 +963,6 @@ h1.blog-header {
     font-family: $font1;
     font-weight: 300;
     font-size: 16px;
-    text-transform: capitalize;
   }
 }
 
@@ -1001,6 +999,44 @@ h1.blog-header {
     font-size: 16px;
     font-family: $font1;
     font-weight: 300;
+  }
+}
+
+.campaign-donate__block-mobile {
+  display: none;
+  margin-bottom: 10px;
+  width: 100%;
+  .raised-donate__header {
+    padding: 10px 0;
+    margin-bottom: 0;
+    border: 2px solid $color;
+    border-radius: 5px 5px 0 0;
+    font-family: $font1;
+    font-weight: 400;
+    font-size: 26px;
+    color: $color;
+  }
+  p {
+    color: #a8a8a8;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  a {
+    padding: 10px 0;
+    color: #fff;
+    background: #774b92;
+    border: 2px solid #774b92;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    display: inline-block;
+    font-family: $font1;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    margin-top: -3px;
   }
 }
 
@@ -1620,6 +1656,11 @@ input:disabled {
       p {
         color: #000;
         font-weight: 500;
+      }
+    }
+    .collapse {
+      &.show {
+        display: block;
       }
     }
   }
@@ -2300,16 +2341,23 @@ input:disabled {
   width: 100%;
 }
 
-.pending-block {
-  margin: 150px 0;
-}
+
 
 .pending-payment {
   $square: 32px;
   $duration: 10s;
+  height: 350px;
   .pending {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
     width: 120px;
     margin: auto;
+  }
+  .pending-text__wrap{
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
   }
   @keyframes square-animation {
     0% {
@@ -2803,7 +2851,7 @@ span.badge-primary {
 }
 
 .category-block {
-  .col-md-6{
+  .col-md-6 {
     padding-right: 5px;
     padding-left: 5px;
   }
@@ -2941,7 +2989,7 @@ span.badge-primary {
       display: inline-block;
       padding-left: 10px;
       p {
-      margin-bottom: 0;
+        margin-bottom: 0;
         span {
           color: rgba(0, 0, 0, 0.6);
         }
@@ -2954,8 +3002,7 @@ span.badge-primary {
     width: 100%;
   }
 
-  }
-
+}
 
 .blog-page__section {
   h1 {

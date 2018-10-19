@@ -31,6 +31,7 @@
     padding: 7px 25px;
   }
   .navbar-main {
+    top: 25px;
     .form-logo {
       img {
         width: 20%;
@@ -57,9 +58,12 @@
       }
     }
   }
+  .funeral-alert__error{
+    top: 65px;
+  }
   .funeral-alert, .funeral-alert__error, .message-alert {
-    left: calc((100vw - 910px) / 2);
-    right: calc((100vw - 960px) / 2);
+    left: calc((100vw - 920px) / 2);
+    right: calc((100vw - 920px) / 2);
   }
   .donate-share {
     padding-left: 50px;
@@ -123,6 +127,7 @@
     text-align: center;
     width: 100%;
     float: none;
+    top: 0;
     .form-logo {
       img {
         width: 22%;
@@ -212,6 +217,15 @@
       text-align: center;
     }
   }
+  .footer-single__list .detail-share__links li a {
+    &:before {
+      bottom: 5px;
+      left: 3px;
+      width: 19px;
+      height: 20px;
+    }
+
+  }
   .single-search {
     .read-more__link {
       text-align: center;
@@ -252,9 +266,9 @@
   }
   .funeral-alert, .funeral-alert__error, .message-alert {
     position: absolute;
-    top: 135px;
-    left: calc((100vw - 750px) / 2);
-    right: calc((100vw - 750px) / 2);
+    top: 150px;
+    left: calc((100vw - 700px) / 2);
+    right: calc((100vw - 700px) / 2);
   }
   .donate-share {
     padding-top: 50px;
@@ -353,6 +367,26 @@
     width: 35px;
     height: auto;
   }
+  .campaign-donate__block-mobile {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    .raised-donate__header {
+      padding: 10px 0;
+      margin-bottom: 0;
+      border: 2px solid $color;
+      border-radius: 5px 5px 0 0;
+      font-family: $font1;
+      font-weight: 400;
+      font-size: 26px;
+      color: $color;
+    }
+    p {
+      color: #a8a8a8;
+      margin: 5px 0;
+      font-size: 16px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -450,9 +484,9 @@
     }
   }
   .funeral-alert, .funeral-alert__error, .message-alert {
-    top: 145px;
-    left: calc((100vw - 550px) / 2);
-    right: calc((100vw - 550px) / 2);
+    top: 160px;
+    left: calc((100vw - 520px) / 2);
+    right: calc((100vw - 520px) / 2);
   }
   .donate-share {
     h1 {
@@ -596,9 +630,9 @@
     text-align: left;
   }
   .funeral-alert, .funeral-alert__error, .message-alert {
-    top: 145px;
-    left: calc((100vw - 500px) / 2);
-    right: calc((100vw - 500px) / 2);
+    top: 160px;
+    left: calc((100vw - 520px) / 2);
+    right: calc((100vw - 520px) / 2);
   }
   .upload-photo__button {
     text-align: center;
@@ -740,8 +774,8 @@
   }
   .funeral-alert, .funeral-alert__error, .message-alert {
     top: 150px;
-    left: calc((100vw - 400px) / 2);
-    right: calc((100vw - 400px) / 2);
+    left: calc((100vw - 430px) / 2);
+    right: calc((100vw - 430px) / 2);
   }
   .campaign-detail__section {
     h1 {
@@ -876,9 +910,13 @@
     padding: 40px 20px;
   }
   .funeral-alert, .funeral-alert__error, .message-alert {
-    top: 185px;
-    left: calc((100vw - 320px) / 2);
-    right: calc((100vw - 330px) / 2);
+    top: 180px;
+    left: calc((100vw - 350px) / 2);
+    right: calc((100vw - 350px) / 2);
+  }
+  .funeral-alert__error span.tagRemove{
+    right: 5px;
+    top: 5px;
   }
   .prog-bar__dash {
     left: 20%;
@@ -901,17 +939,16 @@
   .newsletter-email h1 {
     font-size: 25px;
   }
-  .blog-share{
-    &__list{
-      li{
-        a{
-          padding: 0 5px!important;
+  .blog-share {
+    &__list {
+      li {
+        a {
+          padding: 0 5px !important;
         }
       }
     }
   }
 }
-
 
 @media (max-width: 1500px) {
   .news__block .single-news .single-blog__content .single-blog__text {

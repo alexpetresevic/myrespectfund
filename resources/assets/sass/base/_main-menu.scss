@@ -11,6 +11,7 @@
   .navbar-main__section {
     display: inline-block;
     text-align: right;
+    margin-top: 8px;
     ul {
       margin-bottom: 0;
       padding-left: 0;
@@ -67,11 +68,11 @@
 
 .navbar-main {
   text-align: right;
-  float: right;
   display: inline-block;
-  padding: 15px 0;
+  position: relative;
+  top: 38px;
+  width: 100%;
   .navbar-main__right {
-    padding-left: 20px;
     display: inline-block;
     .dropdown-menu {
       ul {
@@ -96,9 +97,17 @@
         color: $color;
       }
     }
-
+    .navbar-signin{
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      li{
+        list-style: none;
+      }
+    }
     img {
       width: 40px;
+      height: 40px;
     }
   }
 

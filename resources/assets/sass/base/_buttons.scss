@@ -10,7 +10,7 @@
 .menu-trigger {
   display: inline-block;
   position: relative;
-  background: #fff;
+  background: #ccb256;
   height: 3px;
   width: 30px;
 }
@@ -18,18 +18,18 @@
 .menu-trigger:before, .menu-trigger:after {
   display: block;
   position: absolute;
-  background: #fff;
+  background: #ccb256;
   height: 3px;
   width: 30px;
   content: '';
 }
 
 .menu-trigger:before {
-  top: 8px;
+  top: 5px;
 }
 
 .menu-trigger:after {
-  bottom: 8px;
+  bottom: 5px;
 }
 
 .dropdown-toggle {
@@ -39,6 +39,42 @@
   border: 0;
   &:after {
     display: none;
+  }
+}
+
+.navbar-main__right{
+  .nav-link{
+    img {
+      display: inline-block;
+    }
+    p{
+      display: inline-block;
+      padding: 0 5px;
+    }
+  }
+}
+
+.navbar-main__right {
+  .navbar-signin {
+    a {
+      font-family: $font1;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .sign-in__button a {
+      padding: 5px 20px;
+    }
+    .sign-up__button a {
+      padding: 10px 25px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      &:hover {
+        background: #fff;
+        color: $color;
+      }
+    }
   }
 }
 
