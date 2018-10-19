@@ -28,6 +28,23 @@ footer {
         width: 100%;
 
       }
+      table{
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+        tbody{
+          display: inline-block;
+          width: 100%;
+          tr{
+            display: inline-block;
+            width: 100%;
+            td{
+              display: inline-block;
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
   h1 {
