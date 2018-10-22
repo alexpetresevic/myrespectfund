@@ -207,10 +207,10 @@
                                                     <li><a class="dropdown-item"
                                                            href="{{ route('blog.index') }}">blog</a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="/find-funeral-home">Find a
+                                                    <!-- <li><a class="dropdown-item" href="/find-funeral-home">Find a
                                                             funeral
                                                             home</a>
-                                                    </li>
+                                                    </li> -->
                                                 </ul>
                                             </div>
                                         </div>
@@ -252,7 +252,7 @@
                                 <li><a href="{{ route('campaign.create') }}">start a fundraiser</a></li>
                                 <li><a href="#search">find a fundraiser</a></li>
 
-                                <li><a href="/find-funeral-home">find a funeral home</a></li>
+                                <!-- <li><a href="/find-funeral-home">find a funeral home</a></li> -->
                             </ul>
                         </div>
                     </div>

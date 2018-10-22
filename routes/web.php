@@ -15,7 +15,7 @@ Route::get('/campaign/search', 'CampaignController@search')->name('campaign.sear
 Route::get('/list-your-funeral-home', 'FuneralHomeController@create')->name('funeral-home.create');
 Route::post('/list-your-funeral-home', 'FuneralHomeController@store')->name('funeral-home.store');
 
-Route::get('/find-funeral-home', 'FuneralHomeController@search')->name('funeral-home.search');
+// Route::get('/find-funeral-home', 'FuneralHomeController@search')->name('funeral-home.search');
 
 Route::post('/verify-capcha', 'PageController@verifyCapcha')->name('page.verify-capcha');
 
