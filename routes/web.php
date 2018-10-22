@@ -94,7 +94,7 @@ Route::get('terms-of-use', 'PageController@terms')->name('page.terms');
 Route::get('partnership-program', 'PageController@partnership')->name('page.partnership');
 Route::get('faq', 'PageController@faq')->name('page.faq');
 Route::get('how-we-help', 'PageController@howWeHelp')->name('page.how-we-help');
-Route::get('help', 'PageController@help')->name('page.help');
+// Route::get('help', 'PageController@help')->name('page.help');
 Route::get('checklist', 'PageController@checklist')->name('page.checklist');
 Route::get('fees', 'PageController@fees')->name('page.fees');
 

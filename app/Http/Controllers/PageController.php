@@ -54,12 +54,12 @@ class PageController extends Controller
         return view('page', compact('page'));
     }
     
-    public function help()
-    {
-        $page = Page::where('slug', 'help')->first();
+    // public function help()
+    // {
+    //     $page = Page::where('slug', 'help')->first();
         
-        return view('page', compact('page'));
-    }
+    //     return view('page', compact('page'));
+    // }
     
     public function checklist()
     {

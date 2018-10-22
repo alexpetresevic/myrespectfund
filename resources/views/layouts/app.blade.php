@@ -165,9 +165,7 @@
                                                                href="{{ route('page.how-we-help') }}">how
                                                                 we
                                                                 help</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="{{ route('page.help') }}">help</a>
-                                                        </li>
+
                                                         <li><a class="dropdown-item"
                                                                href="{{ route('funeral-home.create') }}">become
                                                                 a partner</a></li>
@@ -198,9 +196,6 @@
                                                                href="{{ route('page.how-we-help') }}">how
                                                                 we
                                                                 help</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="{{ route('page.help') }}">help</a>
-                                                        </li>
                                                         <li><a class="dropdown-item"
                                                                href="{{ route('funeral-home.create') }}">become
                                                                 a partner</a></li>
