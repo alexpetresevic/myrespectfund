@@ -10182,7 +10182,6 @@ a.text-dark:focus {
 header {
   position: fixed;
   z-index: 1000;
-  background-image: url(/images/purple-header.png?c1ed36e4aaeb35ccda923347582100e5);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
@@ -15703,7 +15702,6 @@ footer a:hover {
 }
 
 .footer-upper {
-  background-image: url(/images/blue-bg.png?9f8e3eda0ff87e2eb80a8d03923d4374);
   background-size: cover;
 }
 

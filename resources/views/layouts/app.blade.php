@@ -69,7 +69,7 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk')
     );</script>
-<header id="header">
+<header id="header" style="background-image: url('{{asset('/img/purple-header.png')}}')">
     <div class="container">
         <nav class="navbar">
             <div class="row">
@@ -242,7 +242,7 @@
     @yield('content')
 </div>
 <footer id="footer">
-    <div class="footer-upper">
+    <div class="footer-upper"  style="background-image: url('{{asset('/img/blue-bg.png')}}')">
         <div class="container">
             <div class="footer-link__list">
                 <div class="row">
