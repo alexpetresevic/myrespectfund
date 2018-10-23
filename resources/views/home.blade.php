@@ -25,7 +25,7 @@
                                 <img src="{{asset('/img/noavatar.jpg')}}" alt="">
                             @endif
                             <h2>{{ $campaign->title }}</h2>
-                            
+
                             <p>${{ number_format($campaign->allApprovedDonations()->sum('amount'), 2, '.', ',') }}
                                 raised of
                                 ${{ number_format($campaign->goal, 2, '.', ',') }}</p>
@@ -38,7 +38,22 @@
     <div class="funeral-home">
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6">
+                    <div class="funeral-home__section">
+                        <div class="divider-line">
+                            <h1>palliative care sign up</h1>
+                            <h2>List Your Palliative Care Services for families</h2>
+                            <p>MyRespects helps families in need of a palliative care to find the right social services.
+                                Hospice, Social Workers and Doulas are invited to sign up. so that families in need can
+                                find you.</p>
+                            <ul class="funeral-home__buttons">
+                                <li><a href="{{ route('page.partnership') }}">learn more</a></li>
+                                <li><a href="{{ route('funeral-home.create') }}">Sign Up Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
                     <div class="funeral-home__section">
                         <h1>funeral home sign up</h1>
                         <h2>list your funeral home with MyRespects</h2>
@@ -49,11 +64,6 @@
                             <li><a href="{{ route('page.partnership') }}">learn more</a></li>
                             <li><a href="{{ route('funeral-home.create') }}">Sign Up Now</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="funeral-home__logo">
-                        <img src="{{asset('/img/logo-gold.png')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -69,7 +79,9 @@
                             <a href="{{ route('blog.show', ['post' => $post->slug]) }}"><h3>{{ $post->title }}</h3></a>
                             @if(isset($post) && $post->image)
                                 <div class="admin-image__block">
-                                    <a href="{{ route('blog.show', ['post' => $post->slug]) }}"><img id="post-image" src="{{ asset('uploads/posts/' . $post->image->filename) }}" alt=""></a>
+                                    <a href="{{ route('blog.show', ['post' => $post->slug]) }}"><img id="post-image"
+                                                                                                     src="{{ asset('uploads/posts/' . $post->image->filename) }}"
+                                                                                                     alt=""></a>
                                 </div>
                             @endif
                             <div class="blog-text__block">
@@ -79,7 +91,8 @@
                                 <div class="post_img">
                                     @if($post->author->image)
                                         <img id="profile-image"
-                                             src="{{ asset('uploads/users/' . $post->author->image->filename) }}" alt="">
+                                             src="{{ asset('uploads/users/' . $post->author->image->filename) }}"
+                                             alt="">
                                     @else
                                         <img id="profile-image" src="{{ asset('/img/noavatar.jpg') }}" alt="">
                                     @endif
@@ -91,7 +104,7 @@
                             </div>
                             <div class="blog-link__block">
                                 <a href="{{ route('blog.show', ['post' => $post->slug]) }}">Read more <span><i
-                                            class="fas fa-arrow-right"></i></span></a>
+                                                class="fas fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -104,7 +117,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="family-msg__section">
         <div class="container">
             <h1>what our users say</h1>
@@ -131,7 +144,7 @@
                                              alt="">
                                     @else
                                         <img src="{{asset('/img/noavatar.jpg')}}" alt="">
-                                    @endif                                    
+                                    @endif
                                 @endif
                             </div>
                         @endforeach
