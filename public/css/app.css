@@ -10182,11 +10182,12 @@ a.text-dark:focus {
 header {
   position: fixed;
   z-index: 1000;
-  background-color: #774b92;
+  background-image: url(/images/purple-header.png?c1ed36e4aaeb35ccda923347582100e5);
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
   border-bottom: 5px solid #ccb256;
+  padding: 5px 0;
 }
 
 .navbar {
@@ -10400,14 +10401,35 @@ header {
   bottom: 5px;
 }
 
-.dropdown-toggle {
+.dropdown-toggle__desk {
+  position: relative;
+  bottom: 0;
+  background: transparent;
+  border: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.dropdown-toggle__desk:after {
+  display: none;
+}
+
+.dropdown-toggle__desk svg {
+  margin-left: 5px;
+}
+
+.dropdown-toggle__mobile {
+  display: none;
   position: relative;
   bottom: 5px;
   background: transparent;
   border: 0;
 }
 
-.dropdown-toggle:after {
+.dropdown-toggle__mobile:after {
   display: none;
 }
 
@@ -15681,7 +15703,8 @@ footer a:hover {
 }
 
 .footer-upper {
-  background: #202e5d;
+  background-image: url(/images/blue-bg.png?9f8e3eda0ff87e2eb80a8d03923d4374);
+  background-size: cover;
 }
 
 .footer-bottom {
@@ -16615,6 +16638,14 @@ input:focus {
 }
 
 @media (max-width: 991px) {
+  .dropdown-toggle__desk {
+    display: none;
+  }
+
+  .dropdown-toggle__mobile {
+    display: block;
+  }
+
   body {
     width: 100% !important;
   }

@@ -33,21 +33,44 @@
 }
 
 .dropdown-toggle {
-  position: relative;
-  bottom: 5px;
-  background: transparent;
-  border: 0;
-  &:after {
-    display: none;
+  &__desk {
+    position: relative;
+    bottom: 0;
+    background: transparent;
+    border: 0;
+    font-family: $font1;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    &:after {
+      display: none;
+    }
+    svg{
+      margin-left: 5px;
+    }
   }
 }
 
-.navbar-main__right{
-  .nav-link{
+.dropdown-toggle {
+  &__mobile {
+    display: none;
+    position: relative;
+    bottom: 5px;
+    background: transparent;
+    border: 0;
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.navbar-main__right {
+  .nav-link {
     img {
       display: inline-block;
     }
-    p{
+    p {
       display: inline-block;
       padding: 0 5px;
     }
@@ -159,8 +182,8 @@
       border-radius: 5px;
     }
   }
-  .mc-field-group{
-    input{
+  .mc-field-group {
+    input {
       border: 0;
       width: 100%;
     }
@@ -489,8 +512,8 @@
   }
 }
 
-.blog-home{
-  .next-button{
+.blog-home {
+  .next-button {
     text-align: center;
     a {
       text-transform: uppercase;
@@ -1505,44 +1528,41 @@ span.img-emove {
   }
 }
 
-.single-news__text{
-  h2{
-    a{
+.single-news__text {
+  h2 {
+    a {
       color: $color;
-      &:hover{
+      &:hover {
         text-decoration: none;
       }
     }
   }
 }
 
-.back-blog{
-  a{
+.back-blog {
+  a {
     color: $color;
     font-family: $font1;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
-    &:hover{
+    &:hover {
       text-decoration: none;
     }
   }
 }
 
-
-
-
-
-.campaign-detail__donate .modal-share .modal-body .modal-list li:nth-of-type(3) a.share-email__send{
+.campaign-detail__donate .modal-share .modal-body .modal-list li:nth-of-type(3) a.share-email__send {
   width: 100px;
-  margin:0 100px ;
+  margin: 0 100px;
 }
 
-.campaign-detail__donate .modal-content .modal-body .modal-list li p.error{
+.campaign-detail__donate .modal-content .modal-body .modal-list li p.error {
   font-family: $font1;
   font-size: 16px;
   color: #ff4d4d;
   width: 100%;
   margin-top: -10px;
 }
+

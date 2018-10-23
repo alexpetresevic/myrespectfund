@@ -98,6 +98,15 @@
 }
 
 @media (max-width: 991px) {
+
+  .dropdown-toggle{
+    &__desk{
+      display: none;
+    }
+    &__mobile{
+      display: block;
+    }
+  }
   body {
     width: 100% !important;
     header {
