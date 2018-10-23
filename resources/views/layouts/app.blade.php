@@ -169,9 +169,7 @@
                                                                href="{{ route('page.how-we-help') }}">how
                                                                 we
                                                                 help</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="{{ route('page.help') }}">help</a>
-                                                        </li>
+
                                                         <li><a class="dropdown-item"
                                                                href="{{ route('funeral-home.create') }}">become
                                                                 a partner</a></li>
@@ -203,9 +201,6 @@
                                                                 we
                                                                 help</a></li>
                                                         <li><a class="dropdown-item"
-                                                               href="{{ route('page.help') }}">help</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
                                                                href="{{ route('funeral-home.create') }}">become
                                                                 a partner</a></li>
                                                         <li class="signin__mobile">
@@ -216,10 +211,10 @@
                                                     <li><a class="dropdown-item"
                                                            href="{{ route('blog.index') }}">blog</a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="/find-funeral-home">Find a
+                                                    <!-- <li><a class="dropdown-item" href="/find-funeral-home">Find a
                                                             funeral
                                                             home</a>
-                                                    </li>
+                                                    </li> -->
                                                 </ul>
                                             </div>
                                         </div>
@@ -261,7 +256,7 @@
                                 <li><a href="{{ route('campaign.create') }}">start a fundraiser</a></li>
                                 <li><a href="#search">find a fundraiser</a></li>
 
-                                <li><a href="/find-funeral-home">find a funeral home</a></li>
+                                <!-- <li><a href="/find-funeral-home">find a funeral home</a></li> -->
                             </ul>
                         </div>
                     </div>

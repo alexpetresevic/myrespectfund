@@ -15,7 +15,7 @@ Route::get('/campaign/search', 'CampaignController@search')->name('campaign.sear
 Route::get('/list-your-funeral-home', 'FuneralHomeController@create')->name('funeral-home.create');
 Route::post('/list-your-funeral-home', 'FuneralHomeController@store')->name('funeral-home.store');
 
-Route::get('/find-funeral-home', 'FuneralHomeController@search')->name('funeral-home.search');
+// Route::get('/find-funeral-home', 'FuneralHomeController@search')->name('funeral-home.search');
 
 Route::post('/verify-capcha', 'PageController@verifyCapcha')->name('page.verify-capcha');
 
@@ -94,7 +94,7 @@ Route::get('terms-of-use', 'PageController@terms')->name('page.terms');
 Route::get('partnership-program', 'PageController@partnership')->name('page.partnership');
 Route::get('faq', 'PageController@faq')->name('page.faq');
 Route::get('how-we-help', 'PageController@howWeHelp')->name('page.how-we-help');
-Route::get('help', 'PageController@help')->name('page.help');
+// Route::get('help', 'PageController@help')->name('page.help');
 Route::get('checklist', 'PageController@checklist')->name('page.checklist');
 Route::get('fees', 'PageController@fees')->name('page.fees');
 
