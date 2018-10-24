@@ -156,7 +156,7 @@
                                             </button>
                                             <button class="dropdown-toggle__desk" type="button" id="dropdownMenuButton"
                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                menu +
+                                                menu <span class="menu-open">+</span> <span class="menu-close">-</span>
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <ul class="dropdown-menu__section">
