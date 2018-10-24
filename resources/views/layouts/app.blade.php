@@ -166,10 +166,8 @@
                                                                 in</a>
                                                         </li>
                                                         <li><a class="dropdown-item"
-                                                               href="{{ route('page.how-we-help') }}">how
-                                                                we
-                                                                help</a></li>
-
+                                                               href="{{ route('campaign.create') }}">start a fundraiser</a>
+                                                        </li>
                                                         <li><a class="dropdown-item"
                                                                href="{{ route('funeral-home.create') }}">become
                                                                 a partner</a></li>
@@ -208,6 +206,9 @@
                                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">logout</a>
                                                         </li>
                                                     @endif
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('page.how-we-help') }}">how we help</a>
+                                                    </li>                                                    
                                                     <li><a class="dropdown-item"
                                                            href="{{ route('blog.index') }}">blog</a>
                                                     </li>                                                    
