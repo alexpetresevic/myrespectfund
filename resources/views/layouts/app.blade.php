@@ -166,11 +166,10 @@
                                                                 in</a>
                                                         </li>
                                                         <li><a class="dropdown-item"
-                                                               href="{{ route('campaign.create') }}">start a fundraiser</a>
+                                                               href="{{ route('campaign.create') }}">create your fundraiser</a>
                                                         </li>
                                                         <li><a class="dropdown-item"
-                                                               href="{{ route('funeral-home.create') }}">become
-                                                                a partner</a></li>
+                                                               href="{{ route('funeral-home.create') }}">submit my business</a></li>
                                                         {{--<li class="signin__mobile"><a class="dropdown-item"--}}
                                                         {{--href="{{ route('login') }}">sign up</a>--}}
                                                         {{--</li>--}}
