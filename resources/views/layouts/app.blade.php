@@ -210,7 +210,19 @@
                                                     @endif
                                                     <li><a class="dropdown-item"
                                                            href="{{ route('blog.index') }}">blog</a>
+                                                    </li>                                                    
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('news.index') }}">press/news</a>
                                                     </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('page.faq') }}">FAQ</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="#search">search</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('page.contact') }}">contact us</a>
+                                                    </li>                                                                       
                                                     <!-- <li><a class="dropdown-item" href="/find-funeral-home">Find a
                                                             funeral
                                                             home</a>
