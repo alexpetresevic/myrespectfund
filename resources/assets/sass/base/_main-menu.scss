@@ -190,7 +190,6 @@
 }
 
 .menu-header {
-  margin-top: 5px;
   text-align: left;
   padding-right: 5px;
   border-top: 1px solid $color;
@@ -206,7 +205,10 @@
 }
 
 .navbar-main .navbar-main__right .dropdown-menu li a.link-bottom {
-  padding: 2px 0 5px 0;
+  padding: 0 0 5px 0;
+  &:hover{
+    background: none;
+  }
 }
 
 .navbar-main {
