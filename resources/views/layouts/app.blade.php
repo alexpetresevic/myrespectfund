@@ -72,9 +72,10 @@
 <header id="header" style="background-image: url('{{asset('/img/purple-header.png')}}')">
     <div class="container">
         <nav class="navbar">
-            <form class="search-form">
+        <form method="get" action="{{route('campaign.search')}}" class="search-form" >
+            
                 <label for="search-form">search</label>
-                <input id="search-form" type="text" placeholder="for a fundraiser to support">
+                <input id="search-form" type="text" name="search" placeholder="for a fundraiser to support">
                 <button type="submit"><i class="fas fa-arrow-right"></i></button>
             </form>
             <div class="row">
