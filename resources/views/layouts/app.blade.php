@@ -94,9 +94,6 @@
                                                 <a href="{{ route('campaign.create') }}">Start a fundraiser </a>
                                             @endif
                                         </li>
-                                        <li>
-                                            <a href="#search">Find a fundraiser</a>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
