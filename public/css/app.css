@@ -10391,7 +10391,7 @@ header {
 }
 
 .navbar-main .navbar-main__right .dropdown-menu li a.link-bottom {
-  padding: 2px 0 5px 0;
+  padding: 0 0 5px 0;
 }
 
 .navbar-main .navbar-main__right .dropdown-menu li a.link-bottom:hover {
