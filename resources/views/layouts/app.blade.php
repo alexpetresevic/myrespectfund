@@ -156,7 +156,7 @@
                                             </button>
                                             <button class="dropdown-toggle__desk" type="button" id="dropdownMenuButton"
                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                menu +
+                                                menu <span class="menu-open">+</span> <span class="menu-close">-</span>
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <ul class="dropdown-menu__section">
@@ -166,13 +166,10 @@
                                                                 in</a>
                                                         </li>
                                                         <li><a class="dropdown-item"
-                                                               href="{{ route('page.how-we-help') }}">how
-                                                                we
-                                                                help</a></li>
-
+                                                               href="{{ route('campaign.create') }}">create your fundraiser</a>
+                                                        </li>
                                                         <li><a class="dropdown-item"
-                                                               href="{{ route('funeral-home.create') }}">become
-                                                                a partner</a></li>
+                                                               href="{{ route('funeral-home.create') }}">submit my business</a></li>
                                                         {{--<li class="signin__mobile"><a class="dropdown-item"--}}
                                                         {{--href="{{ route('login') }}">sign up</a>--}}
                                                         {{--</li>--}}
@@ -209,8 +206,23 @@
                                                         </li>
                                                     @endif
                                                     <li><a class="dropdown-item"
+                                                           href="{{ route('page.how-we-help') }}">how we help</a>
+                                                    </li>                                                    
+                                                    <li><a class="dropdown-item"
                                                            href="{{ route('blog.index') }}">blog</a>
+                                                    </li>                                                    
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('news.index') }}">press/news</a>
                                                     </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('page.faq') }}">FAQ</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="#search">search</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('page.contact') }}">contact us</a>
+                                                    </li>                                                                       
                                                     <!-- <li><a class="dropdown-item" href="/find-funeral-home">Find a
                                                             funeral
                                                             home</a>
