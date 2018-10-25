@@ -10190,6 +10190,7 @@ header {
 }
 
 .navbar {
+  position: relative;
   display: inline-block;
   width: 100%;
   padding: 0;
@@ -10234,7 +10235,129 @@ header {
   outline: 0;
 }
 
+.navbar .navbar-main__section li .fundraiser-start {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 20px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #000080;
+  border: 2px solid #d0b041;
+  border-radius: 5px;
+}
+
+.navbar .navbar-main__section li .fundraiser-start span {
+  position: relative;
+  z-index: 99;
+}
+
+.navbar .navbar-main__section li .fundraiser-start:before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #774b92;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar .navbar-main__section li .fundraiser-start:hover {
+  color: #ffffff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar .navbar-main__section li .fundraiser-start:hover:before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.navbar .navbar-main__section li .fundraiser-start:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.navbar .search-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.navbar .search-form label {
+  border-radius: 5px 0 0 5px;
+  background: #fff;
+  color: #774b92;
+  text-transform: uppercase;
+  font: "Roboto";
+  font-weight: 700;
+  margin-bottom: 0;
+  vertical-align: top;
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.navbar .search-form input {
+  border-radius: 0 5px 5px 0;
+  background: #f8f3ed;
+  color: #000;
+  border: none;
+  padding: 3px 3px 3px 10px;
+  width: 230px;
+  height: 30px;
+  margin-left: -5px;
+}
+
+.navbar .search-form input:focus {
+  border: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .search-form button {
+  color: #774b92;
+  height: 30px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navbar .search-form button:hover {
+  cursor: pointer;
+}
+
+.navbar-main {
+  top: 34px;
+}
+
+.account-dropdown .dropdown-menu {
+  left: 120px;
+  right: auto;
+  top: 35px;
+}
+
 .dropdown-menu {
+  left: auto;
+  right: 0;
+  top: 35px;
+}
+
+.dropdown-menu__account {
   left: auto;
   right: 0;
   top: 30px;
@@ -10244,7 +10367,7 @@ header {
   padding: 10px;
 }
 
-.navbar-main__section .navbar-signin .dropdown-menu a {
+.navbar-main__section .navbar-signin .dropdown-menu .dropdown-menu__account a {
   text-align: center;
   color: #774b92;
 }
@@ -10253,11 +10376,30 @@ header {
   display: none;
 }
 
+.menu-header {
+  margin-top: 5px;
+  text-align: left;
+  padding-right: 5px;
+  border-top: 1px solid #774b92;
+  border-bottom: 1px solid #774b92;
+  padding-top: 5px;
+  color: #a8a8a8;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 13px;
+  background: #fff;
+  padding-left: 20px;
+}
+
+.navbar-main .navbar-main__right .dropdown-menu li a.link-bottom {
+  padding: 2px 0 5px 0;
+}
+
 .navbar-main {
   text-align: right;
   display: inline-block;
   position: relative;
-  top: 38px;
+  top: 34px;
   width: 100%;
 }
 
@@ -10286,6 +10428,25 @@ header {
 
 .navbar-main .navbar-main__right .dropdown-menu .dropdown-item {
   color: #774b92;
+}
+
+.navbar-main .navbar-main__right .dropdown-menu__account ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar-main .navbar-main__right .dropdown-menu__account li a {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.navbar-main .navbar-main__right .dropdown-menu__account li a:active {
+  background: #fff;
 }
 
 .navbar-main .navbar-main__right .navbar-signin {
@@ -10363,6 +10524,23 @@ header {
 .navbar-brand__donate img {
   width: 170px;
   margin-bottom: 10px;
+}
+
+.navbar-menu__button .dropdown .dropdown-toggle__desk .menu-open {
+  display: inline-block;
+}
+
+.navbar-menu__button .dropdown .dropdown-toggle__desk .menu-close {
+  display: none;
+}
+
+.navbar-menu__button .dropdown.show .dropdown-toggle__desk .menu-open {
+  display: none;
+}
+
+.navbar-menu__button .dropdown.show .dropdown-toggle__desk .menu-close {
+  display: inline-block;
+  padding-left: 4px;
 }
 
 .navbar-menu__button {
@@ -15745,6 +15923,10 @@ footer a:hover {
   padding: 5px 10px;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
+}
+
+.footer-shadow img {
+  width: 100%;
 }
 
 .signin-section {

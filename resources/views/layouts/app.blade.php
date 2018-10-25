@@ -11,7 +11,7 @@
     <meta property="og:site_name" content="MyRespects"/>
     @yield('facebook-meta')
     <meta property="og:type" content="website"/>
-    
+
     <meta property="og:image" content="https://myrespects.com/img/logo_social_invert.png"/>
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('img/favicon.png') }}">
@@ -72,6 +72,11 @@
 <header id="header" style="background-image: url('{{asset('/img/purple-header.png')}}')">
     <div class="container">
         <nav class="navbar">
+            <form class="search-form">
+                <label for="search-form">search</label>
+                <input id="search-form" type="text" placeholder="for a fundraiser to support">
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
             <div class="row">
                 <div class="offset-lg-0 col-lg-3 offset-md-4 col-md-4 col-6 offset-3">
                     <div class="navbar-brand">
@@ -91,12 +96,12 @@
                                             @elseif(!auth()->guest() && auth()->user()->is('affiliate'))
                                                 <a href="{{ route('partner.index') }}">Partner Dashboard</a>
                                             @else
-                                                <a href="{{ route('campaign.create') }}">Start a fundraiser </a>
+                                                <a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a>
                                             @endif
                                         </li>
-                                        <li>
-                                            <a href="#search">Find a fundraiser</a>
-                                        </li>
+                                        {{--<li>--}}
+                                        {{--<a href="#search">Find a fundraiser</a>--}}
+                                        {{--</li>--}}
                                     </ul>
                                 </div>
                             </div>
@@ -104,7 +109,7 @@
                                 <div class="navbar-main__right">
                                     <ul class="navbar-signin">
                                         @if(auth()->guest())
-                                            <li class="sign-in__button"><a href="{{ route('login') }}">sign in</a></li>
+                                            {{--<li class="sign-in__button"><a href="{{ route('login') }}">sign in</a></li>--}}
                                             {{--<li class="sign-up__button"><a href="{{ route('register') }}">sign up</a></li>--}}
                                         @else
                                             <li class="nav-item account-dropdown">
@@ -150,13 +155,14 @@
                                     </ul>
                                     <div class="navbar-menu__button">
                                         <div class="dropdown">
-                                            <button class="dropdown-toggle__mobile" type="button" id="dropdownMenuButton"
+                                            <button class="dropdown-toggle__mobile" type="button"
+                                                    id="dropdownMenuButton"
                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 <span class="menu-trigger"></span>
                                             </button>
                                             <button class="dropdown-toggle__desk" type="button" id="dropdownMenuButton"
                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                menu +
+                                                menu <span class="menu-open">+</span> <span class="menu-close">-</span>
                                             </button>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                 <ul class="dropdown-menu__section">
@@ -166,13 +172,13 @@
                                                                 in</a>
                                                         </li>
                                                         <li><a class="dropdown-item"
-                                                               href="{{ route('page.how-we-help') }}">how
-                                                                we
-                                                                help</a></li>
-
-                                                        <li><a class="dropdown-item"
-                                                               href="{{ route('funeral-home.create') }}">become
-                                                                a partner</a></li>
+                                                               href="{{ route('campaign.create') }}">create your
+                                                                fundraiser</a>
+                                                        </li>
+                                                        <li class="menu-header">Funeral Service Provider<a
+                                                                    class="dropdown-item link-bottom"
+                                                                    href="{{ route('funeral-home.create') }}">submit my
+                                                                business</a></li>
                                                         {{--<li class="signin__mobile"><a class="dropdown-item"--}}
                                                         {{--href="{{ route('login') }}">sign up</a>--}}
                                                         {{--</li>--}}
@@ -209,7 +215,22 @@
                                                         </li>
                                                     @endif
                                                     <li><a class="dropdown-item"
+                                                           href="{{ route('page.how-we-help') }}">how we help</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
                                                            href="{{ route('blog.index') }}">blog</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('news.index') }}">press/news</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('page.faq') }}">FAQ</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="#search">search</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                           href="{{ route('page.contact') }}">contact us</a>
                                                     </li>
                                                     <!-- <li><a class="dropdown-item" href="/find-funeral-home">Find a
                                                             funeral
@@ -242,7 +263,7 @@
     @yield('content')
 </div>
 <footer id="footer">
-    <div class="footer-upper"  style="background-image: url('{{asset('/img/blue-bg.png')}}')">
+    <div class="footer-upper" style="background-image: url('{{asset('/img/blue-bg.png')}}')">
         <div class="container">
             <div class="footer-link__list">
                 <div class="row">
@@ -304,10 +325,16 @@
                         <div class="footer-list__img">
                             <img src="/img/heart.png" alt="">
                             <img src="/img/my-res_footer.png" alt="">
-                            <table width="135" border="0" cellpadding="2" cellspacing="0" title="Click to Verify - This site chose GeoTrust SSL for secure e-commerce and confidential communications.">
+                            <table width="135" border="0" cellpadding="2" cellspacing="0"
+                                   title="Click to Verify - This site chose GeoTrust SSL for secure e-commerce and confidential communications.">
                                 <tr>
-                                    <td width="135" align="center" valign="top"><script type="text/javascript" src="https://seal.geotrust.com/getgeotrustsslseal?host_name=www.myrespects.com&amp;size=M&amp;lang=en"></script><br />
-                                        <a href="https://www.geotrust.com/ssl/" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;"></a></td>
+                                    <td width="135" align="center" valign="top">
+                                        <script type="text/javascript"
+                                                src="https://seal.geotrust.com/getgeotrustsslseal?host_name=www.myrespects.com&amp;size=M&amp;lang=en"></script>
+                                        <br/>
+                                        <a href="https://www.geotrust.com/ssl/" target="_blank"
+                                           style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;"></a>
+                                    </td>
                                 </tr>
                             </table>
                         </div>
@@ -363,6 +390,9 @@
             <li><a href="{{ route('page.terms') }}">terms of use</a></li>
             <li><i class="far fa-copyright"></i>2017 My Respects</li>
         </ul>
+    </div>
+    <div class="footer-shadow">
+        <img src="/img/shadow.png">
     </div>
     @include('_organisations')
 </footer>
