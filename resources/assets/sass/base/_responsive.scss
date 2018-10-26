@@ -135,9 +135,9 @@
     &__desk {
       display: none;
     }
-    &__mobile {
-      display: block;
-    }
+  }
+  .navbar-menu__button .dropdown .dropdown-toggle__mobile{
+    display: block;
   }
   body {
     width: 100% !important;
