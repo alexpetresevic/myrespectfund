@@ -3,7 +3,14 @@
   display: inline-block;
   width: 100%;
   padding: 0;
+  height: 100%;
   .navbar-brand {
+    position: relative;
+    top: -10px;
+    width: 200px;
+    padding: 0;
+    margin-left: 20px;
+    vertical-align: top;
     img {
       width: 100%;
 
@@ -42,10 +49,11 @@
         }
       }
       .fundraiser-start {
+        bottom: 5px;
         position: relative;
         display: inline-block;
         overflow: hidden;
-        padding: 0 20px;
+        padding: 5px 20px;
         color: #ffffff;
         font-family: $font1;
         font-size: 16px;
@@ -101,10 +109,15 @@
   }
 }
 .navbar{
+  .form-wrap{
+    position: relative;
+    float: left;
+    top: 4px;
+  }
   .search-form{
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin: 0 10px;
+    position: relative;
+    //right: 0;
     z-index: 99;
     label{
       border-radius: 5px 0 0 5px;
@@ -115,8 +128,8 @@
       font-weight: 700;
       margin-bottom: 0;
       vertical-align: top;
-      height: 30px;
-      padding: 5px 10px;
+      height: 38px;
+      padding: 9px 10px;
     }
     input{
       border-radius: 0 5px 5px 0;
@@ -125,7 +138,7 @@
       border: none;
       padding: 3px 3px 3px 10px;
       width: 230px;
-      height: 30px;
+      height: 38px;
       margin-left: -5px;
       &:focus{
         border: 0;
@@ -135,7 +148,7 @@
     }
     button{
       color: $color;
-      height: 30px;
+      height: 38px;
       background: none;
       border: none;
       position: absolute;
@@ -147,15 +160,13 @@
     }
   }
 }
-.navbar-main {
-  top: 34px;
-}
 
 .account-dropdown {
+  position: relative;
   .dropdown-menu {
-    left: 120px;
-    right: auto;
-    top: 35px;
+    left: auto;
+    right: 10px;
+    top: 45px;
   }
 }
 
@@ -212,13 +223,14 @@
 }
 
 .navbar-main {
-  text-align: right;
   display: inline-block;
   position: relative;
-  top: 34px;
+  top: 20px;
   width: 100%;
   .navbar-main__right {
     display: inline-block;
+    margin-right: 40px;
+    float: right;
     .dropdown-menu {
       ul {
         list-style: none;

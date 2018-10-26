@@ -20783,6 +20783,10 @@ $(function () {
     $(window).on('click', function () {
         $('.dropdown-menu').removeClass('show');
     });
+
+    $(window).on('click', function () {
+        $('.dropdown-menu__account').removeClass('show');
+    });
 });
 
 ///////////MATCH HEIGHT/////////////

@@ -11,6 +11,12 @@
   .body-wrapper {
     padding: 0;
   }
+  .navbar{
+    .navbar-brand{
+      top: -8px;
+      width: 160px;
+    }
+  }
   .newsletter-email {
     input {
       border-radius: 5px;
@@ -98,7 +104,28 @@
 }
 
 @media (max-width: 991px) {
-
+  .account-dropdown{
+    .dropdown-menu{
+      right: 10px;
+      top: 45px;
+      left: auto;
+    }
+  }
+  .navbar{
+    .search-form{
+      margin: 0 10px 0 0;
+    }
+    .navbar-brand{
+      top: 0;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+      a{
+        display: inline-block;
+        width: 160px;
+      }
+    }
+  }
   .dropdown-toggle{
     &__desk{
       display: none;
@@ -110,6 +137,7 @@
   body {
     width: 100% !important;
     header {
+      height: 120px;
       width: 100% !important;
     }
   }
@@ -399,6 +427,31 @@
 }
 
 @media (max-width: 767px) {
+  body{
+    header{
+      height: 180px;
+    }
+  }
+  .account-dropdown{
+    .dropdown-menu{
+      right: 10px;
+      top: 45px;
+      left: auto;
+    }
+  }
+  .navbar{
+    .navbar-main{
+      &__section{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      &__right{
+        margin-right: 0;
+        float: none;
+      }
+    }
+  }
   .latest-campaigns {
     margin-bottom: 10px;
     .owl-item {
@@ -552,7 +605,42 @@
   }
 }
 
+@media (max-width: 680px){
+  body{
+    header{
+      height: 230px;
+    }
+  }
+  .navbar{
+    .form-wrap{
+      float: none;
+      width: 100%;
+      top: 0;
+    }
+    .search-form{
+      margin: 0 0 10px 0;
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 580px) {
+  body{
+    header{
+      height: 230px;
+    }
+  }
+  .navbar{
+    .form-wrap{
+      float: none;
+      width: 100%;
+      top: 0;
+    }
+    .search-form{
+      margin: 0 0 10px 0;
+      width: 100%;
+    }
+  }
   .hero-section__text {
     margin-top: -50px;
   }
@@ -710,6 +798,16 @@
 }
 
 @media (max-width: 480px) {
+  body{
+    header{
+      height: 240px;
+    }
+  }
+  .navbar{
+    .form-wrap{
+
+    }
+  }
   .body-wrapper {
     padding-top: 0;
   }
@@ -827,14 +925,9 @@
   }
   .navbar {
     .navbar-main__section {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       ul {
         text-align: center;
-        &:first-of-type li {
-          a {
-            margin-bottom: 20px;
-          }
-        }
       }
     }
   }
