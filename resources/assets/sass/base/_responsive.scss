@@ -426,6 +426,34 @@
   }
 }
 
+@media (max-width: 780px){
+  body{
+    header{
+      height: 180px;
+    }
+  }
+  .account-dropdown{
+    .dropdown-menu{
+      right: 10px;
+      top: 45px;
+      left: auto;
+    }
+  }
+  .navbar{
+    .navbar-main{
+      &__section{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      &__right{
+        margin-right: 0;
+        float: none;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   body{
     header{
