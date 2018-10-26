@@ -10395,20 +10395,18 @@ header {
 
 .menu-header {
   text-align: left;
-  padding-right: 5px;
+  padding: 10px 0 10px 20px;
   border-top: 1px solid #774b92;
   border-bottom: 1px solid #774b92;
-  padding-top: 5px;
   color: #a8a8a8;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 13px;
   background: #fff;
-  padding-left: 20px;
 }
 
 .navbar-main .navbar-main__right .dropdown-menu li a.link-bottom {
-  padding: 0 0 5px 0;
+  padding: 0;
 }
 
 .navbar-main .navbar-main__right .dropdown-menu li a.link-bottom:hover {
