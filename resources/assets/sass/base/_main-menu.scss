@@ -19,7 +19,7 @@
   .navbar-main__section {
     display: inline-block;
     text-align: right;
-    margin-top: 8px;
+    margin: 8px 0 0 20px;
     ul {
       margin-bottom: 0;
       padding-left: 0;
@@ -115,7 +115,7 @@
     top: 4px;
   }
   .search-form{
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     position: relative;
     //right: 0;
     z-index: 99;
@@ -370,4 +370,6 @@
   }
 }
 
-
+.dropdown-toggle__mobile{
+  display: none;
+}

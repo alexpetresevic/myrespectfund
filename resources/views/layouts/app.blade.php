@@ -154,10 +154,9 @@
                     </ul>
                     <div class="navbar-menu__button">
                         <div class="dropdown">
-                            <button class="dropdown-toggle__mobile" type="button"
-                                    id="dropdownMenuButton"
+                            <button class="dropdown-toggle__mobile" type="button" id="dropdownMenuButton"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="menu-trigger"></span>
+                                menu <span class="menu-open">+</span> <span class="menu-close">-</span>
                             </button>
                             <button class="dropdown-toggle__desk" type="button" id="dropdownMenuButton"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

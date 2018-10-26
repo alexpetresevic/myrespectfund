@@ -46,7 +46,7 @@
     &:after {
       display: none;
     }
-    svg{
+    svg {
       margin-left: 5px;
     }
   }
@@ -54,13 +54,20 @@
 
 .dropdown-toggle {
   &__mobile {
-    display: none;
     position: relative;
-    bottom: 5px;
+    bottom: 0;
     background: transparent;
     border: 0;
+    font-family: $font1;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
     &:after {
       display: none;
+    }
+    svg {
+      margin-left: 5px;
     }
   }
 }
