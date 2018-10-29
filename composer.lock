@@ -4,8 +4,67 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b25787f7d0497c0094094c8297f13e6",
+    "content-hash": "fd2a3192a21a38c07d412ce355f3e5d0",
     "packages": [
+        {
+            "name": "anhskohbo/no-captcha",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anhskohbo/no-captcha.git",
+                "reference": "164715a2de0fded5979e7a9b7721785d72a4a7d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anhskohbo/no-captcha/zipball/164715a2de0fded5979e7a9b7721785d72a4a7d3",
+                "reference": "164715a2de0fded5979e7a9b7721785d72a4a7d3",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2",
+                "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*",
+                "php": ">=5.5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Anhskohbo\\NoCaptcha\\NoCaptchaServiceProvider"
+                    ],
+                    "aliases": {
+                        "NoCaptcha": "Anhskohbo\\NoCaptcha\\Facades\\NoCaptcha"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anhskohbo\\NoCaptcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "anhskohbo",
+                    "email": "anhskohbo@gmail.com"
+                }
+            ],
+            "description": "No CAPTCHA reCAPTCHA For Laravel.",
+            "keywords": [
+                "captcha",
+                "laravel",
+                "laravel4",
+                "laravel5",
+                "no-captcha",
+                "recaptcha"
+            ],
+            "time": "2018-08-27T02:16:31+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -1011,16 +1070,16 @@
         },
         {
             "name": "laravel/socialite",
-            "version": "v3.1.1",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/socialite.git",
-                "reference": "65f771ff4f266ebae23de1a3f18efd80a1da2f8d"
+                "reference": "7194c0cd9fb2ce449669252b8ec316b85b7de481"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/socialite/zipball/65f771ff4f266ebae23de1a3f18efd80a1da2f8d",
-                "reference": "65f771ff4f266ebae23de1a3f18efd80a1da2f8d",
+                "url": "https://api.github.com/repos/laravel/socialite/zipball/7194c0cd9fb2ce449669252b8ec316b85b7de481",
+                "reference": "7194c0cd9fb2ce449669252b8ec316b85b7de481",
                 "shasum": ""
             },
             "require": {
@@ -1070,7 +1129,7 @@
                 "laravel",
                 "oauth"
             ],
-            "time": "2018-08-16T12:51:21+00:00"
+            "time": "2018-10-18T03:39:04+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1834,16 +1893,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "57404f43742a8164b5eac3ab03b962d8740885c1"
+                "reference": "2dfd06c59825914a1a325f2a2ed13634b9d8c411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/57404f43742a8164b5eac3ab03b962d8740885c1",
-                "reference": "57404f43742a8164b5eac3ab03b962d8740885c1",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/2dfd06c59825914a1a325f2a2ed13634b9d8c411",
+                "reference": "2dfd06c59825914a1a325f2a2ed13634b9d8c411",
                 "shasum": ""
             },
             "require": {
@@ -1917,7 +1976,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2018-09-30T03:57:24+00:00"
+            "time": "2018-10-21T10:04:54+00:00"
         },
         {
             "name": "psr/container",
@@ -3511,16 +3570,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.2.1",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "e79cd403fb77fc8963a99ecc30e80ddd885b3311"
+                "reference": "bc0fd11bc455cc20ee4b5edabc63ebbf859324c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/e79cd403fb77fc8963a99ecc30e80ddd885b3311",
-                "reference": "e79cd403fb77fc8963a99ecc30e80ddd885b3311",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/bc0fd11bc455cc20ee4b5edabc63ebbf859324c7",
+                "reference": "bc0fd11bc455cc20ee4b5edabc63ebbf859324c7",
                 "shasum": ""
             },
             "require": {
@@ -3568,7 +3627,7 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2018-06-30T13:14:06+00:00"
+            "time": "2018-10-23T09:00:00+00:00"
         },
         {
             "name": "fzaninotto/faker",

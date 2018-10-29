@@ -57,6 +57,17 @@
                             <label for="password_confirmation">confirm password<sup>*</sup></label>
                             <input type="password" class="form-control{{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}" name="password_confirmation" required placeholder="confirm password">
                         </div>
+
+                        <div class="form-group">
+                            {!! NoCaptcha::display() !!}
+
+                            @if ($errors->has('g-recaptcha-response'))
+                                <span class="help-block text-danger">
+                                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+
                         <div class="signin-button">
                             <button type="submit">continue</button>
                         </div>

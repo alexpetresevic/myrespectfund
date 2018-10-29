@@ -425,6 +425,7 @@
 <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour-standalone.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script>
     (
         function removeFacebookAppendedHash() {
