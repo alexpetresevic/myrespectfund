@@ -441,24 +441,13 @@
                                                name="password" required>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        {!! NoCaptcha::display() !!}
-
-                                        @if ($errors->has('g-recaptcha-response'))
-                                            <span class="help-block text-danger">
-                                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
-                                </span>
-                                        @endif
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="form-bottom">
                             <div class="signin-button">
                                 <button type="submit"><span><i class="far fa-clipboard"></i></span>manage my fundraiser</button>
                             </div>
-                            <p>If you are only looking to contribute to a fundraiser, ou do not need to login or sign up to find a fundraiser,a
+                            <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign up to find a fundraiser,a
                                  <a href="">click here</a> to search for a fundraiser to support.</p>
                             {{--<div class="signin-fb__button">--}}
                                 {{--<a href="{{ route('facebook.signin') }}">sign in via facebook</a>--}}
@@ -468,12 +457,6 @@
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <ul>
-                        <li><a href="{{ route('page.privacy') }}" target="_blank">privacy policy</a></li>
-                        <li><a href="{{ route('page.terms') }}" target="_blank">terms of use</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
