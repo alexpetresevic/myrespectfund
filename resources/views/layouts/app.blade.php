@@ -24,8 +24,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/favicon.png') }}">
     <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('img/favicon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon.png') }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('img/favicon.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" hre<form method="POST" action="http://checkbox.dev/check">
+	<input type="checkbox" name="terms[]" value='1'>
+	<input type="checkbox" name="terms[]" value='1'>
+	<input type="submit">
+</form>set('img/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" hre<form method="POST" action="http://checkbox.dev/check">
+	<input type="checkbox" name="terms[]" value='1'>
+	<input type="checkbox" name="terms[]" value='1'>
+	<input type="submit">
+</form>set('img/favicon.png') }}">
     <title>{{ $settings->get('site_title') }}</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
