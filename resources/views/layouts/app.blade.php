@@ -447,7 +447,7 @@
                             <div class="signin-button">
                                 <button type="submit"><span><i class="far fa-clipboard"></i></span>manage my fundraiser</button>
                             </div>
-                            <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign up to find a fundraiser,a
+                            <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign up to find a fundraiser.
                                  <a href="">click here</a> to search for a fundraiser to support.</p>
                             {{--<div class="signin-fb__button">--}}
                                 {{--<a href="{{ route('facebook.signin') }}">sign in via facebook</a>--}}
