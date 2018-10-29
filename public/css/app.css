@@ -10690,6 +10690,31 @@ header {
   color: #774b92;
 }
 
+.navbar-main__right .navbar-signin button {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-main__right .navbar-signin .sign-in__button button {
+  padding: 5px 20px;
+}
+
+.navbar-main__right .navbar-signin .sign-up__button button {
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.navbar-main__right .navbar-signin .sign-up__button button:hover {
+  color: #fff;
+}
+
 .navbar-main__section .navbar-signin a {
   font-family: "Roboto";
   font-size: 16px;
@@ -11201,6 +11226,36 @@ header {
 
 .error input {
   border: 1px solid rgba(204, 0, 0, 0.8) !important;
+}
+
+.form-bottom .signin-button {
+  text-align: center;
+}
+
+.form-bottom .signin-button button {
+  position: relative;
+  border: none;
+  border-bottom: 3px solid #9b7338;
+  width: 290px;
+  text-align: right;
+  background: #bc8e44;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.form-bottom .signin-button button:hover {
+  color: #fff;
+}
+
+.form-bottom .signin-button button span {
+  border-radius: 5px 0 0 5px;
+  font-size: 30px;
+  padding: 0 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #af843a;
 }
 
 /*Dashboard*/
@@ -18425,10 +18480,7 @@ body.no-scroll {
 
 .modal {
   padding: 0 10px;
-}
-
-.modal-dialog {
-  margin: 120px auto;
+  background: rgba(119, 75, 146, 0.3);
 }
 
 .modal-form label {
@@ -18549,6 +18601,199 @@ body.no-scroll {
 
 .modal-form .reminder-section .remove-reminder:hover {
   color: #774b92;
+}
+
+/* Sign in modal */
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.sign-in__modal {
+  background-color: #fff;
+  border: 4px solid #774b92;
+  border-radius: 7px;
+}
+
+.sign-in__modal .modal-header {
+  display: block;
+  border: none;
+  text-align: center;
+  position: relative;
+}
+
+.sign-in__modal .modal-header__image {
+  width: 100%;
+  text-align: center;
+}
+
+.sign-in__modal .modal-header img {
+  width: 300px;
+  margin: auto;
+}
+
+.sign-in__modal .modal-header p {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #774b92;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: -15px;
+}
+
+.sign-in__modal .modal-header .close {
+  font-size: 40px;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  background: none;
+  border: none;
+  color: #774b92;
+  opacity: 1;
+}
+
+.sign-in__modal .modal-body {
+  padding: 0;
+}
+
+.sign-in__modal .modal-body form label {
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  color: #a8a8a8;
+  text-align: left;
+  float: left;
+  text-transform: capitalize;
+}
+
+.sign-in__modal .modal-body form label span {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.sign-in__modal .modal-body form input {
+  font-family: "Roboto";
+  padding: 5px 10px;
+  display: inline-block;
+  width: 100%;
+  border: 2px solid rgba(168, 168, 168, 0.5);
+  border-radius: 0;
+}
+
+.sign-in__modal .modal-body form input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(168, 168, 168, 0.5);
+}
+
+.sign-in__modal .modal-body form input:-ms-input-placeholder {
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(168, 168, 168, 0.5);
+}
+
+.sign-in__modal .modal-body form input::-ms-input-placeholder {
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(168, 168, 168, 0.5);
+}
+
+.sign-in__modal .modal-body form input::placeholder {
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(168, 168, 168, 0.5);
+}
+
+.sign-in__modal .modal-body form .form-top {
+  padding: 20px 30px;
+  background-color: #f7f3f0;
+}
+
+.sign-in__modal .modal-body form .form-bottom {
+  padding: 20px 30px;
+  background: #fff;
+}
+
+.sign-in__modal .modal-body form .form-bottom p {
+  font-family: "Roboto";
+  color: #000;
+  font-size: 12px;
+  margin: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.sign-in__modal .modal-body form .form-bottom a {
+  text-transform: capitalize;
+  color: #774b92;
+  text-decoration: underline;
+}
+
+.sign-in__modal .modal-body form .form-bottom .forgot-pass {
+  text-align: center;
+}
+
+.sign-in__modal .modal-body form .form-bottom .forgot-pass a {
+  color: #a8a8a8;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.sign-in__modal .modal-body form .form-bottom .forgot-pass a:hover {
+  color: #a8a8a8;
+}
+
+.sign-in__modal .modal-footer {
+  text-align: center;
+  background: #f7f3f0;
+  padding: 20px;
+}
+
+.sign-in__modal .modal-footer ul {
+  margin-bottom: 0;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.sign-in__modal .modal-footer ul li {
+  margin: 0 5px;
+  padding: 5px 20px;
+  display: inline;
+}
+
+.sign-in__modal .modal-footer ul li:first-of-type {
+  margin: 0;
+  border-right: 2px solid #a8a8a8;
+}
+
+.sign-in__modal .modal-footer ul li:last-of-type {
+  margin-left: -5px;
+}
+
+.sign-in__modal .modal-footer ul li a {
+  color: #a8a8a8;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.sign-in__modal .modal-footer ul li a:hover {
+  color: #a8a8a8;
+  text-decoration: none;
 }
 
 /* Dashboard reminder modal*/

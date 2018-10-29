@@ -65,11 +65,6 @@ $(function () {
         navText: ['<img src="/img/owl-prev-2.png"/>', '<img src="/img/owl-next-2.png"/>']
     });
 
-
-    $('#exampleModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-    });
-
     // select chosen state on campaign create
 
     $('#state option').each(function () {
@@ -147,7 +142,7 @@ $(function () {
 
     $(window).on('click', function () {
         $('.dropdown-menu').removeClass('show');
-    })
+    });
 
     $(window).on('click', function () {
         $('.dropdown-menu__account').removeClass('show');

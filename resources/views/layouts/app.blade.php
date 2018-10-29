@@ -108,7 +108,10 @@
                     </div>
                     <ul class="navbar-signin">
                         @if(auth()->guest())
-                            <li class="sign-in__button"><a href="{{ route('login') }}">sign in</a></li>
+                            <li class="sign-in__button">
+                                <button type="button" data-toggle="modal" data-target="#signInModal">sign in</button>
+                            </li>
+                            {{--<li class="sign-in__button"><a href="{{ route('login') }}">sign in</a></li>--}}
                             {{--<li class="sign-up__button"><a href="{{ route('register') }}">sign up</a></li>--}}
                         @else
                             <li class="nav-item account-dropdown">
@@ -121,7 +124,7 @@
                                         <img class="img-avatar48 rounded-circle"
                                              src="{{asset('/img/noavatar.jpg')}}">
                                     @endif
-                                    <p>Hello, {{ auth()->user()->first_name }}</p><i
+                                    <p>Hello {{ auth()->user()->first_name }}</p><i
                                             class="fas fa-angle-down"></i>
                                 </a>
                                 <div class="dropdown-menu account-logout dropdown"
@@ -215,7 +218,7 @@
                                     @endif
                                     <li><a class="dropdown-item"
                                            href="{{ route('page.how-we-help') }}">how we help</a>
-                                    </li> 
+                                    </li>
                                     <li><a class="dropdown-item"
                                            href="{{ route('blog.index') }}">blog</a>
                                     </li>
@@ -261,7 +264,7 @@
                 </div>
             </form>
         </div>
-        
+
     </nav>
 </header>
 <div class="body-wrapper">
@@ -400,7 +403,82 @@
         <img src="/img/shadow.png">
     </div>
     @include('_organisations')
+
 </footer>
+
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="sign-in__modal">
+                <div class="modal-header">
+                    <div class="modal-header__image">
+                        <img src="{{asset('/img/logo-modal.png')}}" alt="">
+                    </div>
+                    <p>account login</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="{{ route('login') }}">
+                        {{ csrf_field() }}
+                        <div class="form-top">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">username <span>(your primary email)</span></label>
+                                        <input id="email" type="email"
+                                               class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                               name="email"
+                                               value="{{ old('email') }}" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="password">password</label>
+                                        <input id="password" type="password"
+                                               class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                               name="password" required>
+                                    </div>
+                                </div>
+                                {{--<div class="col-md-6">--}}
+                                    {{--<div class="form-group">--}}
+                                        {{--{!! NoCaptcha::display() !!}--}}
+
+                                        {{--@if ($errors->has('g-recaptcha-response'))--}}
+                                            {{--<span class="help-block text-danger">--}}
+                                    {{--<strong>{{ $errors->first('g-recaptcha-response') }}</strong>--}}
+                                {{--</span>--}}
+                                        {{--@endif--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <div class="signin-button">
+                                <button type="submit"><span><i class="far fa-clipboard"></i></span>manage my fundraiser</button>
+                            </div>
+                            <p>If you are only looking to contribute to a fundraiser, ou do not need to login or sign up to find a fundraiser,a
+                                 <a href="">click here</a> to search for a fundraiser to support.</p>
+                            {{--<div class="signin-fb__button">--}}
+                                {{--<a href="{{ route('facebook.signin') }}">sign in via facebook</a>--}}
+                            {{--</div>--}}
+                            <div class="forgot-pass">
+                                <a href="{{ route('password.request') }}">forgot your password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <ul>
+                        <li><a href="{{ route('page.privacy') }}" target="_blank">privacy policy</a></li>
+                        <li><a href="{{ route('page.terms') }}" target="_blank">terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {{--Alert Message--}}
 
 @if (Session::has('message'))

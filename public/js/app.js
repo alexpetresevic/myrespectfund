@@ -20700,10 +20700,6 @@ $(function () {
         navText: ['<img src="/img/owl-prev-2.png"/>', '<img src="/img/owl-next-2.png"/>']
     });
 
-    $('#exampleModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus');
-    });
-
     // select chosen state on campaign create
 
     $('#state option').each(function () {
