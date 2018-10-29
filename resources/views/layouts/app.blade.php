@@ -439,17 +439,17 @@
                                                name="password" required>
                                     </div>
                                 </div>
-                                {{--<div class="col-md-6">--}}
-                                    {{--<div class="form-group">--}}
-                                        {{--{!! NoCaptcha::display() !!}--}}
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        {!! NoCaptcha::display() !!}
 
-                                        {{--@if ($errors->has('g-recaptcha-response'))--}}
-                                            {{--<span class="help-block text-danger">--}}
-                                    {{--<strong>{{ $errors->first('g-recaptcha-response') }}</strong>--}}
-                                {{--</span>--}}
-                                        {{--@endif--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
+                                        @if ($errors->has('g-recaptcha-response'))
+                                            <span class="help-block text-danger">
+                                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                </span>
+                                        @endif
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-bottom">
@@ -496,7 +496,7 @@
 <div class="message-alert" style="display: none">
     <div><p>You have new message<span class="tagRemove" id="alert-remove">&times;</span></p></div>
 </div>
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
 <script src="{{ asset('/js/app.js') }}"></script>
 <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
