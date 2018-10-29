@@ -18483,6 +18483,10 @@ body.no-scroll {
   background: rgba(119, 75, 146, 0.3);
 }
 
+.modal-dialog {
+  max-width: 705px;
+}
+
 .modal-form label {
   text-transform: capitalize;
   font-family: "Roboto";
@@ -18668,7 +18672,7 @@ body.no-scroll {
   color: #a8a8a8;
   text-align: left;
   float: left;
-  text-transform: capitalize;
+  margin-bottom: 0;
 }
 
 .sign-in__modal .modal-body form label span {
@@ -18733,6 +18737,7 @@ body.no-scroll {
   color: #000;
   font-size: 12px;
   margin: 20px;
+  padding: 0 12%;
   text-align: center;
   font-weight: 700;
 }
