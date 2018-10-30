@@ -451,7 +451,6 @@
                                     my fundraiser
                                 </button>
                             </div>
-
                             <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign
                                 up to find a fundraiser,a
                                 <a href="#search">click here</a> to search for a fundraiser to support.</p>
@@ -502,10 +501,12 @@
                                 <div class="col-md-6">
                                     <div class="signin-fb__button">
                                         @if(app('request')->input('start-campaign'))
-                                            <a href="{{ route('facebook.signin', ['start_campaign' => true]) }}"><span><i class="fab fa-facebook-f"></i></span>sign in via
+                                            <a href="{{ route('facebook.signin', ['start_campaign' => true]) }}"><span><i
+                                                            class="fab fa-facebook-f"></i></span>sign in via
                                                 facebook</a>
                                         @else
-                                            <a href="{{ route('facebook.signin') }}"><span><i class="fab fa-facebook-f"></i></span>use my facebook account</a>
+                                            <a href="{{ route('facebook.signin') }}"><span><i
+                                                            class="fab fa-facebook-f"></i></span>use my facebook account</a>
                                         @endif
                                         <p>We will never post without your permission</p>
                                     </div>
@@ -540,7 +541,8 @@
                                         <label for="email">email<span>(your primary email)</span></label>
                                         <input type="email"
                                                class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
-                                               name="email" value="{{ old('email') }}" placeholder="this is your username" required>
+                                               name="email" value="{{ old('email') }}"
+                                               placeholder="this is your username" required>
                                         @if ($errors->has('email'))
                                             <div class="invalid-feedback">
                                                 <strong>{{ $errors->first('email') }}</strong>
@@ -565,7 +567,8 @@
                                                name="password_confirmation" required>
                                     </div>
                                     <div class="form-agree">
-                                        <p>"By signing up, you agree to our <a href="{{ route('page.terms') }}">Terms of Use</a> and <a
+                                        <p>"By signing up, you agree to our <a href="{{ route('page.terms') }}">Terms of
+                                                Use</a> and <a
                                                     href="{{ route('page.privacy') }}">Privacy Policy".</a></p>
                                     </div>
 
@@ -583,7 +586,8 @@
                                 @endif
                             </div>
                             <div class="signin-button">
-                                <button type="submit"><span><i class="fas fa-plus"></i></span>create your fundraiser</button>
+                                <button type="submit"><span><i class="fas fa-plus"></i></span>create your fundraiser
+                                </button>
                             </div>
 
                             <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign
