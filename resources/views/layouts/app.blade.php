@@ -270,7 +270,7 @@
                                 <li><a href="{{ route('blog.index') }}">blog</a></li>
                                 <li><a href="{{ route('page.faq') }}">FAQ</a></li>
                                 <li><a href="{{ route('page.how-we-help') }}">how we help</a></li>
-                                <li><a data-toggle="modal">start a fundraiser</a></li>
+                                <li><a data-toggle="modal" data-target="#signUpModal">start a fundraiser</a></li>
                                 <li><a href="#search">find a fundraiser</a></li>
 
                                 <!-- <li><a href="/find-funeral-home">find a funeral home</a></li> -->

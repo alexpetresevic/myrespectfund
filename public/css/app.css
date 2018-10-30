@@ -10263,6 +10263,7 @@ header {
   background: #000080;
   border: 2px solid #d0b041;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .navbar .navbar-main__section li .fundraiser-start span {
@@ -10583,6 +10584,13 @@ header {
   padding-left: 4px;
 }
 
+.g-recaptcha {
+  -webkit-transform: scale(0.77);
+          transform: scale(0.77);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
 .navbar-menu__button {
   display: inline-block;
 }
@@ -10635,6 +10643,7 @@ header {
 }
 
 .dropdown-toggle__desk svg {
+  font-size: 20px;
   margin-left: 5px;
 }
 
@@ -10655,7 +10664,28 @@ header {
 }
 
 .dropdown-toggle__mobile svg {
+  font-size: 20px;
   margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
+
+a:not([href]):not([tabindex]) {
+  display: inline-block;
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+a:not([href]):not([tabindex]):hover {
+  text-decoration: none;
+  color: #d0b041;
 }
 
 .navbar-main__right .nav-link img {
@@ -10665,6 +10695,15 @@ header {
 .navbar-main__right .nav-link p {
   display: inline-block;
   padding: 0 5px;
+  position: relative;
+  top: 2px;
+}
+
+.navbar-main__right .nav-link svg {
+  font-size: 20px;
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
 }
 
 .navbar-main__right .navbar-signin a {
