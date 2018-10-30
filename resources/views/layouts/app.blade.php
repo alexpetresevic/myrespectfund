@@ -252,19 +252,6 @@
             </form>
 
         </div>
-
-
-        <div id="search" class="search-box__section">
-            <form role="search" id="searchform" action="{{ route('campaign.search') }}"
-                  method="get">
-                <span class="close">&times;</span>
-                <div class="offset-md-2 col-md-8">
-                    <input value="" id="campaign-search-input" name="search" type="text"
-                           placeholder="search for a fundraiser"/>
-                </div>
-            </form>
-        </div>
-
     </nav>
 </header>
 <div class="body-wrapper">
@@ -567,9 +554,9 @@
                                                name="password_confirmation" required>
                                     </div>
                                     <div class="form-agree">
-                                        <p>"By signing up, you agree to our <a href="{{ route('page.terms') }}">Terms of
+                                        <p>"By signing up, you agree to our <a href="{{ route('page.terms') }}" target="_blank">Terms of
                                                 Use</a> and <a
-                                                    href="{{ route('page.privacy') }}">Privacy Policy".</a></p>
+                                                    href="{{ route('page.privacy') }}" target="_blank">Privacy Policy".</a></p>
                                     </div>
 
                                 </div>
