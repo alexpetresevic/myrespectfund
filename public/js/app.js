@@ -20708,13 +20708,23 @@ $(function () {
         }
     });
 
+    //Modal switch
+
+    $("#signUpButton").on("click", function () {
+        $('#signInModal').modal('hide');
+        $('#signUpModal').modal('show');
+        $('body').addClass('no-scroll');
+    });
+
     //Search dropdown
 
     $('a[href="#search"]').on('click', function (event) {
         $('#search').addClass('open');
         $('body').addClass('no-scroll');
+        $('#signInModal').modal('hide');
+        $('#signUpModal').modal('hide');
+        $('.modal-backdrop').hide();
         var $searchInput = $('#campaign-search-input');
-
         setTimeout(function () {
             $searchInput.focus();
         }, 500);

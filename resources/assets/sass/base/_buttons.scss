@@ -693,13 +693,18 @@
       span{
         border-radius: 5px 0 0 5px;
         font-size: 30px;
-        padding: 0 15px;
+        padding: 0 10px 0 15px;
         position: absolute;
         left: 0;
         top: 0;
         bottom: 0;
         background: #af843a;
       }
+    }
+  }
+  .signup-button{
+    a{
+      cursor: pointer;
     }
   }
 }

@@ -11250,12 +11250,16 @@ header {
 .form-bottom .signin-button button span {
   border-radius: 5px 0 0 5px;
   font-size: 30px;
-  padding: 0 15px;
+  padding: 0 10px 0 15px;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   background: #af843a;
+}
+
+.form-bottom .signup-button a {
+  cursor: pointer;
 }
 
 /*Dashboard*/
@@ -16820,1129 +16824,6 @@ input:focus {
   line-height: 1.5;
 }
 
-@media (max-width: 1250px) {
-  .news__block .single-news .single-blog__content .single-blog__text {
-    width: 65%;
-  }
-}
-
-@media (max-width: 1200px) {
-  header {
-    position: relative;
-  }
-
-  .body-wrapper {
-    padding: 0;
-  }
-
-  .navbar .navbar-brand {
-    top: -8px;
-    width: 160px;
-  }
-
-  .navbar .search-form input {
-    width: 205px;
-  }
-
-  .newsletter-email input {
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-
-  .newsletter-email button {
-    margin-left: 0;
-    border-radius: 0 5px 5px 0;
-  }
-
-  .signin-section {
-    padding: 150px 50px;
-  }
-
-  .signup-section {
-    padding: 150px 50px;
-  }
-
-  .upload-photo__button {
-    padding: 7px 25px;
-  }
-
-  .navbar-main {
-    top: 25px;
-  }
-
-  .navbar-main .form-logo img {
-    width: 20%;
-  }
-
-  .signup-section__block .upload-photo__button {
-    padding: 0;
-  }
-
-  .campaign-section__block .upload-photo__button {
-    padding: 0;
-  }
-
-  .campaign-section__block .upload-photo__button label {
-    padding: 7px 18px;
-  }
-
-  .campaign_dashboard__block .update-form__section .upload-photo__button {
-    padding: 0;
-  }
-
-  .funeral-alert__error {
-    top: 65px;
-  }
-
-  .funeral-alert,
-  .funeral-alert__error,
-  .message-alert {
-    left: calc((100vw - 920px) / 2);
-    right: calc((100vw - 920px) / 2);
-  }
-
-  .donate-share {
-    padding-left: 50px;
-  }
-
-  .fee-page__block ul {
-    columns: 4;
-    -webkit-columns: 4;
-    -moz-columns: 4;
-  }
-
-  .single-blog .admin-image__block {
-    width: 100%;
-  }
-
-  .single-blog .admin-image__block img {
-    width: 100%;
-    height: auto;
-  }
-
-  .single-blog .blog-text__block {
-    width: 100%;
-  }
-
-  .single-blog .blog-text__block p {
-    width: 100%;
-  }
-
-  .single-blog .post_author .post_text {
-    width: 200px;
-  }
-}
-
-@media (max-width: 991px) {
-  .account-dropdown .dropdown-menu {
-    right: 10px;
-    top: 45px;
-    left: auto;
-  }
-
-  .navbar .search-form {
-    margin: 0 10px 0 0;
-  }
-
-  .navbar .navbar-brand {
-    top: 0;
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .navbar .navbar-brand a {
-    display: inline-block;
-    width: 160px;
-  }
-
-  .dropdown-toggle__desk {
-    display: none;
-  }
-
-  .navbar-menu__button .dropdown .dropdown-toggle__mobile {
-    display: block;
-  }
-
-  body {
-    width: 100% !important;
-  }
-
-  body header {
-    height: 120px;
-    width: 100% !important;
-  }
-
-  .campaign-detail__header h1 {
-    word-break: normal;
-  }
-
-  header {
-    position: relative;
-  }
-
-  .campaign-detail__content img {
-    float: none;
-  }
-
-  .body-wrapper {
-    padding-top: 0;
-  }
-
-  .navbar .navbar-main__section .navbar-signin {
-    display: none;
-  }
-
-  .navbar-main {
-    text-align: center;
-    width: 100%;
-    float: none;
-    top: 0;
-  }
-
-  .navbar-main .form-logo img {
-    width: 22%;
-  }
-
-  .signin__mobile {
-    display: block;
-  }
-
-  .navbar-brand {
-    margin-right: 0;
-  }
-
-  .navbar-brand img {
-    width: 100%;
-  }
-
-  .hero-section__text h1 {
-    font-size: 30px;
-  }
-
-  .hero-section__text p {
-    font-size: 17px;
-  }
-
-  .latest-campaigns .owl-item {
-    padding: 25px;
-  }
-
-  .owl-nav {
-    display: none;
-  }
-
-  .hero-section__text img {
-    width: 12%;
-  }
-
-  .signin-section {
-    padding: 80px 0;
-  }
-
-  .signin-section .signin-section__block {
-    padding: 40px 60px;
-  }
-
-  .signup-section {
-    padding: 80px 0;
-  }
-
-  .signup-section .signin-section__block {
-    padding: 40px 60px;
-  }
-
-  .footer-single__list {
-    margin-bottom: 30px;
-  }
-
-  .share-fb {
-    margin-bottom: 20px;
-  }
-
-  .share-twitter {
-    margin-bottom: 20px;
-  }
-
-  .share-mail {
-    margin-bottom: 20px;
-  }
-
-  .news__block {
-    padding: 60px 40px;
-  }
-
-  .news__block .single-news img {
-    height: 300px;
-  }
-
-  .news__block .single-news__details img {
-    height: 300px;
-  }
-
-  .search__block {
-    padding: 60px 60px;
-  }
-
-  .search__block h1 {
-    text-align: center;
-  }
-
-  .search__block h2 {
-    text-align: center;
-  }
-
-  .single-search__text p {
-    text-align: center;
-  }
-
-  .footer-single__list .detail-share__links li a:before {
-    bottom: 5px;
-    left: 3px;
-    width: 19px;
-    height: 20px;
-  }
-
-  .single-search .read-more__link {
-    text-align: center;
-  }
-
-  .single-search h2 {
-    word-break: normal !important;
-  }
-
-  .campaign-detail__about h3 {
-    word-break: normal;
-    text-align: left;
-  }
-
-  .dash-detail__section .dash-detail__text span {
-    float: none;
-    display: inline-block;
-    width: 100%;
-  }
-
-  .campaign-detail__section .campaign-donate__block {
-    display: none;
-  }
-
-  .campaign-detail__section .campaign-detail__stats {
-    display: none;
-  }
-
-  .campaign-detail__section .campaign-brief__blockP {
-    display: none;
-  }
-
-  .campaign-detail__section .col-lg-5 {
-    display: none;
-  }
-
-  .funeral-alert,
-  .funeral-alert__error,
-  .message-alert {
-    position: absolute;
-    top: 150px;
-    left: calc((100vw - 700px) / 2);
-    right: calc((100vw - 700px) / 2);
-  }
-
-  .donate-share {
-    padding-top: 50px;
-  }
-
-  .donate-share h1 {
-    font-size: 32px;
-  }
-
-  .campaign-detail__section h1 {
-    font-size: 32px;
-  }
-
-  .fee-page__block ul {
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-  }
-
-  .fee-chart p {
-    padding: 20px;
-  }
-
-  .footer-single__list .detail-share__links li a {
-    font-size: 34px;
-    padding: 0 10px;
-  }
-
-  .footer-single__list .detail-share__links li a:first-of-type {
-    padding-left: 0;
-  }
-
-  .single-blog .admin-image__block {
-    width: 100%;
-  }
-
-  .single-blog .admin-image__block img {
-    width: 100%;
-  }
-
-  .single-blog .blog-text__block {
-    width: 100%;
-  }
-
-  .single-blog .blog-text__block p {
-    width: 100%;
-  }
-
-  .single-blog .post_author .post_text {
-    width: 200px;
-  }
-
-  .campaign-detail__header h3 {
-    text-align: left;
-  }
-
-  .campaign-detail__header .detail-share__links {
-    display: block;
-  }
-
-  .news__block .single-news .single-blog__content .single-blog__text {
-    width: 100% !important;
-  }
-
-  .news__block .single-news .single-blog__content .single-blog__img {
-    margin-bottom: 30px;
-  }
-
-  .news__block .single-news .single-blog__content .single-blog__img img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .footer-list__img {
-    display: none;
-  }
-
-  .newsletter-img {
-    display: none;
-  }
-
-  footer .footer-single__list li {
-    line-height: 2.5;
-  }
-
-  .footer-single__list .detail-share__links li a {
-    width: 35px;
-    height: auto;
-  }
-
-  .campaign-donate__block-mobile {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-
-  .campaign-donate__block-mobile .raised-donate__header {
-    padding: 10px 0;
-    margin-bottom: 0;
-    border: 2px solid #774b92;
-    border-radius: 5px 5px 0 0;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 26px;
-    color: #774b92;
-  }
-
-  .campaign-donate__block-mobile p {
-    color: #a8a8a8;
-    margin: 5px 0;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 850px) {
-  body header {
-    height: 180px;
-  }
-
-  .account-dropdown .dropdown-menu {
-    right: 10px;
-    top: 45px;
-    left: auto;
-  }
-
-  .navbar .navbar-main__section {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .navbar .navbar-main__right {
-    margin-right: 0;
-    float: none;
-  }
-}
-
-@media (max-width: 780px) {
-  body header {
-    height: 180px;
-  }
-
-  .account-dropdown .dropdown-menu {
-    right: 10px;
-    top: 45px;
-    left: auto;
-  }
-
-  .navbar .navbar-main__section {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .navbar .navbar-main__right {
-    margin-right: 0;
-    float: none;
-  }
-}
-
-@media (max-width: 767px) {
-  body header {
-    height: 180px;
-  }
-
-  .account-dropdown .dropdown-menu {
-    right: 10px;
-    top: 45px;
-    left: auto;
-  }
-
-  .navbar .navbar-main__section {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .navbar .navbar-main__right {
-    margin-right: 0;
-    float: none;
-  }
-
-  .latest-campaigns {
-    margin-bottom: 10px;
-  }
-
-  .latest-campaigns .owl-item {
-    padding: 50px;
-  }
-
-  .latest-campaigns h1 {
-    margin-bottom: 0;
-  }
-
-  .funeral-home__buttons {
-    text-align: center;
-  }
-
-  .hero-section__text {
-    padding: 30px 20px;
-    margin-bottom: 20px;
-  }
-
-  .hero-section__text img {
-    width: 15%;
-  }
-
-  .single-partner {
-    margin-bottom: 20px;
-  }
-
-  .family-msg__section .owl-item {
-    padding: 30px 10px;
-  }
-
-  .start-campaign__section {
-    padding: 40px 0;
-  }
-
-  .navbar-main .form-logo img {
-    width: 26%;
-  }
-
-  .news__block h1 {
-    text-align: center;
-    word-break: break-all;
-  }
-
-  .campaign-detail__section {
-    padding: 60px 20px;
-  }
-
-  .campaign-detail__section {
-    padding: 40px 20px;
-  }
-
-  .campaign-detail__section .campaign-detail__header {
-    text-align: center;
-  }
-
-  .campaign-detail__section .campaign-detail__header img {
-    display: none;
-  }
-
-  .campaign-detail__section .campaign-title__details {
-    margin-bottom: 20px;
-  }
-
-  .checklist-header p.check-share {
-    text-align: left;
-  }
-
-  .single-checklist__img {
-    margin-bottom: 20px;
-  }
-
-  .select-radio .radio-box:nth-of-type(1) label {
-    border-radius: 5px 5px 0 0;
-  }
-
-  .select-radio .radio-box:nth-of-type(2) label {
-    border-radius: 0;
-    border-left: 1px solid #774b92;
-  }
-
-  .select-radio .radio-box:nth-of-type(3) label {
-    border-radius: 0;
-    border-left: 1px solid #774b92;
-  }
-
-  .select-radio .radio-box:nth-of-type(4) label {
-    border-radius: 0;
-    border-left: 1px solid #774b92;
-  }
-
-  .funeral-alert,
-  .funeral-alert__error,
-  .message-alert {
-    top: 160px;
-    left: calc((100vw - 520px) / 2);
-    right: calc((100vw - 520px) / 2);
-  }
-
-  .donate-share h1 {
-    font-size: 28px;
-  }
-
-  .campaign-detail__section h1 {
-    font-size: 28px;
-  }
-
-  .form-check {
-    height: 30px;
-    margin-bottom: 20px;
-  }
-
-  .signup-button {
-    display: inline-block;
-    width: 100%;
-  }
-
-  .upload-photo {
-    text-align: left;
-  }
-
-  .signup-section__block .upload-photo__button {
-    display: inline-block;
-  }
-
-  .fee-chart p {
-    margin: 0 10px;
-  }
-
-  .single-blog .admin-image__block {
-    width: 100%;
-  }
-
-  .single-blog .admin-image__block img {
-    width: 100%;
-  }
-
-  .single-blog .blog-text__block {
-    width: 100%;
-  }
-
-  .single-blog .blog-text__block p {
-    width: 100%;
-  }
-
-  .campaign-detail__header h3 {
-    text-align: left;
-  }
-
-  .campaign-detail__header .detail-share__links {
-    text-align: left;
-  }
-}
-
-@media (max-width: 680px) {
-  body header {
-    height: 230px;
-  }
-
-  .navbar .form-wrap {
-    float: none;
-    width: 100%;
-    top: 0;
-  }
-
-  .navbar .search-form {
-    margin: 0 0 10px 0;
-    width: 100%;
-  }
-
-  .navbar .navbar-main__section {
-    margin: 0;
-  }
-}
-
-@media (max-width: 580px) {
-  body header {
-    height: 230px;
-  }
-
-  .navbar .form-wrap {
-    float: none;
-    width: 100%;
-    top: 0;
-  }
-
-  .navbar .search-form {
-    margin: 0 0 10px 0;
-    width: 100%;
-  }
-
-  .hero-section__text {
-    margin-top: -50px;
-  }
-
-  .latest-campaigns .owl-item {
-    padding: 20px;
-  }
-
-  .funeral-home__section {
-    padding: 0 40px;
-  }
-
-  .funeral-home__buttons {
-    text-align: center;
-  }
-
-  .single-partner {
-    text-align: center;
-  }
-
-  .navbar-main .navbar-main__right {
-    padding-left: 0;
-  }
-
-  .footer-single__list {
-    text-align: center;
-  }
-
-  .footer-single__list h1 {
-    line-height: 1.5;
-  }
-
-  .single-partner {
-    text-align: center;
-  }
-
-  .navbar-main .form-logo img {
-    width: 34%;
-  }
-
-  .campaign-section__block .upload-photo__button label {
-    width: 100%;
-    text-align: center;
-  }
-
-  .campaign-donate__buttons li {
-    width: 45%;
-  }
-
-  .verify-section .contact-button {
-    text-align: center;
-  }
-
-  .verify-section .contact-button button {
-    width: 100%;
-  }
-
-  .verify-section .load_more_button {
-    text-align: center;
-  }
-
-  .verify-section .load_more_button button {
-    width: 100%;
-  }
-
-  .checklist-header .donation-block .radio-box .single-radio-box label {
-    border-radius: 0 0 5px 5px;
-  }
-
-  .checklist-header .donation-block .radio-box:first-of-type label {
-    border-radius: 5px 5px 0 0;
-  }
-
-  .dash-detail__section .dash-detail__text span {
-    text-align: left;
-  }
-
-  .dash-detail__section .dash-detail__text a {
-    text-align: left;
-  }
-
-  .funeral-alert,
-  .funeral-alert__error,
-  .message-alert {
-    top: 160px;
-    left: calc((100vw - 520px) / 2);
-    right: calc((100vw - 520px) / 2);
-  }
-
-  .upload-photo__button {
-    text-align: center;
-  }
-
-  .dash-date__block .next-button {
-    text-align: center;
-  }
-
-  .fee-page__block ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-  }
-
-  .fee-chart span {
-    display: inline-block;
-    font-size: 25px;
-    padding: 10px 0;
-  }
-
-  .fee-chart p {
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .dash-detail__section .dash-detail__text span.description-detail {
-    text-align: left;
-  }
-
-  .news__block .single-news .single-blog__content .single-blog__img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .news__block .single-news .single-blog__content .single-blog__img img {
-    height: 100%;
-    width: 100%;
-  }
-
-  .news__block .single-news .single-blog__content .single-blog__text {
-    width: 100%;
-  }
-
-  .news__block .single-news .single-blog__content .single-blog__text p {
-    width: 100%;
-  }
-
-  .cat-tags span {
-    display: inline-block;
-    margin: 10px 0;
-  }
-
-  .detail-share__links {
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  body header {
-    height: 240px;
-  }
-
-  .body-wrapper {
-    padding-top: 0;
-  }
-
-  .latest-campaigns {
-    padding: 0 60px;
-  }
-
-  .latest-campaigns img {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .signin-section {
-    padding: 150px 0;
-  }
-
-  .signin-section .signin-section__block {
-    padding: 30px 40px;
-  }
-
-  .signup-section .signup-section__block {
-    padding: 30px 40px;
-  }
-
-  .verify-mail__block {
-    padding: 35px;
-  }
-
-  .navbar-main .navbar-main__section {
-    margin-bottom: 20px;
-  }
-
-  .navbar-main .form-logo img {
-    width: 40%;
-  }
-
-  .navbar-main #search input[type="search"] {
-    font-size: 30px;
-  }
-
-  .news__block {
-    padding: 40px 20px;
-  }
-
-  .campaign-donate__buttons li {
-    width: 43%;
-  }
-
-  #search input[type="text"] {
-    margin-top: 100px !important;
-    font-size: 30px !important;
-  }
-
-  #search input[type="text"] {
-    font-size: 30px !important;
-  }
-
-  ul.funeral-home__buttons {
-    padding: 0 10px;
-  }
-
-  ul.funeral-home__buttons:first-of-type li a {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .dropdown-menu {
-    right: 0;
-  }
-
-  .checklist-header h1 {
-    text-align: center;
-  }
-
-  .funeral-alert,
-  .funeral-alert__error,
-  .message-alert {
-    top: 150px;
-    left: calc((100vw - 430px) / 2);
-    right: calc((100vw - 430px) / 2);
-  }
-
-  .campaign-detail__section h1 {
-    font-size: 24px;
-  }
-
-  .donate-img img {
-    width: 100%;
-  }
-
-  .prog-bar__dash {
-    left: 30%;
-  }
-
-  .funeral-home__section ul li {
-    display: inline-block;
-    width: 100%;
-  }
-
-  .fee-page__block {
-    padding: 30px;
-  }
-
-  .blog-page__section {
-    padding: 40px 20px;
-  }
-
-  .detail-share__links {
-    text-align: center;
-  }
-
-  .newsletter-email .clear {
-    text-align: center;
-  }
-}
-
-@media (max-width: 375px) {
-  .body-wrapper {
-    padding-top: 0;
-  }
-
-  .navbar .navbar-main__section {
-    margin-bottom: 10px;
-  }
-
-  .navbar .navbar-main__section ul {
-    text-align: center;
-  }
-
-  .latest-campaigns {
-    padding: 30px;
-  }
-
-  .latest-campaigns .owl-item {
-    padding: 30px;
-  }
-
-  .family-msg__section p {
-    padding: 0 30px;
-  }
-
-  .funeral-home__section {
-    padding: 0 20px;
-  }
-
-  .funeral-home__section li:first-of-type a {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .hero-section__text img {
-    width: 25%;
-  }
-
-  .navbar-main .form-logo img {
-    width: 50%;
-  }
-
-  .navbar-main #search input[type="search"] {
-    font-size: 28px;
-    margin-top: 200px;
-  }
-
-  .navbar-main #search input[type="text"] {
-    margin-top: 150px;
-    font-size: 28px;
-  }
-
-  .funeral-home__info .upload-photo {
-    text-align: center;
-  }
-
-  .campaign_dashboard__block {
-    padding: 40px 20px;
-  }
-
-  .campaign-detail__section {
-    padding: 40px 20px;
-  }
-
-  .campaign-detail__section .campaign-detail__header {
-    text-align: center;
-  }
-
-  .campaign-detail__section .campaign-detail__header img {
-    width: 70%;
-  }
-
-  .campaign-detail__section .campaign-title__details {
-    margin-bottom: 20px;
-  }
-
-  ul.funeral-home__buttons {
-    padding: 0 15px;
-  }
-
-  .dropdown-menu {
-    right: -60px;
-  }
-
-  .search__block {
-    padding: 60px 20px;
-  }
-
-  .search__block h1 {
-    text-align: center;
-    font-size: 26px;
-  }
-
-  .search__block h2 {
-    text-align: center;
-    font-size: 22px;
-  }
-
-  .footer-link__list {
-    padding: 40px 20px;
-  }
-
-  .funeral-alert,
-  .funeral-alert__error,
-  .message-alert {
-    top: 180px;
-    left: calc((100vw - 350px) / 2);
-    right: calc((100vw - 350px) / 2);
-  }
-
-  .funeral-alert__error span.tagRemove {
-    right: 5px;
-    top: 5px;
-  }
-
-  .prog-bar__dash {
-    left: 20%;
-  }
-
-  .fee-page__block ul {
-    columns: 1;
-    -webkit-columns: 1;
-    -moz-columns: 1;
-  }
-
-  .fee-page__block ul li {
-    text-align: center;
-  }
-
-  .fee-chart p {
-    margin: 0 5px;
-  }
-
-  .newsletter-email h1 {
-    font-size: 25px;
-  }
-
-  .blog-share__list li a {
-    padding: 0 5px !important;
-  }
-}
-
-@media (max-width: 1500px) {
-  .news__block .single-news .single-blog__content .single-blog__text {
-    width: 55%;
-  }
-}
-
-@media (max-width: 1400px) {
-  .news__block .single-news .single-blog__content .single-blog__text {
-    width: 50%;
-  }
-}
-
 .share-button__section {
   margin-bottom: 50px;
 }
@@ -18481,6 +17362,15 @@ body.no-scroll {
 .modal {
   padding: 0 10px;
   background: rgba(119, 75, 146, 0.3);
+  overflow: auto;
+}
+
+.modal-backdrop {
+  background: none;
+}
+
+.modal-dialog {
+  max-width: 650px;
 }
 
 .modal-form label {
@@ -18732,10 +17622,13 @@ body.no-scroll {
   font-family: "Roboto";
   color: #000;
   font-size: 12px;
-  margin: 20px;
-  padding: 0 12%;
+  margin: 20px 0;
   text-align: center;
   font-weight: 700;
+}
+
+.sign-in__modal .modal-body form .form-bottom button img {
+  width: 30px;
 }
 
 .sign-in__modal .modal-body form .form-bottom a {
@@ -18764,37 +17657,275 @@ body.no-scroll {
   padding: 20px;
 }
 
-.sign-in__modal .modal-footer ul {
+.sign-in__modal .modal-footer .signup-button {
   margin-bottom: 0;
   width: 100%;
-  padding: 0;
+}
+
+.sign-in__modal .modal-footer .signup-button p {
+  color: #000;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.sign-in__modal .modal-footer .signup-button p a {
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #774b92;
+  text-decoration: underline;
+}
+
+/* Sign up modal*/
+
+.sign-up__modal {
+  background-color: #fff;
+  border: 4px solid #774b92;
+  border-radius: 7px;
+}
+
+.sign-up__modal .modal-header {
+  display: block;
+  border: none;
+  text-align: center;
+  position: relative;
+}
+
+.sign-up__modal .modal-header__image {
+  width: 100%;
   text-align: center;
 }
 
-.sign-in__modal .modal-footer ul li {
-  margin: 0 5px;
-  padding: 5px 20px;
-  display: inline;
+.sign-up__modal .modal-header img {
+  width: 300px;
+  margin: auto;
 }
 
-.sign-in__modal .modal-footer ul li:first-of-type {
-  margin: 0;
-  border-right: 2px solid #a8a8a8;
-}
-
-.sign-in__modal .modal-footer ul li:last-of-type {
-  margin-left: -5px;
-}
-
-.sign-in__modal .modal-footer ul li a {
-  color: #a8a8a8;
-  font-weight: 700;
+.sign-up__modal .modal-header p {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #774b92;
   text-transform: capitalize;
+  font-size: 16px;
+  margin-bottom: 0;
 }
 
-.sign-in__modal .modal-footer ul li a:hover {
+.sign-up__modal .modal-header .close {
+  font-size: 40px;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  background: none;
+  border: none;
+  color: #774b92;
+  opacity: 1;
+}
+
+.sign-up__modal .modal-body {
+  padding: 0;
+}
+
+.sign-up__modal .modal-body form label {
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
   color: #a8a8a8;
-  text-decoration: none;
+  text-align: left;
+  float: left;
+  margin-bottom: 0;
+}
+
+.sign-up__modal .modal-body form label span {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.sign-up__modal .modal-body form input {
+  font-family: "Roboto";
+  padding: 5px 10px;
+  display: inline-block;
+  width: 100%;
+  border: 2px solid rgba(168, 168, 168, 0.5);
+  border-radius: 0;
+}
+
+.sign-up__modal .modal-body form input::-webkit-input-placeholder {
+  text-transform: lowercase;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(168, 168, 168, 0.7);
+}
+
+.sign-up__modal .modal-body form input:-ms-input-placeholder {
+  text-transform: lowercase;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(168, 168, 168, 0.7);
+}
+
+.sign-up__modal .modal-body form input::-ms-input-placeholder {
+  text-transform: lowercase;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(168, 168, 168, 0.7);
+}
+
+.sign-up__modal .modal-body form input::placeholder {
+  text-transform: lowercase;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(168, 168, 168, 0.7);
+}
+
+.sign-up__modal .modal-body form .form-top {
+  position: relative;
+  padding: 20px 15px;
+  background-color: #f7f3f0;
+}
+
+.sign-up__modal .modal-body form .form-top .signin-fb__button {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sign-up__modal .modal-body form .form-top .signin-fb__button a {
+  position: relative;
+  text-align: right;
+  font-size: 16px;
+  padding: 10px 20px;
+  background: #4562a0;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 4px solid #355494;
+}
+
+.sign-up__modal .modal-body form .form-top .signin-fb__button a:hover {
+  color: #fff;
+}
+
+.sign-up__modal .modal-body form .form-top .signin-fb__button a span {
+  border-radius: 5px 0 0 5px;
+  background: #355494;
+  padding: 5px 15px;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.sign-up__modal .modal-body form .form-top .signin-fb__button p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(168, 168, 168, 0.7);
+}
+
+.sign-up__modal .modal-body form .form-top .signup-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.sign-up__modal .modal-body form .form-top .signup-divider:before {
+  content: '';
+  border: 1px solid rgba(168, 168, 168, 0.5);
+  position: absolute;
+  top: 25px;
+  height: 170px;
+}
+
+.sign-up__modal .modal-body form .form-top .signup-divider:after {
+  content: '';
+  border: 1px solid rgba(168, 168, 168, 0.5);
+  position: absolute;
+  bottom: 35px;
+  height: 190px;
+}
+
+.sign-up__modal .modal-body form .form-top .signup-divider p {
+  position: absolute;
+  top: 44%;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #000;
+  text-transform: capitalize;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.sign-up__modal .modal-body form .form-top p {
+  font-size: 12px;
+}
+
+.sign-up__modal .modal-body form .form-top p a {
+  color: #774b92;
+  text-deconration: underline;
+}
+
+.sign-up__modal .modal-body form .form-top p a:hover {
+  color: #774b92;
+}
+
+.sign-up__modal .modal-body form .form-bottom {
+  padding: 20px 30px;
+  background: #fff;
+}
+
+.sign-up__modal .modal-body form .form-bottom p {
+  font-family: "Roboto";
+  color: #000;
+  font-size: 12px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.sign-up__modal .modal-body form .form-bottom button img {
+  width: 30px;
+}
+
+.sign-up__modal .modal-body form .form-bottom a {
+  text-transform: capitalize;
+  color: #774b92;
+  text-decoration: underline;
+}
+
+.sign-up__modal .modal-body form .form-bottom .forgot-pass {
+  text-align: center;
+}
+
+.sign-up__modal .modal-body form .form-bottom .forgot-pass a {
+  color: #a8a8a8;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.sign-up__modal .modal-body form .form-bottom .forgot-pass a:hover {
+  color: #a8a8a8;
+}
+
+.sign-up__modal .modal-body form .form-bottom .signin-button button span {
+  padding: 5px 10px;
+  font-size: 27px;
 }
 
 /* Dashboard reminder modal*/
@@ -19112,5 +18243,1293 @@ body.no-scroll {
 .campaign-detail__donate .modal-share .modal-body .modal-list li p {
   text-align: left;
   width: 180px;
+}
+
+@media (max-width: 1250px) {
+  .news__block .single-news .single-blog__content .single-blog__text {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    position: relative;
+  }
+
+  .body-wrapper {
+    padding: 0;
+  }
+
+  .navbar .navbar-brand {
+    top: -8px;
+    width: 160px;
+  }
+
+  .navbar .search-form input {
+    width: 205px;
+  }
+
+  .newsletter-email input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-email button {
+    margin-left: 0;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .signin-section {
+    padding: 150px 50px;
+  }
+
+  .signup-section {
+    padding: 150px 50px;
+  }
+
+  .upload-photo__button {
+    padding: 7px 25px;
+  }
+
+  .navbar-main {
+    top: 25px;
+  }
+
+  .navbar-main .form-logo img {
+    width: 20%;
+  }
+
+  .signup-section__block .upload-photo__button {
+    padding: 0;
+  }
+
+  .campaign-section__block .upload-photo__button {
+    padding: 0;
+  }
+
+  .campaign-section__block .upload-photo__button label {
+    padding: 7px 18px;
+  }
+
+  .campaign_dashboard__block .update-form__section .upload-photo__button {
+    padding: 0;
+  }
+
+  .funeral-alert__error {
+    top: 65px;
+  }
+
+  .funeral-alert,
+  .funeral-alert__error,
+  .message-alert {
+    left: calc((100vw - 920px) / 2);
+    right: calc((100vw - 920px) / 2);
+  }
+
+  .donate-share {
+    padding-left: 50px;
+  }
+
+  .fee-page__block ul {
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+  }
+
+  .single-blog .admin-image__block {
+    width: 100%;
+  }
+
+  .single-blog .admin-image__block img {
+    width: 100%;
+    height: auto;
+  }
+
+  .single-blog .blog-text__block {
+    width: 100%;
+  }
+
+  .single-blog .blog-text__block p {
+    width: 100%;
+  }
+
+  .single-blog .post_author .post_text {
+    width: 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .account-dropdown .dropdown-menu {
+    right: 10px;
+    top: 45px;
+    left: auto;
+  }
+
+  .navbar .search-form {
+    margin: 0 10px 0 0;
+  }
+
+  .navbar .navbar-brand {
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar .navbar-brand a {
+    display: inline-block;
+    width: 160px;
+  }
+
+  .dropdown-toggle__desk {
+    display: none;
+  }
+
+  .navbar-menu__button .dropdown .dropdown-toggle__mobile {
+    display: block;
+  }
+
+  body {
+    width: 100% !important;
+  }
+
+  body header {
+    height: 120px;
+    width: 100% !important;
+  }
+
+  .campaign-detail__header h1 {
+    word-break: normal;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .campaign-detail__content img {
+    float: none;
+  }
+
+  .body-wrapper {
+    padding-top: 0;
+  }
+
+  .navbar .navbar-main__section .navbar-signin {
+    display: none;
+  }
+
+  .navbar-main {
+    text-align: center;
+    width: 100%;
+    float: none;
+    top: 0;
+  }
+
+  .navbar-main .form-logo img {
+    width: 22%;
+  }
+
+  .signin__mobile {
+    display: block;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  .navbar-brand img {
+    width: 100%;
+  }
+
+  .hero-section__text h1 {
+    font-size: 30px;
+  }
+
+  .hero-section__text p {
+    font-size: 17px;
+  }
+
+  .latest-campaigns .owl-item {
+    padding: 25px;
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .hero-section__text img {
+    width: 12%;
+  }
+
+  .signin-section {
+    padding: 80px 0;
+  }
+
+  .signin-section .signin-section__block {
+    padding: 40px 60px;
+  }
+
+  .signup-section {
+    padding: 80px 0;
+  }
+
+  .signup-section .signin-section__block {
+    padding: 40px 60px;
+  }
+
+  .footer-single__list {
+    margin-bottom: 30px;
+  }
+
+  .share-fb {
+    margin-bottom: 20px;
+  }
+
+  .share-twitter {
+    margin-bottom: 20px;
+  }
+
+  .share-mail {
+    margin-bottom: 20px;
+  }
+
+  .news__block {
+    padding: 60px 40px;
+  }
+
+  .news__block .single-news img {
+    height: 300px;
+  }
+
+  .news__block .single-news__details img {
+    height: 300px;
+  }
+
+  .search__block {
+    padding: 60px 60px;
+  }
+
+  .search__block h1 {
+    text-align: center;
+  }
+
+  .search__block h2 {
+    text-align: center;
+  }
+
+  .single-search__text p {
+    text-align: center;
+  }
+
+  .footer-single__list .detail-share__links li a:before {
+    bottom: 5px;
+    left: 3px;
+    width: 19px;
+    height: 20px;
+  }
+
+  .single-search .read-more__link {
+    text-align: center;
+  }
+
+  .single-search h2 {
+    word-break: normal !important;
+  }
+
+  .campaign-detail__about h3 {
+    word-break: normal;
+    text-align: left;
+  }
+
+  .dash-detail__section .dash-detail__text span {
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .campaign-detail__section .campaign-donate__block {
+    display: none;
+  }
+
+  .campaign-detail__section .campaign-detail__stats {
+    display: none;
+  }
+
+  .campaign-detail__section .campaign-brief__blockP {
+    display: none;
+  }
+
+  .campaign-detail__section .col-lg-5 {
+    display: none;
+  }
+
+  .funeral-alert,
+  .funeral-alert__error,
+  .message-alert {
+    position: absolute;
+    top: 150px;
+    left: calc((100vw - 700px) / 2);
+    right: calc((100vw - 700px) / 2);
+  }
+
+  .donate-share {
+    padding-top: 50px;
+  }
+
+  .donate-share h1 {
+    font-size: 32px;
+  }
+
+  .campaign-detail__section h1 {
+    font-size: 32px;
+  }
+
+  .fee-page__block ul {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+  }
+
+  .fee-chart p {
+    padding: 20px;
+  }
+
+  .footer-single__list .detail-share__links li a {
+    font-size: 34px;
+    padding: 0 10px;
+  }
+
+  .footer-single__list .detail-share__links li a:first-of-type {
+    padding-left: 0;
+  }
+
+  .single-blog .admin-image__block {
+    width: 100%;
+  }
+
+  .single-blog .admin-image__block img {
+    width: 100%;
+  }
+
+  .single-blog .blog-text__block {
+    width: 100%;
+  }
+
+  .single-blog .blog-text__block p {
+    width: 100%;
+  }
+
+  .single-blog .post_author .post_text {
+    width: 200px;
+  }
+
+  .campaign-detail__header h3 {
+    text-align: left;
+  }
+
+  .campaign-detail__header .detail-share__links {
+    display: block;
+  }
+
+  .news__block .single-news .single-blog__content .single-blog__text {
+    width: 100% !important;
+  }
+
+  .news__block .single-news .single-blog__content .single-blog__img {
+    margin-bottom: 30px;
+  }
+
+  .news__block .single-news .single-blog__content .single-blog__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-list__img {
+    display: none;
+  }
+
+  .newsletter-img {
+    display: none;
+  }
+
+  footer .footer-single__list li {
+    line-height: 2.5;
+  }
+
+  .footer-single__list .detail-share__links li a {
+    width: 35px;
+    height: auto;
+  }
+
+  .campaign-donate__block-mobile {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .campaign-donate__block-mobile .raised-donate__header {
+    padding: 10px 0;
+    margin-bottom: 0;
+    border: 2px solid #774b92;
+    border-radius: 5px 5px 0 0;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 26px;
+    color: #774b92;
+  }
+
+  .campaign-donate__block-mobile p {
+    color: #a8a8a8;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 850px) {
+  body header {
+    height: 180px;
+  }
+
+  .account-dropdown .dropdown-menu {
+    right: 10px;
+    top: 45px;
+    left: auto;
+  }
+
+  .navbar .navbar-main__section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar .navbar-main__right {
+    margin-right: 0;
+    float: none;
+  }
+}
+
+@media (max-width: 780px) {
+  body header {
+    height: 180px;
+  }
+
+  .account-dropdown .dropdown-menu {
+    right: 10px;
+    top: 45px;
+    left: auto;
+  }
+
+  .navbar .navbar-main__section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar .navbar-main__right {
+    margin-right: 0;
+    float: none;
+  }
+}
+
+@media (max-width: 767px) {
+  body header {
+    height: 180px;
+  }
+
+  .sign-up__modal .modal-header .close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signin-fb__button {
+    text-align: center;
+    width: 100%;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    display: inline-block;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signin-fb__button a {
+    width: 300px;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider:before {
+    top: auto;
+    left: 15px;
+    width: 210px;
+    height: 0;
+    bottom: 12px;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider:after {
+    top: auto;
+    height: 0;
+    right: 15px;
+    width: 210px;
+    bottom: 12px;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider p {
+    text-align: center;
+    position: relative;
+    top: auto;
+    -webkit-transform: none;
+            transform: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .sign-up__modal .modal-body form .form-top p {
+    text-align: center;
+  }
+
+  .sign-up__modal .modal-body form .form-bottom {
+    padding: 20px;
+  }
+
+  .sign-up__modal .modal-body form .form-bottom p {
+    text-align: center;
+  }
+
+  .modal-dialog {
+    max-width: 500px;
+  }
+
+  .sign-in__modal .modal-header .close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .account-dropdown .dropdown-menu {
+    right: 10px;
+    top: 45px;
+    left: auto;
+  }
+
+  .navbar .navbar-main__section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar .navbar-main__right {
+    margin-right: 0;
+    float: none;
+  }
+
+  .latest-campaigns {
+    margin-bottom: 10px;
+  }
+
+  .latest-campaigns .owl-item {
+    padding: 50px;
+  }
+
+  .latest-campaigns h1 {
+    margin-bottom: 0;
+  }
+
+  .funeral-home__buttons {
+    text-align: center;
+  }
+
+  .hero-section__text {
+    padding: 30px 20px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section__text img {
+    width: 15%;
+  }
+
+  .single-partner {
+    margin-bottom: 20px;
+  }
+
+  .family-msg__section .owl-item {
+    padding: 30px 10px;
+  }
+
+  .start-campaign__section {
+    padding: 40px 0;
+  }
+
+  .navbar-main .form-logo img {
+    width: 26%;
+  }
+
+  .news__block h1 {
+    text-align: center;
+    word-break: break-all;
+  }
+
+  .campaign-detail__section {
+    padding: 60px 20px;
+  }
+
+  .campaign-detail__section {
+    padding: 40px 20px;
+  }
+
+  .campaign-detail__section .campaign-detail__header {
+    text-align: center;
+  }
+
+  .campaign-detail__section .campaign-detail__header img {
+    display: none;
+  }
+
+  .campaign-detail__section .campaign-title__details {
+    margin-bottom: 20px;
+  }
+
+  .checklist-header p.check-share {
+    text-align: left;
+  }
+
+  .single-checklist__img {
+    margin-bottom: 20px;
+  }
+
+  .select-radio .radio-box:nth-of-type(1) label {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .select-radio .radio-box:nth-of-type(2) label {
+    border-radius: 0;
+    border-left: 1px solid #774b92;
+  }
+
+  .select-radio .radio-box:nth-of-type(3) label {
+    border-radius: 0;
+    border-left: 1px solid #774b92;
+  }
+
+  .select-radio .radio-box:nth-of-type(4) label {
+    border-radius: 0;
+    border-left: 1px solid #774b92;
+  }
+
+  .funeral-alert,
+  .funeral-alert__error,
+  .message-alert {
+    top: 160px;
+    left: calc((100vw - 520px) / 2);
+    right: calc((100vw - 520px) / 2);
+  }
+
+  .donate-share h1 {
+    font-size: 28px;
+  }
+
+  .campaign-detail__section h1 {
+    font-size: 28px;
+  }
+
+  .form-check {
+    height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .signup-button {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .upload-photo {
+    text-align: left;
+  }
+
+  .signup-section__block .upload-photo__button {
+    display: inline-block;
+  }
+
+  .fee-chart p {
+    margin: 0 10px;
+  }
+
+  .single-blog .admin-image__block {
+    width: 100%;
+  }
+
+  .single-blog .admin-image__block img {
+    width: 100%;
+  }
+
+  .single-blog .blog-text__block {
+    width: 100%;
+  }
+
+  .single-blog .blog-text__block p {
+    width: 100%;
+  }
+
+  .campaign-detail__header h3 {
+    text-align: left;
+  }
+
+  .campaign-detail__header .detail-share__links {
+    text-align: left;
+  }
+}
+
+@media (max-width: 680px) {
+  body header {
+    height: 230px;
+  }
+
+  .sign-in__modal .modal-body form .form-bottom {
+    padding: 20px 10px;
+  }
+
+  .navbar .form-wrap {
+    float: none;
+    width: 100%;
+    top: 0;
+  }
+
+  .navbar .search-form {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+
+  .navbar .navbar-main__section {
+    margin: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  body header {
+    height: 230px;
+  }
+
+  .navbar .form-wrap {
+    float: none;
+    width: 100%;
+    top: 0;
+  }
+
+  .navbar .search-form {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+
+  .hero-section__text {
+    margin-top: -50px;
+  }
+
+  .latest-campaigns .owl-item {
+    padding: 20px;
+  }
+
+  .funeral-home__section {
+    padding: 0 40px;
+  }
+
+  .funeral-home__buttons {
+    text-align: center;
+  }
+
+  .single-partner {
+    text-align: center;
+  }
+
+  .navbar-main .navbar-main__right {
+    padding-left: 0;
+  }
+
+  .footer-single__list {
+    text-align: center;
+  }
+
+  .footer-single__list h1 {
+    line-height: 1.5;
+  }
+
+  .single-partner {
+    text-align: center;
+  }
+
+  .navbar-main .form-logo img {
+    width: 34%;
+  }
+
+  .campaign-section__block .upload-photo__button label {
+    width: 100%;
+    text-align: center;
+  }
+
+  .campaign-donate__buttons li {
+    width: 45%;
+  }
+
+  .verify-section .contact-button {
+    text-align: center;
+  }
+
+  .verify-section .contact-button button {
+    width: 100%;
+  }
+
+  .verify-section .load_more_button {
+    text-align: center;
+  }
+
+  .verify-section .load_more_button button {
+    width: 100%;
+  }
+
+  .checklist-header .donation-block .radio-box .single-radio-box label {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .checklist-header .donation-block .radio-box:first-of-type label {
+    border-radius: 5px 5px 0 0;
+  }
+
+  .dash-detail__section .dash-detail__text span {
+    text-align: left;
+  }
+
+  .dash-detail__section .dash-detail__text a {
+    text-align: left;
+  }
+
+  .funeral-alert,
+  .funeral-alert__error,
+  .message-alert {
+    top: 160px;
+    left: calc((100vw - 520px) / 2);
+    right: calc((100vw - 520px) / 2);
+  }
+
+  .upload-photo__button {
+    text-align: center;
+  }
+
+  .dash-date__block .next-button {
+    text-align: center;
+  }
+
+  .fee-page__block ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  .fee-chart span {
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px 0;
+  }
+
+  .fee-chart p {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .dash-detail__section .dash-detail__text span.description-detail {
+    text-align: left;
+  }
+
+  .news__block .single-news .single-blog__content .single-blog__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .news__block .single-news .single-blog__content .single-blog__img img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .news__block .single-news .single-blog__content .single-blog__text {
+    width: 100%;
+  }
+
+  .news__block .single-news .single-blog__content .single-blog__text p {
+    width: 100%;
+  }
+
+  .cat-tags span {
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  .detail-share__links {
+    text-align: center;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider:before {
+    width: 180px;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider:after {
+    width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  body header {
+    height: 240px;
+  }
+
+  .sign-up__modal .modal-header img {
+    width: 100%;
+  }
+
+  .sign-in__modal .modal-header__image {
+    width: 100%;
+  }
+
+  .sign-in__modal .modal-header__image img {
+    width: 100%;
+  }
+
+  .sign-in__modal .modal-body form .form-top .signin-fb__button {
+    text-align: center;
+    width: 100%;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    display: inline-block;
+  }
+
+  .sign-in__modal .modal-body form .form-top .signin-fb__button a {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .sign-in__modal .modal-body form form .form-bottom {
+    padding: 20px 3px;
+  }
+
+  .sign-in__modal .modal-footer .signup-button {
+    padding: 0 15px;
+  }
+
+  .sign-in__modal .modal-footer .signup-button p {
+    font-size: 13px;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signin-fb__button a {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .form-bottom .signin-button button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .body-wrapper {
+    padding-top: 0;
+  }
+
+  .latest-campaigns {
+    padding: 0 60px;
+  }
+
+  .latest-campaigns img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .signin-section {
+    padding: 150px 0;
+  }
+
+  .signin-section .signin-section__block {
+    padding: 30px 40px;
+  }
+
+  .signup-section .signup-section__block {
+    padding: 30px 40px;
+  }
+
+  .verify-mail__block {
+    padding: 35px;
+  }
+
+  .navbar-main .navbar-main__section {
+    margin-bottom: 20px;
+  }
+
+  .navbar-main .form-logo img {
+    width: 40%;
+  }
+
+  .navbar-main #search input[type="search"] {
+    font-size: 30px;
+  }
+
+  .news__block {
+    padding: 40px 20px;
+  }
+
+  .campaign-donate__buttons li {
+    width: 43%;
+  }
+
+  #search input[type="text"] {
+    margin-top: 100px !important;
+    font-size: 30px !important;
+  }
+
+  #search input[type="text"] {
+    font-size: 30px !important;
+  }
+
+  ul.funeral-home__buttons {
+    padding: 0 10px;
+  }
+
+  ul.funeral-home__buttons:first-of-type li a {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .dropdown-menu {
+    right: 0;
+  }
+
+  .checklist-header h1 {
+    text-align: center;
+  }
+
+  .funeral-alert,
+  .funeral-alert__error,
+  .message-alert {
+    top: 150px;
+    left: calc((100vw - 430px) / 2);
+    right: calc((100vw - 430px) / 2);
+  }
+
+  .campaign-detail__section h1 {
+    font-size: 24px;
+  }
+
+  .donate-img img {
+    width: 100%;
+  }
+
+  .prog-bar__dash {
+    left: 30%;
+  }
+
+  .funeral-home__section ul li {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .fee-page__block {
+    padding: 30px;
+  }
+
+  .blog-page__section {
+    padding: 40px 20px;
+  }
+
+  .detail-share__links {
+    text-align: center;
+  }
+
+  .newsletter-email .clear {
+    text-align: center;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider:before {
+    width: 130px;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider:after {
+    width: 130px;
+  }
+}
+
+@media (max-width: 375px) {
+  .body-wrapper {
+    padding-top: 0;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider:before {
+    width: 110px;
+  }
+
+  .sign-up__modal .modal-body form .form-top .signup-divider:after {
+    width: 110px;
+  }
+
+  .navbar .navbar-main__section {
+    margin-bottom: 10px;
+  }
+
+  .navbar .navbar-main__section ul {
+    text-align: center;
+  }
+
+  .latest-campaigns {
+    padding: 30px;
+  }
+
+  .latest-campaigns .owl-item {
+    padding: 30px;
+  }
+
+  .family-msg__section p {
+    padding: 0 30px;
+  }
+
+  .funeral-home__section {
+    padding: 0 20px;
+  }
+
+  .funeral-home__section li:first-of-type a {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-section__text img {
+    width: 25%;
+  }
+
+  .navbar-main .form-logo img {
+    width: 50%;
+  }
+
+  .navbar-main #search input[type="search"] {
+    font-size: 28px;
+    margin-top: 200px;
+  }
+
+  .navbar-main #search input[type="text"] {
+    margin-top: 150px;
+    font-size: 28px;
+  }
+
+  .funeral-home__info .upload-photo {
+    text-align: center;
+  }
+
+  .campaign_dashboard__block {
+    padding: 40px 20px;
+  }
+
+  .campaign-detail__section {
+    padding: 40px 20px;
+  }
+
+  .campaign-detail__section .campaign-detail__header {
+    text-align: center;
+  }
+
+  .campaign-detail__section .campaign-detail__header img {
+    width: 70%;
+  }
+
+  .campaign-detail__section .campaign-title__details {
+    margin-bottom: 20px;
+  }
+
+  ul.funeral-home__buttons {
+    padding: 0 15px;
+  }
+
+  .dropdown-menu {
+    right: -60px;
+  }
+
+  .search__block {
+    padding: 60px 20px;
+  }
+
+  .search__block h1 {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .search__block h2 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .footer-link__list {
+    padding: 40px 20px;
+  }
+
+  .funeral-alert,
+  .funeral-alert__error,
+  .message-alert {
+    top: 180px;
+    left: calc((100vw - 350px) / 2);
+    right: calc((100vw - 350px) / 2);
+  }
+
+  .funeral-alert__error span.tagRemove {
+    right: 5px;
+    top: 5px;
+  }
+
+  .prog-bar__dash {
+    left: 20%;
+  }
+
+  .fee-page__block ul {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+
+  .fee-page__block ul li {
+    text-align: center;
+  }
+
+  .fee-chart p {
+    margin: 0 5px;
+  }
+
+  .newsletter-email h1 {
+    font-size: 25px;
+  }
+
+  .blog-share__list li a {
+    padding: 0 5px !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .form-bottom .signin-button button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .form-bottom .signin-button button span {
+    font-size: 20px;
+    padding: 5px 5px 5px 10px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .news__block .single-news .single-blog__content .single-blog__text {
+    width: 55%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .news__block .single-news .single-blog__content .single-blog__text {
+    width: 50%;
+  }
 }
 

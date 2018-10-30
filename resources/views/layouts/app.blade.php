@@ -241,17 +241,17 @@
                 </nav>
             </div>
         </div>
-        {{--<div id="search" class="search-box__section">--}}
-        {{--<form role="search" id="searchform" action="{{ route('campaign.search') }}"--}}
-        {{--method="get">--}}
-        {{--<span class="close">&times;</span>--}}
-        {{--<div class="offset-md-2 col-md-8">--}}
-        {{--<input value="" id="campaign-search-input" name="search" type="text"--}}
-        {{--placeholder="search for a fundraiser"/>--}}
-        {{--</div>--}}
-        {{--</form>--}}
-        {{----}}
-        {{--</div>--}}
+        <div id="search" class="search-box__section">
+            <form role="search" id="searchform" action="{{ route('campaign.search') }}"
+                  method="get">
+                <span class="close">&times;</span>
+                <div class="offset-md-2 col-md-8">
+                    <input value="" id="campaign-search-input" name="search" type="text"
+                           placeholder="search for a fundraiser"/>
+                </div>
+            </form>
+
+        </div>
 
 
         <div id="search" class="search-box__section">
@@ -406,7 +406,8 @@
 
 </footer>
 
-<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="sign-in__modal">
@@ -414,7 +415,7 @@
                     <div class="modal-header__image">
                         <img src="{{asset('/img/logo-modal.png')}}" alt="">
                     </div>
-                    <p>account login</p>
+                    <p>sign in</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
                     </button>
@@ -426,7 +427,8 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">username <span>(your primary email)</span></label>
+                                        <label for="exampleInputEmail1">username
+                                            <span>(your primary email)</span></label>
                                         <input id="email" type="email"
                                                class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                                                name="email"
@@ -445,16 +447,148 @@
                         </div>
                         <div class="form-bottom">
                             <div class="signin-button">
-                                <button type="submit"><span><i class="far fa-clipboard"></i></span>manage my fundraiser</button>
+                                <button type="submit"><span><img src="{{asset('/img/signin.svg')}}" alt=""></span>manage
+                                    my fundraiser
+                                </button>
                             </div>
-                            <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign up to find a fundraiser,a
-                                 <a href="">click here</a> to search for a fundraiser to support.</p>
+
+                            <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign
+                                up to find a fundraiser,a
+                                <a href="#search">click here</a> to search for a fundraiser to support.</p>
                             {{--<div class="signin-fb__button">--}}
-                                {{--<a href="{{ route('facebook.signin') }}">sign in via facebook</a>--}}
+                            {{--<a href="{{ route('facebook.signin') }}">sign in via facebook</a>--}}
                             {{--</div>--}}
                             <div class="forgot-pass">
                                 <a href="{{ route('password.request') }}">forgot your password?</a>
                             </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="signup-button">
+                        <p>Need To Start a Fundraiser?
+                            <a id="signUpButton" data-toggle="modal">Click Here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="sign-up__modal">
+                <div class="modal-header">
+                    <div class="modal-header__image">
+                        <img src="{{asset('/img/logo-modal.png')}}" alt="">
+                    </div>
+                    <p>account sign up</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @php
+                        $action = request()->has('start-campaign') ? url('/register?start-campaign=1') : url('/register');
+                    @endphp
+                    <form role="form" method="POST" action="{{ $action }}">
+                        <div class="form-top">
+                            {!! csrf_field() !!}
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="signin-fb__button">
+                                        @if(app('request')->input('start-campaign'))
+                                            <a href="{{ route('facebook.signin', ['start_campaign' => true]) }}"><span><i class="fab fa-facebook-f"></i></span>sign in via
+                                                facebook</a>
+                                        @else
+                                            <a href="{{ route('facebook.signin') }}"><span><i class="fab fa-facebook-f"></i></span>use my facebook account</a>
+                                        @endif
+                                        <p>We will never post without your permission</p>
+                                    </div>
+                                </div>
+                                <div class="signup-divider">
+                                    <p>or</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="first_name">first name</label>
+                                        <input type="text"
+                                               class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}"
+                                               name="first_name" value="{{ old('first_name') }}" required>
+                                        @if ($errors->has('first_name'))
+                                            <div class="invalid-feedback">
+                                                <strong>{{ $errors->first('first_name') }}</strong>
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last_name">last name</label>
+                                        <input type="text"
+                                               class="form-control{{ $errors->has('last_name') ? ' is-invalid' : '' }}"
+                                               name="last_name" value="{{ old('last_name') }}" required>
+                                        @if ($errors->has('last_name'))
+                                            <div class="invalid-feedback">
+                                                <strong>{{ $errors->first('last_name') }}</strong>
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">email<span>(your primary email)</span></label>
+                                        <input type="email"
+                                               class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                               name="email" value="{{ old('email') }}" placeholder="this is your username" required>
+                                        @if ($errors->has('email'))
+                                            <div class="invalid-feedback">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">password</label>
+                                        <input type="password"
+                                               class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                               name="password">
+                                        @if ($errors->has('password'))
+                                            <div class="invalid-feedback">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password_confirmation">confirm password</label>
+                                        <input type="password"
+                                               class="form-control{{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}"
+                                               name="password_confirmation" required>
+                                    </div>
+                                    <div class="form-agree">
+                                        <p>"By signing up, you agree to our <a href="{{ route('page.terms') }}">Terms of Use</a> and <a
+                                                    href="{{ route('page.privacy') }}">Privacy Policy".</a></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <div class="form-group">
+                                {!! NoCaptcha::display() !!}
+
+                                @if ($errors->has('g-recaptcha-response'))
+                                    <span class="help-block text-danger">
+                                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                                </span>
+                                @endif
+                            </div>
+                            <div class="signin-button">
+                                <button type="submit"><span><i class="fas fa-plus"></i></span>create your fundraiser</button>
+                            </div>
+
+                            <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign
+                                up to find a fundraiser,a
+                                <a href="#search">click here</a> to search for a fundraiser to support.</p>
                         </div>
                     </form>
                 </div>

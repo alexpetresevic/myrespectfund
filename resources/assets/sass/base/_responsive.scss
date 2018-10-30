@@ -136,7 +136,7 @@
       display: none;
     }
   }
-  .navbar-menu__button .dropdown .dropdown-toggle__mobile{
+  .navbar-menu__button .dropdown .dropdown-toggle__mobile {
     display: block;
   }
   body {
@@ -431,7 +431,7 @@
   }
 }
 
-@media (max-width: 850px){
+@media (max-width: 850px) {
   body {
     header {
       height: 180px;
@@ -492,6 +492,82 @@
     header {
       height: 180px;
     }
+  }
+  .sign-up__modal .modal-header .close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .sign-up {
+    &__modal {
+      .modal-body {
+        form {
+          .form-top {
+            .signin-fb {
+              &__button {
+                text-align: center;
+                width: 100%;
+                top: 0;
+                transform: none;
+                display: inline-block;
+                a {
+                  width: 300px;
+                }
+              }
+            }
+            .signup-divider {
+              display: inline-block;
+              width: 100%;
+              position: relative;
+              top: auto;
+              bottom: auto;
+              left: 0;
+              right: 0;
+              transform: none;
+              &:before {
+                top: auto;
+                left: 15px;
+                width: 210px;
+                height: 0;
+                bottom: 12px;
+              }
+              &:after {
+                top: auto;
+                height: 0;
+                right: 15px;
+                width: 210px;
+                bottom: 12px;
+              }
+              p {
+                text-align: center;
+                position: relative;
+                top: auto;
+                transform: none;
+                display: inline-block;
+                width: 100%;
+              }
+            }
+            p {
+              text-align: center;
+            }
+          }
+          .form-bottom {
+            padding: 20px;
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-dialog {
+    max-width: 500px;
+  }
+  .sign-in__modal .modal-header .close {
+    top: 20px;
+    right: 20px;
   }
   .account-dropdown {
     .dropdown-menu {
@@ -672,6 +748,17 @@
       height: 230px;
     }
   }
+  .sign-in {
+    &__modal {
+      .modal-body {
+        form {
+          .form-bottom {
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+  }
   .navbar {
     .form-wrap {
       float: none;
@@ -684,7 +771,7 @@
     }
     .navbar-main {
       &__section {
-       margin: 0;
+        margin: 0;
       }
 
     }
@@ -862,6 +949,24 @@
   .detail-share__links {
     text-align: center;
   }
+  .sign-up {
+    &__modal {
+      .modal-body {
+        form {
+          .form-top {
+            .signup-divider {
+              &:before {
+                width: 180px;
+              }
+              &:after {
+                width: 180px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -869,6 +974,76 @@
     header {
       height: 240px;
     }
+  }
+  .sign-up__modal .modal-header img{
+    width: 100%;
+  }
+  .sign-in {
+    &__modal {
+      .modal-header {
+        &__image {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .modal-body {
+        form {
+          .form-top {
+            .signin-fb {
+              &__button {
+                text-align: center;
+                width: 100%;
+                top: 0;
+                transform: none;
+                display: inline-block;
+                a {
+                  width: 100%;
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+          form {
+            .form-bottom {
+              padding: 20px 3px;
+            }
+          }
+        }
+
+      }
+      .modal-footer {
+        .signup-button {
+          padding: 0 15px;
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .sign-up {
+    &__modal {
+      .modal-body {
+        form {
+          .form-top {
+            .signin-fb {
+              &__button {
+                a {
+                  width: 100%;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .form-bottom .signin-button button {
+    width: 100%;
+    font-size: 16px;
   }
   .navbar {
     .form-wrap {
@@ -984,11 +1159,48 @@
   .newsletter-email .clear {
     text-align: center;
   }
+  .sign-up {
+    &__modal {
+      .modal-body {
+        form {
+          .form-top {
+            .signup-divider {
+              &:before {
+                width: 130px;
+              }
+              &:after {
+                width: 130px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 375px) {
   .body-wrapper {
     padding-top: 0;
+  }
+  .sign-up {
+    &__modal {
+      .modal-body {
+        form {
+          .form-top {
+            .signup-divider {
+              &:before {
+                width: 110px;
+              }
+              &:after {
+                width: 110px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .navbar {
     .navbar-main__section {
@@ -1113,6 +1325,22 @@
       li {
         a {
           padding: 0 5px !important;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 350px) {
+  .form-bottom {
+    .signin-button {
+      button {
+        width: 100%;
+        font-size: 16px;
+        span {
+          font-size: 20px;
+          padding: 5px 5px 5px 10px;
         }
       }
     }
