@@ -82,7 +82,8 @@
                         @elseif(!auth()->guest() && auth()->user()->is('affiliate'))
                             <a href="{{ route('partner.index') }}">Partner Dashboard</a>
                         @else
-                            <a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a>
+                            {{--<a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a>--}}
+                            <a class="fundraiser-start" data-toggle="modal" data-target="#signUpModal"><span>start your fundraiser here</span></a>
                         @endif
                     </li>
                     {{--<li>--}}
@@ -269,7 +270,7 @@
                                 <li><a href="{{ route('blog.index') }}">blog</a></li>
                                 <li><a href="{{ route('page.faq') }}">FAQ</a></li>
                                 <li><a href="{{ route('page.how-we-help') }}">how we help</a></li>
-                                <li><a href="{{ route('campaign.create') }}">start a fundraiser</a></li>
+                                <li><a data-toggle="modal">start a fundraiser</a></li>
                                 <li><a href="#search">find a fundraiser</a></li>
 
                                 <!-- <li><a href="/find-funeral-home">find a funeral home</a></li> -->
