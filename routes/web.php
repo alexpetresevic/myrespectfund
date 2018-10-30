@@ -9,7 +9,7 @@ Auth::routes();
 
 
 
-// Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/auth/facebook/redirect', 'SocialAuthFacebookController@redirect')->name('facebook.signin');
 Route::get('/auth/facebook/callback', 'SocialAuthFacebookController@callback');
 
@@ -27,7 +27,7 @@ Route::get('/start-fundraiser/{step?}/{campaign?}', 'CampaignController@create')
 
 Route::middleware(['auth'])->group(function (){
 
-    Route::get('/', 'HomeController@index')->name('home');
+    // Route::get('/', 'HomeController@index')->name('home');
     Route::get('/my-fundraiser', 'CampaignController@dashboard')->name('campaign.dashboard');
     Route::post('/my-fundraiser/post-update', 'CampaignController@postUpdate')->name('campaign.dashboard.post-update');
     Route::get('/my-fundraiser/resources', 'CampaignController@toolkit')->name('campaign.dashboard.toolkit');
