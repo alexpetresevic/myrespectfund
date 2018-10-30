@@ -396,7 +396,7 @@
         <ul class="footer-bottom__list">
             <li><a href="{{ route('page.privacy') }}">privacy policy</a></li>
             <li><a href="{{ route('page.terms') }}">terms of use</a></li>
-            <li><i class="far fa-copyright"></i>2017 My Respects</li>
+            <li><i class="far fa-copyright"></i>{{ now()->year }} My Respects</li>
         </ul>
     </div>
     <div class="footer-shadow">
