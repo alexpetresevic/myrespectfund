@@ -70,181 +70,200 @@
 <header id="header" style="background-image: url('{{asset('/img/purple-header.png')}}')">
     <nav class="navbar">
         <div class="navbar-main">
-            <div class="navbar-brand">
-                <a href="{{ route('home') }}"><img src="{{asset('/img/logo.png')}}" alt="logo"></a>
-            </div>
-            <div class="navbar-main__section">
-                <ul>
-                    <li>
-                        @if (!auth()->guest() && $campaign = auth()->user()->campaigns()->first())
-                            <a class="fundraiser-start" href="{{ route('campaign.dashboard') }}"><span>My
-                                                    fundraiser </span></a>
-                        @elseif(!auth()->guest() && auth()->user()->is('affiliate'))
-                            <a href="{{ route('partner.index') }}">Partner Dashboard</a>
-                        @else
-                            <a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a>
-                        @endif
-                    </li>
-                    {{--<li>--}}
-                    {{--<a href="#search">Find a fundraiser</a>--}}
-                    {{--</li>--}}
-                </ul>
-            </div>
-
-
-            <div class="navbar-main__right">
-                <nav class="navbar">
-                    <div class="form-wrap">
-                        <form class="search-form" method="get" action="{{route('campaign.search')}}"
-                              class="search-form">
-
-                            <label for="search-form">search</label>
-                            <input id="search-form" type="text" name="search"
-                                   placeholder="for a fundraiser to support">
-                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                        </form>
-                    </div>
-                    <ul class="navbar-signin">
-                        @if(auth()->guest())
-                            <li class="sign-in__button">
-                                <button type="button" data-toggle="modal" data-target="#signInModal">sign in</button>
-                            </li>
-                            {{--<li class="sign-in__button"><a href="{{ route('login') }}">sign in</a></li>--}}
-                            {{--<li class="sign-up__button"><a href="{{ route('register') }}">sign up</a></li>--}}
-                        @else
-                            <li class="nav-item account-dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    @if (auth()->user()->image()->exists())
-                                        <img class="img-avatar48 rounded-circle"
-                                             src="{{ asset('uploads/users/' . auth()->user()->image->filename) }}">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="menu-left">
+                        <div class="navbar-brand">
+                            <a href="{{ route('home') }}"><img src="{{asset('/img/logo.png')}}" alt="logo"></a>
+                        </div>
+                        <div class="navbar-main__section">
+                            @if (!auth()->guest() && $campaign = auth()->user()->campaigns()->first())
+                                        <a class="fundraiser-start" href="{{ route('campaign.dashboard') }}"><span>My
+                                                                fundraiser </span></a>
+                                    @elseif(!auth()->guest() && auth()->user()->is('affiliate'))
+                                        <a href="{{ route('partner.index') }}">Partner Dashboard</a>
                                     @else
-                                        <img class="img-avatar48 rounded-circle"
-                                             src="{{asset('/img/noavatar.jpg')}}">
+                                        <!-- <a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a> -->
+                                        <a class="fundraiser-start" data-toggle="modal" data-target="#signUpModal"><span>start your fundraiser here</span></a>
                                     @endif
-                                    <p>Hello {{ auth()->user()->first_name }}</p><i
-                                            class="fas fa-angle-down"></i>
-                                </a>
-                                <div class="dropdown-menu account-logout dropdown"
-                                     aria-labelledby="navbarDropdown">
-                                    @if(auth()->user()->is('affiliate'))
-                                        <a class="dropdown-item" href="{{ route('partner.index') }}">Partner
-                                            Dashboard</a>
-                                    @endif
-                                    @if(auth()->user()->is('admin'))
-                                        <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Admin
-                                            Dashboard</a>
-                                    @endif
-                                    @if(!is_null(auth()->user()->campaign))
-                                        <a class="dropdown-item"
-                                           href="{{ route('campaign.dashboard') }}">My
-                                            Fundraiser</a>
-                                    @endif
-                                    <a class="dropdown-item" href="{{ route('user.profile') }}">Edit
-                                        Profile</a>
-                                    <a class="dropdown-item" id="" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">logout</a>
+                            <!-- <ul>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                          style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </div>
-                            </li>
-                        @endif
-                    </ul>
-                    <div class="navbar-menu__button">
-                        <div class="dropdown">
-                            <button class="dropdown-toggle__mobile" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                menu <i
-                                        class="fas fa-angle-down"></i>
-                            </button>
-                            <button class="dropdown-toggle__desk" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                menu <i
-                                        class="fas fa-angle-down"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <ul class="dropdown-menu__section">
-                                    @if(auth()->guest())
-                                        <li class="signin__mobile"><a class="dropdown-item"
-                                                                      href="{{ route('login') }}">sign
-                                                in</a>
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                               href="{{ route('campaign.create') }}">create your
-                                                fundraiser</a>
-                                        </li>
-                                        <li class="menu-header">Funeral Service Provider<a
-                                                    class="dropdown-item link-bottom"
-                                                    href="{{ route('funeral-home.create') }}">submit my
-                                                business</a></li>
-
-                                        {{--<li class="signin__mobile"><a class="dropdown-item"--}}
-                                        {{--href="{{ route('login') }}">sign up</a>--}}
-                                        {{--</li>--}}
+                                <li>
+                                    @if (!auth()->guest() && $campaign = auth()->user()->campaigns()->first())
+                                        <a class="fundraiser-start" href="{{ route('campaign.dashboard') }}"><span>My
+                                                                fundraiser </span></a>
+                                    @elseif(!auth()->guest() && auth()->user()->is('affiliate'))
+                                        <a href="{{ route('partner.index') }}">Partner Dashboard</a>
                                     @else
-                                        <li class="signin__mobile">
-                                            <a class="dropdown-item" href="{{ route('user.profile') }}">Edit
-                                                Profile</a>
-                                            @if(auth()->user()->is('affiliate'))
-                                                <a class="dropdown-item"
-                                                   href="{{ route('partner.index') }}">Partner
-                                                    Dashboard</a>
-                                            @endif
-                                            @if(auth()->user()->is('admin'))
-                                                <a class="dropdown-item"
-                                                   href="{{ route('admin.dashboard') }}">Admin
-                                                    Dashboard</a>
-                                            @endif
-                                            @if(!is_null(auth()->user()->campaign))
-                                                <a class="dropdown-item"
-                                                   href="{{ route('campaign.dashboard') }}">My
-                                                    Fundraiser</a>
-                                            @endif
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                               href="{{ route('page.how-we-help') }}">how
-                                                we
-                                                help</a></li>
-                                        <li><a class="dropdown-item"
-                                               href="{{ route('funeral-home.create') }}">become
-                                                a partner</a></li>
-                                        <li class="signin__mobile">
-                                            <a class="dropdown-item" id="" href="{{ route('logout') }}"
-                                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">logout</a>
-                                        </li>
+                                        {{--<a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a>--}}
+                                        <a class="fundraiser-start" data-toggle="modal" data-target="#signUpModal"><span>start your fundraiser here</span></a>
                                     @endif
-                                    <li><a class="dropdown-item"
-                                           href="{{ route('page.how-we-help') }}">how we help</a>
-                                    </li>
-                                    <li><a class="dropdown-item"
-                                           href="{{ route('blog.index') }}">blog</a>
-                                    </li>
-                                    <li><a class="dropdown-item"
-                                           href="{{ route('news.index') }}">press/news</a>
-                                    </li>
-                                    <li><a class="dropdown-item"
-                                           href="{{ route('page.faq') }}">FAQ</a>
-                                    </li>
-                                    <li><a class="dropdown-item"
-                                           href="#search">search</a>
-                                    </li>
-                                    <li><a class="dropdown-item"
-                                           href="{{ route('page.contact') }}">contact us</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                </li>
+                                <li>
+                                <a href="#search">Find a fundraiser</a>
+                                </li>
+                            </ul> -->
                         </div>
                     </div>
-                </nav>
+                </div>
+                <div class="col-lg-5">
+                    <div class="navbar-main__right">
+                        <nav class="navbar">
+                            <div class="form-wrap">
+                                <form class="search-form" method="get" action="{{route('campaign.search')}}"
+                                    class="search-form">
+
+                                    <label for="search-form">search</label>
+                                    <input id="search-form" type="text" name="search"
+                                        placeholder="for a fundraiser to support">
+                                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                                </form>
+                            </div>
+                            <div class="menu-right">
+                                <ul class="navbar-signin">
+                                    @if(auth()->guest())
+                                        <li class="sign-in__button">
+                                            <button type="button" data-toggle="modal" data-target="#signInModal">sign in</button>
+                                        </li>
+                                        <!-- <li class="sign-in__button"><a href="{{ route('login') }}">sign in</a></li>
+                                        <li class="sign-up__button"><a href="{{ route('register') }}">sign up</a></li> -->
+                                    @else
+                                        <li class="nav-item account-dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                @if (auth()->user()->image()->exists())
+                                                    <img class="img-avatar48 rounded-circle"
+                                                        src="{{ asset('uploads/users/' . auth()->user()->image->filename) }}">
+                                                @else
+                                                    <img class="img-avatar48 rounded-circle"
+                                                        src="{{asset('/img/noavatar.jpg')}}">
+                                                @endif
+                                                <p>Hello {{ auth()->user()->first_name }}</p><i
+                                                        class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu account-logout dropdown"
+                                                aria-labelledby="navbarDropdown">
+                                                @if(auth()->user()->is('affiliate'))
+                                                    <a class="dropdown-item" href="{{ route('partner.index') }}">Partner
+                                                        Dashboard</a>
+                                                @endif
+                                                @if(auth()->user()->is('admin'))
+                                                    <a class="dropdown-item" href="{{ route('admin.dashboard') }}">Admin
+                                                        Dashboard</a>
+                                                @endif
+                                                @if(!is_null(auth()->user()->campaign))
+                                                    <a class="dropdown-item"
+                                                    href="{{ route('campaign.dashboard') }}">My
+                                                        Fundraiser</a>
+                                                @endif
+                                                <a class="dropdown-item" href="{{ route('user.profile') }}">Edit
+                                                    Profile</a>
+                                                <a class="dropdown-item" id="" href="{{ route('logout') }}"
+                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">logout</a>
+
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                    style="display: none;">
+                                                    {{ csrf_field() }}
+                                                </form>
+                                            </div>
+                                        </li>
+                                    @endif
+                                </ul>
+                                <div class="navbar-menu__button">
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle__mobile" type="button" id="dropdownMenuButton"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            menu <i
+                                                    class="fas fa-angle-down"></i>
+                                        </button>
+                                        <button class="dropdown-toggle__desk" type="button" id="dropdownMenuButton"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            menu <i
+                                                    class="fas fa-angle-down"></i>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <ul class="dropdown-menu__section">
+                                                @if(auth()->guest())
+                                                    <li class="signin__mobile"><a class="dropdown-item"
+                                                                                href="{{ route('login') }}">sign
+                                                            in</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                        href="{{ route('campaign.create') }}">create your
+                                                            fundraiser</a>
+                                                    </li>
+                                                    <li class="menu-header">Funeral Service Provider<a
+                                                                class="dropdown-item link-bottom"
+                                                                href="{{ route('funeral-home.create') }}">submit my
+                                                            business</a></li>
+
+                                                    {{--<li class="signin__mobile"><a class="dropdown-item"--}}
+                                                    {{--href="{{ route('login') }}">sign up</a>--}}
+                                                    {{--</li>--}}
+                                                @else
+                                                    <li class="signin__mobile">
+                                                        <a class="dropdown-item" href="{{ route('user.profile') }}">Edit
+                                                            Profile</a>
+                                                        @if(auth()->user()->is('affiliate'))
+                                                            <a class="dropdown-item"
+                                                            href="{{ route('partner.index') }}">Partner
+                                                                Dashboard</a>
+                                                        @endif
+                                                        @if(auth()->user()->is('admin'))
+                                                            <a class="dropdown-item"
+                                                            href="{{ route('admin.dashboard') }}">Admin
+                                                                Dashboard</a>
+                                                        @endif
+                                                        @if(!is_null(auth()->user()->campaign))
+                                                            <a class="dropdown-item"
+                                                            href="{{ route('campaign.dashboard') }}">My
+                                                                Fundraiser</a>
+                                                        @endif
+                                                    </li>
+                                                    <li><a class="dropdown-item"
+                                                        href="{{ route('page.how-we-help') }}">how
+                                                            we
+                                                            help</a></li>
+                                                    <li><a class="dropdown-item"
+                                                        href="{{ route('funeral-home.create') }}">become
+                                                            a partner</a></li>
+                                                    <li class="signin__mobile">
+                                                        <a class="dropdown-item" id="" href="{{ route('logout') }}"
+                                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">logout</a>
+                                                    </li>
+                                                @endif
+                                                <li><a class="dropdown-item"
+                                                    href="{{ route('page.how-we-help') }}">how we help</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                    href="{{ route('blog.index') }}">blog</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                    href="{{ route('news.index') }}">press/news</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                    href="{{ route('page.faq') }}">FAQ</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                    href="#search">search</a>
+                                                </li>
+                                                <li><a class="dropdown-item"
+                                                    href="{{ route('page.contact') }}">contact us</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="search" class="search-box__section">
             <form role="search" id="searchform" action="{{ route('campaign.search') }}"
                   method="get">
-                <span class="close">&times;</span>
+                <a class="close"><i class="far fa-times-circle"></i></a>
                 <div class="offset-md-2 col-md-8">
                     <input value="" id="campaign-search-input" name="search" type="text"
                            placeholder="search for a fundraiser"/>
@@ -252,19 +271,6 @@
             </form>
 
         </div>
-
-
-        <div id="search" class="search-box__section">
-            <form role="search" id="searchform" action="{{ route('campaign.search') }}"
-                  method="get">
-                <span class="close">&times;</span>
-                <div class="offset-md-2 col-md-8">
-                    <input value="" id="campaign-search-input" name="search" type="text"
-                           placeholder="search for a fundraiser"/>
-                </div>
-            </form>
-        </div>
-
     </nav>
 </header>
 <div class="body-wrapper">
@@ -282,7 +288,7 @@
                                 <li><a href="{{ route('blog.index') }}">blog</a></li>
                                 <li><a href="{{ route('page.faq') }}">FAQ</a></li>
                                 <li><a href="{{ route('page.how-we-help') }}">how we help</a></li>
-                                <li><a href="{{ route('campaign.create') }}">start a fundraiser</a></li>
+                                <li><a data-toggle="modal">start a fundraiser</a></li>
                                 <li><a href="#search">find a fundraiser</a></li>
 
                                 <!-- <li><a href="/find-funeral-home">find a funeral home</a></li> -->
@@ -567,9 +573,9 @@
                                                name="password_confirmation" required>
                                     </div>
                                     <div class="form-agree">
-                                        <p>"By signing up, you agree to our <a href="{{ route('page.terms') }}">Terms of
+                                        <p>"By signing up, you agree to our <a href="{{ route('page.terms') }}" target="_blank">Terms of
                                                 Use</a> and <a
-                                                    href="{{ route('page.privacy') }}">Privacy Policy".</a></p>
+                                                    href="{{ route('page.privacy') }}" target="_blank">Privacy Policy".</a></p>
                                     </div>
 
                                 </div>
@@ -591,7 +597,7 @@
                             </div>
 
                             <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign
-                                up to find a fundraiser,a
+                                up to find a fundraiser.
                                 <a href="#search">click here</a> to search for a fundraiser to support.</p>
                         </div>
                     </form>
@@ -672,4 +678,3 @@
 @stack('stack-script')
 </body>
 </html>
-
