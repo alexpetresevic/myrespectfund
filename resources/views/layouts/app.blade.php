@@ -78,8 +78,7 @@
                         </div>
                         <div class="navbar-main__section">
                             @if (!auth()->guest() && $campaign = auth()->user()->campaigns()->first())
-                                        <a class="fundraiser-start" href="{{ route('campaign.dashboard') }}"><span>My
-                                                                fundraiser </span></a>
+                                        <a class="fundraiser-start" href="{{ route('campaign.dashboard') }}"><span>Manage my fundraiser</span></a>
                                     @elseif(!auth()->guest() && auth()->user()->is('affiliate'))
                                         <a href="{{ route('partner.index') }}">Partner Dashboard</a>
 
@@ -132,6 +131,7 @@
                                         <li class="nav-item account-dropdown">
                                             <a class="nav-link" href="#" id="navbarDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            
                                                 @if (auth()->user()->image()->exists())
                                                     <img class="img-avatar48 rounded-circle"
                                                         src="{{ asset('uploads/users/' . auth()->user()->image->filename) }}">
