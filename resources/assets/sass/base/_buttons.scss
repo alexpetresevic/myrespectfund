@@ -1,3 +1,9 @@
+.g-recaptcha {
+  transform:scale(0.77);
+  transform-origin:0 0;
+}
+
+
 .navbar-menu__button {
   display: inline-block;
   button {
@@ -47,6 +53,7 @@
       display: none;
     }
     svg {
+      font-size: 20px;
       margin-left: 5px;
     }
   }
@@ -67,11 +74,29 @@
       display: none;
     }
     svg {
+      font-size: 20px;
       margin-left: 5px;
+      position: relative;
+      top: 2px;
     }
   }
 }
-
+a:not([href]):not([tabindex]) {
+  display: inline-block;
+  text-transform: capitalize;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover{
+    text-decoration: none;
+    color: #d0b041;
+  }
+}
 .navbar-main__right {
   .nav-link {
     img {
@@ -80,6 +105,14 @@
     p {
       display: inline-block;
       padding: 0 5px;
+      position: relative;
+      top: 2px;
+    }
+    svg{
+      font-size: 20px;
+      margin-left: 5px;
+      position: relative;
+      top: 2px;
     }
   }
 }

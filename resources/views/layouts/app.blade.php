@@ -82,6 +82,7 @@
                                                                 fundraiser </span></a>
                                     @elseif(!auth()->guest() && auth()->user()->is('affiliate'))
                                         <a href="{{ route('partner.index') }}">Partner Dashboard</a>
+
                                     @else
                                         <!-- <a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a> -->
                                         <a class="fundraiser-start" data-toggle="modal" data-target="#signUpModal"><span>start your fundraiser here</span></a>
@@ -288,7 +289,8 @@
                                 <li><a href="{{ route('blog.index') }}">blog</a></li>
                                 <li><a href="{{ route('page.faq') }}">FAQ</a></li>
                                 <li><a href="{{ route('page.how-we-help') }}">how we help</a></li>
-                                <li><a data-toggle="modal">start a fundraiser</a></li>
+
+                                <li><a data-toggle="modal" data-target="#signUpModal">start a fundraiser</a></li>
                                 <li><a href="#search">find a fundraiser</a></li>
 
                                 <!-- <li><a href="/find-funeral-home">find a funeral home</a></li> -->
@@ -625,7 +627,7 @@
 <div class="message-alert" style="display: none">
     <div><p>You have new message<span class="tagRemove" id="alert-remove">&times;</span></p></div>
 </div>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+
 <script src="{{ asset('/js/app.js') }}"></script>
 <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
