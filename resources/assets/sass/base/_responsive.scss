@@ -146,10 +146,14 @@
       }
       .menu-right{
         float: none;
+        text-align: center;
       }
     }
     .search-form{
       margin: 0;
+    }
+    .search-form{
+      right: 0;
     }
   }
   .dropdown-toggle {

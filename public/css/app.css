@@ -10391,7 +10391,7 @@ header {
   color: #000;
   border: none;
   padding: 3px 3px 3px 10px;
-  width: 230px;
+  width: 220px;
   height: 38px;
   margin-left: -5px;
 }
@@ -17635,7 +17635,7 @@ body.no-scroll {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #774b92;
+  color: #a8a8a8;
   text-transform: capitalize;
   font-size: 16px;
   margin-bottom: 0;
@@ -17816,7 +17816,7 @@ body.no-scroll {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #774b92;
+  color: #a8a8a8;
   text-transform: capitalize;
   font-size: 16px;
   margin-bottom: 0;
@@ -18516,10 +18516,15 @@ body.no-scroll {
 
   .navbar .navbar-main .menu-right {
     float: none;
+    text-align: center;
   }
 
   .navbar .search-form {
     margin: 0;
+  }
+
+  .navbar .search-form {
+    right: 0;
   }
 
   .dropdown-toggle__desk {

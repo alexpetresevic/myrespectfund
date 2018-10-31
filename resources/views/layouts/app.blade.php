@@ -459,7 +459,7 @@
                                 </button>
                             </div>
                             <p>If you are only looking to contribute to a fundraiser, you do not need to login or sign
-                                up to find a fundraiser,a
+                                up to find a fundraiser.
                                 <a href="#search">click here</a> to search for a fundraiser to support.</p>
                             {{--<div class="signin-fb__button">--}}
                             {{--<a href="{{ route('facebook.signin') }}">sign in via facebook</a>--}}
