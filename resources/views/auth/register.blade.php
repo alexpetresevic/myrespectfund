@@ -59,7 +59,8 @@
                         </div>
 
                         <div class="form-group">
-                            {!! NoCaptcha::display() !!}
+                            {{-- {!! NoCaptcha::display() !!} --}}
+                            {!! app('captcha')->render(); !!}
 
                             @if ($errors->has('g-recaptcha-response'))
                                 <span class="help-block text-danger">
