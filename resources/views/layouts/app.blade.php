@@ -107,9 +107,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="navbar-main__right">
-                        <nav class="navbar">
-                            <div class="form-wrap">
+                <div class="form-wrap">
                                 <form class="search-form" method="get" action="{{route('campaign.search')}}"
                                     class="search-form">
 
@@ -119,6 +117,10 @@
                                     <button type="submit"><i class="fas fa-arrow-right"></i></button>
                                 </form>
                             </div>
+                    <div class="navbar-main__right">
+
+                        <nav class="navbar">
+
                             <div class="menu-right">
                                 <ul class="navbar-signin">
                                     @if(auth()->guest())
@@ -131,7 +133,7 @@
                                         <li class="nav-item account-dropdown">
                                             <a class="nav-link" href="#" id="navbarDropdown" role="button"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            
+
                                                 @if (auth()->user()->image()->exists())
                                                     <img class="img-avatar48 rounded-circle"
                                                         src="{{ asset('uploads/users/' . auth()->user()->image->filename) }}">

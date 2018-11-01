@@ -10368,8 +10368,9 @@ header {
 .navbar .search-form {
   margin: 0;
   position: relative;
-  right: 10px;
+  right: 105px;
   z-index: 99;
+  text-align: right;
 }
 
 .navbar .search-form label {
@@ -10487,6 +10488,7 @@ header {
   margin-right: 40px;
   float: right;
   text-align: right;
+  position: relative;
 }
 
 .navbar-main .navbar-main__right .dropdown-menu ul {
@@ -18527,6 +18529,15 @@ body.no-scroll {
     right: 0;
   }
 
+  .navbar .form-wrap {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-bottom: 20px;
+    width: 285px;
+  }
+
   .dropdown-toggle__desk {
     display: none;
   }
@@ -19090,12 +19101,6 @@ body.no-scroll {
     height: auto;
   }
 
-  .navbar .form-wrap {
-    float: none;
-    width: 100%;
-    top: 0;
-  }
-
   .navbar .search-form {
     margin: 0 0 10px 0;
     width: 100%;
@@ -19256,10 +19261,6 @@ body.no-scroll {
 }
 
 @media (max-width: 480px) {
-  body header {
-    height: 240px;
-  }
-
   .sign-up__modal .modal-header img {
     width: 100%;
   }
