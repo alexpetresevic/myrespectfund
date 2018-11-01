@@ -20729,13 +20729,20 @@ $(function () {
             $searchInput.focus();
         }, 500);
     });
-    $('#search, #search button.close').on('click keyup', function (event) {
+    $('#search, #search .close').on('click keyup', function (event) {
         if (event.target.className == 'close') {
             $(this).removeClass('open');
             setTimeout(function () {
                 $('body').removeClass('no-scroll');
             }, 500);
         }
+    });
+
+    $('.close').on('click', function () {
+        $('#search').removeClass('open');
+        setTimeout(function () {
+            $('body').removeClass('no-scroll');
+        }, 500);
     });
 
     if ($('.funeral-alert')) {

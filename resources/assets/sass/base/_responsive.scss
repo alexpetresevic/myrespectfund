@@ -13,8 +13,8 @@
   }
   .navbar {
     .navbar-brand {
-      top: -8px;
-      width: 160px;
+      top: -20px;
+      width: 250px;
     }
     .search-form {
       input {
@@ -42,7 +42,6 @@
     padding: 7px 25px;
   }
   .navbar-main {
-    top: 25px;
     .form-logo {
       img {
         width: 20%;
@@ -127,8 +126,41 @@
       margin-bottom: 10px;
       a {
         display: inline-block;
-        width: 160px;
+        width: 200px;
       }
+    }
+    .menu-left{
+      top: 0;
+      a{
+        padding: 0;
+      }
+    }
+    .navbar-main{
+      &__section{
+        float: none;
+        margin-bottom: 20px;
+      }
+      &__right{
+        float: none;
+        margin-right: 0;
+      }
+      .menu-right{
+        float: none;
+        text-align: center;
+      }
+    }
+    .search-form{
+      margin: 0;
+    }
+    .search-form{
+      right: 0;
+    }
+    .form-wrap{
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 20px;
+      width: 285px;
     }
   }
   .dropdown-toggle {
@@ -142,7 +174,6 @@
   body {
     width: 100% !important;
     header {
-      height: 120px;
       width: 100% !important;
     }
   }
@@ -431,66 +462,38 @@
   }
 }
 
-@media (max-width: 850px) {
-  body {
-    header {
-      height: 180px;
-    }
-  }
-  .account-dropdown {
-    .dropdown-menu {
-      right: 10px;
-      top: 45px;
-      left: auto;
-    }
-  }
-  .navbar {
-    .navbar-main {
-      &__section {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-      &__right {
-        margin-right: 0;
-        float: none;
-      }
-    }
-  }
-}
-
-@media (max-width: 780px) {
-  body {
-    header {
-      height: 180px;
-    }
-  }
-  .account-dropdown {
-    .dropdown-menu {
-      right: 10px;
-      top: 45px;
-      left: auto;
-    }
-  }
-  .navbar {
-    .navbar-main {
-      &__section {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-      &__right {
-        margin-right: 0;
-        float: none;
-      }
-    }
-  }
-}
+// @media (max-width: 850px) {
+//   body {
+//     header {
+//       height: 180px;
+//     }
+//   }
+//   .account-dropdown {
+//     .dropdown-menu {
+//       right: 10px;
+//       top: 45px;
+//       left: auto;
+//     }
+//   }
+//   .navbar {
+//     .navbar-main {
+//       &__section {
+//         width: 100%;
+//         text-align: center;
+//         margin-bottom: 10px;
+//       }
+//       &__right {
+//         margin-right: 0;
+//         float: none;
+//       }
+//     }
+//   }
+// }
 
 @media (max-width: 767px) {
   body {
     header {
-      height: 180px;
+      height: auto;
     }
   }
   .sign-up__modal .modal-header .close {
@@ -581,7 +584,7 @@
       &__section {
         width: 100%;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
       &__right {
         margin-right: 0;
@@ -742,54 +745,14 @@
   }
 }
 
-@media (max-width: 680px) {
-  body {
-    header {
-      height: 230px;
-    }
-  }
-  .sign-in {
-    &__modal {
-      .modal-body {
-        form {
-          .form-bottom {
-            padding: 20px 10px;
-          }
-        }
-      }
-    }
-  }
-  .navbar {
-    .form-wrap {
-      float: none;
-      width: 100%;
-      top: 0;
-    }
-    .search-form {
-      margin: 0 0 10px 0;
-      width: 100%;
-    }
-    .navbar-main {
-      &__section {
-        margin: 0;
-      }
-
-    }
-  }
-}
-
 @media (max-width: 580px) {
   body {
     header {
-      height: 230px;
+      height: auto;
     }
   }
   .navbar {
-    .form-wrap {
-      float: none;
-      width: 100%;
-      top: 0;
-    }
+  
     .search-form {
       margin: 0 0 10px 0;
       width: 100%;
@@ -970,11 +933,7 @@
 }
 
 @media (max-width: 480px) {
-  body {
-    header {
-      height: 240px;
-    }
-  }
+
   .sign-up__modal .modal-header img{
     width: 100%;
   }
@@ -1204,7 +1163,7 @@
   }
   .navbar {
     .navbar-main__section {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       ul {
         text-align: center;
       }

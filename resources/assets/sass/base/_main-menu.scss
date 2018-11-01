@@ -6,20 +6,83 @@
   height: 100%;
   .navbar-brand {
     position: relative;
-    top: -10px;
-    width: 200px;
+    top: -20px;
+    width: 250px;
     padding: 0;
     margin-left: 20px;
     vertical-align: top;
     img {
       width: 100%;
-
     }
   }
+
+  .menu-left {
+    position: relative;
+    top: 25px;
+    width: 100%;
+    display: inline-block;
+    a {
+      display: inline-block;
+      padding: 0 20px;
+      color: #ffffff;
+      font-family: $font1;
+      font-size: 16px;
+      font-weight: 500;
+      -webkit-transition: 0.4s;
+      -moz-transition: 0.4s;
+      -ms-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s;
+      text-decoration: none;
+      &:focus {
+        text-decoration: none;
+        outline: 0;
+      }
+    }
+    .fundraiser-start {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      padding: 5px 20px;
+      color: #ffffff;
+      font-family: $font1;
+      font-size: 16px;
+      font-weight: 500;
+      -webkit-transition: 0.4s;
+      -moz-transition: 0.4s;
+      -ms-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #794d8f;
+      border: 1px solid #d0b041;
+      border-radius: 5px;
+      cursor: pointer;
+      span {
+        position: relative;
+        z-index: 99;
+      }
+      &:hover {
+        color: #ffffff;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      &:focus {
+        text-decoration: none;
+        outline: 0;
+      }
+    }
+  }
+
   .navbar-main__section {
     display: inline-block;
     text-align: right;
-    margin: 8px 0 0 20px;
+    float: right;
     ul {
       margin-bottom: 0;
       padding-left: 0;
@@ -28,7 +91,6 @@
       list-style: none;
     }
     li {
-
       display: inline;
       a {
         display: inline-block;
@@ -74,7 +136,7 @@
           z-index: 99;
         }
         &:before {
-          content: '';
+          content: "";
           z-index: 0;
           position: absolute;
           top: 0;
@@ -113,14 +175,13 @@
 .navbar {
   .form-wrap {
     position: relative;
-    float: left;
-    top: 4px;
   }
   .search-form {
-    margin: 0 10px 0 0;
+    margin: 0;
     position: relative;
-    //right: 0;
+    right: 105px;
     z-index: 99;
+    text-align: right;
     label {
       border-radius: 5px 0 0 5px;
       background: #fff;
@@ -139,7 +200,7 @@
       color: #000;
       border: none;
       padding: 3px 3px 3px 10px;
-      width: 230px;
+      width: 220px;
       height: 38px;
       margin-left: -5px;
       &:focus {
@@ -176,7 +237,6 @@
   left: auto;
   right: 0;
   top: 35px;
-
 }
 
 .dropdown-menu__account {
@@ -224,12 +284,16 @@
 .navbar-main {
   display: inline-block;
   position: relative;
-  top: 20px;
   width: 100%;
+  .menu-right {
+    float: right;
+  }
   .navbar-main__right {
     display: inline-block;
     margin-right: 40px;
     float: right;
+    text-align: right;
+    position: relative;
     .dropdown-menu {
       ul {
         list-style: none;
@@ -252,7 +316,6 @@
       .dropdown-item {
         color: $color;
       }
-
     }
     .dropdown-menu__account {
       ul {

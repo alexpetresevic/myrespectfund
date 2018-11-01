@@ -10184,7 +10184,7 @@ header {
   z-index: 1000;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100px;
+  height: auto;
   background-size: cover;
   border-bottom: 5px solid #ccb256;
   padding: 5px 0;
@@ -10200,8 +10200,8 @@ header {
 
 .navbar .navbar-brand {
   position: relative;
-  top: -10px;
-  width: 200px;
+  top: -20px;
+  width: 250px;
   padding: 0;
   margin-left: 20px;
   vertical-align: top;
@@ -10211,10 +10211,69 @@ header {
   width: 100%;
 }
 
+.navbar .menu-left {
+  position: relative;
+  top: 25px;
+  width: 100%;
+  display: inline-block;
+}
+
+.navbar .menu-left a {
+  display: inline-block;
+  padding: 0 20px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.navbar .menu-left a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.navbar .menu-left .fundraiser-start {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 5px 20px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #794d8f;
+  border: 1px solid #d0b041;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar .menu-left .fundraiser-start span {
+  position: relative;
+  z-index: 99;
+}
+
+.navbar .menu-left .fundraiser-start:hover {
+  color: #ffffff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar .menu-left .fundraiser-start:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
 .navbar .navbar-main__section {
   display: inline-block;
   text-align: right;
-  margin: 8px 0 0 20px;
+  float: right;
 }
 
 .navbar .navbar-main__section ul {
@@ -10272,7 +10331,7 @@ header {
 }
 
 .navbar .navbar-main__section li .fundraiser-start:before {
-  content: '';
+  content: "";
   z-index: 0;
   position: absolute;
   top: 0;
@@ -10304,14 +10363,14 @@ header {
 
 .navbar .form-wrap {
   position: relative;
-  float: left;
-  top: 4px;
 }
 
 .navbar .search-form {
-  margin: 0 10px 0 0;
+  margin: 0;
   position: relative;
+  right: 105px;
   z-index: 99;
+  text-align: right;
 }
 
 .navbar .search-form label {
@@ -10333,7 +10392,7 @@ header {
   color: #000;
   border: none;
   padding: 3px 3px 3px 10px;
-  width: 230px;
+  width: 220px;
   height: 38px;
   margin-left: -5px;
 }
@@ -10417,14 +10476,19 @@ header {
 .navbar-main {
   display: inline-block;
   position: relative;
-  top: 20px;
   width: 100%;
+}
+
+.navbar-main .menu-right {
+  float: right;
 }
 
 .navbar-main .navbar-main__right {
   display: inline-block;
   margin-right: 40px;
   float: right;
+  text-align: right;
+  position: relative;
 }
 
 .navbar-main .navbar-main__right .dropdown-menu ul {
@@ -17532,6 +17596,13 @@ body.no-scroll {
   color: #774b92;
 }
 
+.g-recaptcha {
+  -webkit-transform: scale(0.77);
+          transform: scale(0.77);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
 /* Sign in modal */
 
 .modal-content {
@@ -17540,7 +17611,7 @@ body.no-scroll {
 
 .sign-in__modal {
   background-color: #fff;
-  border: 4px solid #774b92;
+  border: 5px solid #774b92;
   border-radius: 7px;
 }
 
@@ -17566,11 +17637,12 @@ body.no-scroll {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #774b92;
+  color: #a8a8a8;
   text-transform: capitalize;
   font-size: 16px;
   margin-bottom: 0;
   margin-top: -15px;
+  font-weight: 700;
 }
 
 .sign-in__modal .modal-header .close {
@@ -17719,11 +17791,12 @@ body.no-scroll {
 
 .sign-up__modal {
   background-color: #fff;
-  border: 4px solid #774b92;
+  border: 5px solid #774b92;
   border-radius: 7px;
 }
 
 .sign-up__modal .modal-header {
+  padding: 5px;
   display: block;
   border: none;
   text-align: center;
@@ -17745,10 +17818,11 @@ body.no-scroll {
   bottom: 0;
   left: 0;
   right: 0;
-  color: #774b92;
+  color: #a8a8a8;
   text-transform: capitalize;
   font-size: 16px;
   margin-bottom: 0;
+  font-weight: 700;
 }
 
 .sign-up__modal .modal-header .close {
@@ -17827,8 +17901,12 @@ body.no-scroll {
 
 .sign-up__modal .modal-body form .form-top {
   position: relative;
-  padding: 20px 15px;
+  padding: 10px 15px 0;
   background-color: #f7f3f0;
+}
+
+.sign-up__modal .modal-body form .form-top .form-group {
+  margin-bottom: 10px;
 }
 
 .sign-up__modal .modal-body form .form-top .signin-fb__button {
@@ -17886,16 +17964,16 @@ body.no-scroll {
   content: '';
   border: 1px solid rgba(168, 168, 168, 0.5);
   position: absolute;
-  top: 25px;
-  height: 170px;
+  top: 15px;
+  height: 160px;
 }
 
 .sign-up__modal .modal-body form .form-top .signup-divider:after {
   content: '';
   border: 1px solid rgba(168, 168, 168, 0.5);
   position: absolute;
-  bottom: 35px;
-  height: 190px;
+  bottom: 15px;
+  height: 180px;
 }
 
 .sign-up__modal .modal-body form .form-top .signup-divider p {
@@ -17929,11 +18007,15 @@ body.no-scroll {
   background: #fff;
 }
 
+.sign-up__modal .modal-body form .form-bottom .form-group {
+  margin-bottom: 0;
+}
+
 .sign-up__modal .modal-body form .form-bottom p {
   font-family: "Roboto";
   color: #000;
   font-size: 12px;
-  margin: 20px 0;
+  margin: 20px 0 0;
   text-align: center;
   font-weight: 700;
 }
@@ -18300,8 +18382,8 @@ body.no-scroll {
   }
 
   .navbar .navbar-brand {
-    top: -8px;
-    width: 160px;
+    top: -20px;
+    width: 250px;
   }
 
   .navbar .search-form input {
@@ -18328,10 +18410,6 @@ body.no-scroll {
 
   .upload-photo__button {
     padding: 7px 25px;
-  }
-
-  .navbar-main {
-    top: 25px;
   }
 
   .navbar-main .form-logo img {
@@ -18417,7 +18495,47 @@ body.no-scroll {
 
   .navbar .navbar-brand a {
     display: inline-block;
-    width: 160px;
+    width: 200px;
+  }
+
+  .navbar .menu-left {
+    top: 0;
+  }
+
+  .navbar .menu-left a {
+    padding: 0;
+  }
+
+  .navbar .navbar-main__section {
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .navbar .navbar-main__right {
+    float: none;
+    margin-right: 0;
+  }
+
+  .navbar .navbar-main .menu-right {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar .search-form {
+    margin: 0;
+  }
+
+  .navbar .search-form {
+    right: 0;
+  }
+
+  .navbar .form-wrap {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-bottom: 20px;
+    width: 285px;
   }
 
   .dropdown-toggle__desk {
@@ -18433,7 +18551,6 @@ body.no-scroll {
   }
 
   body header {
-    height: 120px;
     width: 100% !important;
   }
 
@@ -18724,55 +18841,9 @@ body.no-scroll {
   }
 }
 
-@media (max-width: 850px) {
-  body header {
-    height: 180px;
-  }
-
-  .account-dropdown .dropdown-menu {
-    right: 10px;
-    top: 45px;
-    left: auto;
-  }
-
-  .navbar .navbar-main__section {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .navbar .navbar-main__right {
-    margin-right: 0;
-    float: none;
-  }
-}
-
-@media (max-width: 780px) {
-  body header {
-    height: 180px;
-  }
-
-  .account-dropdown .dropdown-menu {
-    right: 10px;
-    top: 45px;
-    left: auto;
-  }
-
-  .navbar .navbar-main__section {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .navbar .navbar-main__right {
-    margin-right: 0;
-    float: none;
-  }
-}
-
 @media (max-width: 767px) {
   body header {
-    height: 180px;
+    height: auto;
   }
 
   .sign-up__modal .modal-header .close {
@@ -18861,7 +18932,7 @@ body.no-scroll {
   .navbar .navbar-main__section {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .navbar .navbar-main__right {
@@ -19025,40 +19096,9 @@ body.no-scroll {
   }
 }
 
-@media (max-width: 680px) {
-  body header {
-    height: 230px;
-  }
-
-  .sign-in__modal .modal-body form .form-bottom {
-    padding: 20px 10px;
-  }
-
-  .navbar .form-wrap {
-    float: none;
-    width: 100%;
-    top: 0;
-  }
-
-  .navbar .search-form {
-    margin: 0 0 10px 0;
-    width: 100%;
-  }
-
-  .navbar .navbar-main__section {
-    margin: 0;
-  }
-}
-
 @media (max-width: 580px) {
   body header {
-    height: 230px;
-  }
-
-  .navbar .form-wrap {
-    float: none;
-    width: 100%;
-    top: 0;
+    height: auto;
   }
 
   .navbar .search-form {
@@ -19221,10 +19261,6 @@ body.no-scroll {
 }
 
 @media (max-width: 480px) {
-  body header {
-    height: 240px;
-  }
-
   .sign-up__modal .modal-header img {
     width: 100%;
   }
@@ -19412,7 +19448,7 @@ body.no-scroll {
   }
 
   .navbar .navbar-main__section {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .navbar .navbar-main__section ul {
