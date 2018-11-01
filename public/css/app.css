@@ -10368,8 +10368,9 @@ header {
 .navbar .search-form {
   margin: 0;
   position: relative;
-  right: 10px;
+  right: 105px;
   z-index: 99;
+  text-align: right;
 }
 
 .navbar .search-form label {
@@ -10487,6 +10488,7 @@ header {
   margin-right: 40px;
   float: right;
   text-align: right;
+  position: relative;
 }
 
 .navbar-main .navbar-main__right .dropdown-menu ul {
@@ -15882,6 +15884,8 @@ label.share-mail__label input:focus {
 
 footer {
   border-top: 10px solid #774b92;
+  position: relative;
+  z-index: 4;
 }
 
 footer .footer-link__list {
@@ -15958,6 +15962,17 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: #d0b041;
+}
+
+footer:before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  bottom: -30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#fff));
+  background-image: linear-gradient(#000, #fff);
+  z-index: 1;
 }
 
 .newsletter-img {
@@ -16093,9 +16108,14 @@ footer a:hover {
 
 .footer-upper {
   background-size: cover;
+  position: relative;
+  z-index: 4;
 }
 
 .footer-bottom {
+  z-index: 4;
+  position: relative;
+  margin-bottom: 30px;
   padding: 10px 0;
   background: #d6be69;
 }
@@ -18527,6 +18547,15 @@ body.no-scroll {
     right: 0;
   }
 
+  .navbar .form-wrap {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-bottom: 20px;
+    width: 285px;
+  }
+
   .dropdown-toggle__desk {
     display: none;
   }
@@ -19090,12 +19119,6 @@ body.no-scroll {
     height: auto;
   }
 
-  .navbar .form-wrap {
-    float: none;
-    width: 100%;
-    top: 0;
-  }
-
   .navbar .search-form {
     margin: 0 0 10px 0;
     width: 100%;
@@ -19256,10 +19279,6 @@ body.no-scroll {
 }
 
 @media (max-width: 480px) {
-  body header {
-    height: 240px;
-  }
-
   .sign-up__modal .modal-header img {
     width: 100%;
   }
