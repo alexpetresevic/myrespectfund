@@ -502,7 +502,7 @@
                     @php
                         $action = request()->has('start-campaign') ? url('/register?start-campaign=1') : url('/register');
                     @endphp
-                    <form role="form" method="POST" action="{{ $action }}">
+                    <form role="form" id="create-fundraiser" method="POST" action="{{ $action }}">
                         <div class="form-top">
                             {!! csrf_field() !!}
                             <div class="row">
@@ -585,8 +585,9 @@
                             </div>
                         </div>
                         <div class="form-bottom">
-                            <div class="form-group">
-                                {!! NoCaptcha::display() !!}
+                            <div class="form-group captcha-wrapp">
+                                {{-- {!! NoCaptcha::display() !!} --}}
+                                {!! app('captcha')->render(); !!}
 
                                 @if ($errors->has('g-recaptcha-response'))
                                     <span class="help-block text-danger">
