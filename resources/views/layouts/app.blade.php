@@ -408,9 +408,9 @@
             <li><i class="far fa-copyright"></i>2017 My Respects</li>
         </ul>
     </div>
-    <div class="footer-shadow">
+    <!-- <div class="footer-shadow">
         <img src="/img/shadow.png">
-    </div>
+    </div> -->
     @include('_organisations')
 
 </footer>

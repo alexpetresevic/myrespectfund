@@ -15884,6 +15884,8 @@ label.share-mail__label input:focus {
 
 footer {
   border-top: 10px solid #774b92;
+  position: relative;
+  z-index: 4;
 }
 
 footer .footer-link__list {
@@ -15960,6 +15962,17 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: #d0b041;
+}
+
+footer:before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  bottom: -30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#fff));
+  background-image: linear-gradient(#000, #fff);
+  z-index: 1;
 }
 
 .newsletter-img {
@@ -16095,9 +16108,14 @@ footer a:hover {
 
 .footer-upper {
   background-size: cover;
+  position: relative;
+  z-index: 4;
 }
 
 .footer-bottom {
+  z-index: 4;
+  position: relative;
+  margin-bottom: 30px;
   padding: 10px 0;
   background: #d6be69;
 }
