@@ -1,7 +1,6 @@
 footer {
   border-top: 10px solid $color;
   position: relative;
-  z-index: 4;
   .footer-link__list {
     padding: 40px 0;
   }
@@ -73,15 +72,6 @@ footer {
       text-decoration: none;
       color: #d0b041;
     }
-  }
-  &:before{
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 100px;
-    bottom: -30px;
-    background-image: linear-gradient(#000,#fff);
-    z-index: 1;
   }
 }
 
@@ -224,7 +214,6 @@ footer {
 .footer-bottom {
   z-index: 4;
   position: relative;
-  margin-bottom: 30px;
   padding: 10px 0;
   background: #d6be69;
   &__list {
@@ -255,7 +244,6 @@ footer {
       }
     }
   }
-  
 }
 
 

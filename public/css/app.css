@@ -10252,6 +10252,7 @@ header {
   border: 1px solid #d0b041;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 4;
 }
 
 .navbar .menu-left .fundraiser-start span {
@@ -10274,6 +10275,7 @@ header {
   display: inline-block;
   text-align: right;
   float: right;
+  position: relative;
 }
 
 .navbar .navbar-main__section ul {
@@ -10330,21 +10332,6 @@ header {
   z-index: 99;
 }
 
-.navbar .navbar-main__section li .fundraiser-start:before {
-  content: "";
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #774b92;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
 .navbar .navbar-main__section li .fundraiser-start:hover {
   color: #ffffff;
   -webkit-transition: 0.4s;
@@ -10359,6 +10346,34 @@ header {
 .navbar .navbar-main__section li .fundraiser-start:focus {
   text-decoration: none;
   outline: 0;
+}
+
+.navbar .navbar-main__section:before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 55%;
+  bottom: 7px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-main__section:after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  left: 55%;
+  right: 10px;
+  bottom: 7px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .navbar .form-wrap {
@@ -15885,7 +15900,6 @@ label.share-mail__label input:focus {
 footer {
   border-top: 10px solid #774b92;
   position: relative;
-  z-index: 4;
 }
 
 footer .footer-link__list {
@@ -15962,17 +15976,6 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: #d0b041;
-}
-
-footer:before {
-  content: '';
-  position: absolute;
-  width: 400px;
-  height: 100px;
-  bottom: -30px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#fff));
-  background-image: linear-gradient(#000, #fff);
-  z-index: 1;
 }
 
 .newsletter-img {
@@ -16115,7 +16118,6 @@ footer:before {
 .footer-bottom {
   z-index: 4;
   position: relative;
-  margin-bottom: 30px;
   padding: 10px 0;
   background: #d6be69;
 }

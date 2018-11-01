@@ -84,7 +84,7 @@
 
                                     @else
                                         <!-- <a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a> -->
-                                        <a class="fundraiser-start" data-toggle="modal" data-target="#signUpModal"><span>start your fundraiser here</span></a>
+                                        <a class="fundraiser-start" data-toggle="modal" data-target="#signUpModal"><span>start your fundraiser here</span> </a>
                                     @endif
                             <!-- <ul>
 
@@ -138,7 +138,7 @@
                                                     <img class="img-avatar48 rounded-circle"
                                                         src="{{ asset('uploads/users/' . auth()->user()->image->filename) }}">
                                                 @else
-                                                    <img class="img-avatar48 rounded-circle" src="{{asset('/img/default-profile.png')}}">
+                                                    <img class="img-avatar48 rounded-circle" src="{{asset('/img/default-profile.svg')}}">
                                                 @endif
                                                 <p>Hello {{ auth()->user()->first_name }}</p><i
                                                         class="fas fa-angle-down"></i>
@@ -407,10 +407,11 @@
             <li><a href="{{ route('page.terms') }}">terms of use</a></li>
             <li><i class="far fa-copyright"></i>2017 My Respects</li>
         </ul>
+
     </div>
-    <!-- <div class="footer-shadow">
+    <div class="footer-shadow">
         <img src="/img/shadow.png">
-    </div> -->
+    </div>
     @include('_organisations')
 
 </footer>
