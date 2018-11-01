@@ -10358,8 +10358,8 @@ header {
   height: 10px;
   border-radius: 50%;
   background-color: #000;
-  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.35);
 }
 
 .navbar .navbar-main__section:after {
@@ -10372,8 +10372,8 @@ header {
   height: 10px;
   border-radius: 50%;
   background-color: #000;
-  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.35);
 }
 
 .navbar .form-wrap {
