@@ -201,7 +201,7 @@
     <script type="text/javascript">
         (
             function (){
-                WePay.set_endpoint("stage"); // change to "production" when live
+                WePay.set_endpoint("staging"); // change to "production" when live
                 // Shortcuts
                 var d = document;
                 d.id = d.getElementById, valueById = function (id){
