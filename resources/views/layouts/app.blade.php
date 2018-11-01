@@ -74,7 +74,7 @@
                 <div class="col-lg-7">
                     <div class="menu-left">
                         <div class="navbar-brand">
-                            <a href="{{ route('home') }}"><img src="{{asset('/img/logo.png')}}" alt="logo"></a>
+                            <a href="{{ route('home') }}"><img src="{{asset('/img/logo.svg')}}" alt="logo"></a>
                         </div>
                         <div class="navbar-main__section">
                             @if (!auth()->guest() && $campaign = auth()->user()->campaigns()->first())
