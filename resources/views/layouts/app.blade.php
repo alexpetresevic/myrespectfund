@@ -565,7 +565,8 @@
                         </div>
                         <div class="form-bottom">
                             <div class="form-group captcha-wrapp">
-                                {!! NoCaptcha::display() !!}
+                                {{-- {!! NoCaptcha::display() !!} --}}
+                                {!! app('captcha')->render(); !!}
 
                                 @if ($errors->has('g-recaptcha-response'))
                                     <span class="help-block text-danger">
