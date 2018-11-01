@@ -1,13 +1,13 @@
+AuthUserFile /home/ext/domains/myrespects.dev.extraordinary.rs/site/public/.htpasswd
+AuthType Basic  
+AuthName "Enter Password To Proceed"  
+Require valid-user
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
 
     RewriteEngine On
-
-    #Force www:
-    RewriteCond %{HTTP_HOST} ^myrespects.com [NC]
-    RewriteRule ^(.*)$ https://www.myrespects.com/$1 [L,R=301,NC]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
@@ -21,6 +21,5 @@
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    # RewriteRule ^ index.php [L]
-    RewriteRule ^(.+)$ /index.php [L]
+    RewriteRule ^ index.php [L]
 </IfModule>
