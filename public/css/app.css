@@ -10643,7 +10643,7 @@ header {
 }
 
 .navbar-menu__button .dropdown .dropdown-toggle__mobile {
-  display: none;
+  display: inline-block;
 }
 
 .navbar-menu__button .dropdown .dropdown-toggle__mobile .menu-open {
@@ -18561,10 +18561,6 @@ body.no-scroll {
 
   .dropdown-toggle__desk {
     display: none;
-  }
-
-  .navbar-menu__button .dropdown .dropdown-toggle__mobile {
-    display: block;
   }
 
   body {
