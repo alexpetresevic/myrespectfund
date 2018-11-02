@@ -10208,7 +10208,7 @@ header {
 }
 
 .navbar .navbar-brand img {
-  width: 100%;
+  width: 250px;
 }
 
 .navbar .menu-left {
@@ -18951,7 +18951,6 @@ body.no-scroll {
   }
 
   .navbar .navbar-main__section {
-    width: 100%;
     text-align: center;
     margin-bottom: 20px;
   }

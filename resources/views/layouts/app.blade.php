@@ -73,9 +73,11 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="menu-left">
+                
                         <div class="navbar-brand">
                             <a href="{{ route('home') }}"><img src="{{asset('/img/logo.svg')}}" alt="logo"></a>
                         </div>
+
                         <div class="navbar-main__section">
                             @if (!auth()->guest() && $campaign = auth()->user()->campaigns()->first())
                                         <a class="fundraiser-start" href="{{ route('campaign.dashboard') }}"><span>Manage my fundraiser</span></a>
