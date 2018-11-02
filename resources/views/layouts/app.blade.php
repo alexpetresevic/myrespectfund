@@ -85,10 +85,10 @@
                                         <a href="{{ route('partner.index') }}">Partner Dashboard</a>
 
                                     @else
-                                        <!-- <a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a> -->
+                                        {{-- <a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a> --}}
                                         <a class="fundraiser-start" data-toggle="modal" data-target="#signUpModal"><span>start your fundraiser here</span> </a>
                                     @endif
-                            <!-- <ul>
+                            {{-- <ul>
 
                                 <li>
                                     @if (!auth()->guest() && $campaign = auth()->user()->campaigns()->first())
@@ -97,14 +97,14 @@
                                     @elseif(!auth()->guest() && auth()->user()->is('affiliate'))
                                         <a href="{{ route('partner.index') }}">Partner Dashboard</a>
                                     @else
-                                        {{--<a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a>--}}
+                                        <a class="fundraiser-start" href="{{ route('campaign.create') }}"><span>start your fundraiser here</span></a>
                                         <a class="fundraiser-start" data-toggle="modal" data-target="#signUpModal"><span>start your fundraiser here</span></a>
                                     @endif
                                 </li>
                                 <li>
                                 <a href="#search">Find a fundraiser</a>
                                 </li>
-                            </ul> -->
+                            </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -129,8 +129,8 @@
                                         <li class="sign-in__button">
                                             <button type="button" data-toggle="modal" data-target="#signInModal">sign in</button>
                                         </li>
-                                        <!-- <li class="sign-in__button"><a href="{{ route('login') }}">sign in</a></li>
-                                        <li class="sign-up__button"><a href="{{ route('register') }}">sign up</a></li> -->
+                                        {{-- <li class="sign-in__button"><a href="{{ route('login') }}">sign in</a></li>
+                                        <li class="sign-up__button"><a href="{{ route('register') }}">sign up</a></li> --}}
                                     @else
                                         <li class="nav-item account-dropdown">
                                             <a class="nav-link" href="#" id="navbarDropdown" role="button"
@@ -319,9 +319,9 @@
                                                    class="tw-share"><i class="fab fa-twitter-square"></i></a></li>
                                             {{--@endif--}}
                                             {{--@if(!is_null($settings->get('google_plus')))--}}
-                                        <!-- <li><a target="_blank" href="{{ $settings->get('google_plus') }}"
+                                        {{-- <li><a target="_blank" href="{{ $settings->get('google_plus') }}"
                                                        class="gg-share"><i class="fab fa-google-plus-square"></i></a>
-                                                </li> -->
+                                                </li> --}}
                                             {{--@endif--}}
                                             {{--@if(!is_null($settings->get('linkedin')))--}}
                                             <li><a target="_blank" href="{{ $settings->get('linkedin') }}"
