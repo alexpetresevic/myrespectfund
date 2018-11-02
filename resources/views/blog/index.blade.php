@@ -36,12 +36,13 @@
                                             </div>
                                             <div class="post_author">
                                                 <div class="post_img">
-                                                    @if($post->author->image)
+                                                    {{-- @if($post->author->image)
                                                         <img id="profile-image"
                                                              src="{{ asset('uploads/users/' . $post->author->image->filename) }}" alt="">
                                                     @else
                                                         <img id="profile-image" src="{{ asset('/img/noavatar.jpg') }}" alt="">
-                                                    @endif
+                                                    @endif --}}
+                                                    <img id="profile-image" src="{{ $post->author->image ? asset('uploads/users/' . $post->author->image->filename) : asset('/img/noavatar.jpg') }}" alt="">
                                                 </div>
                                                 <div class="post_text">
                                                     <p>{{ $post->author->first_name }} {{ $post->author->last_name }}</p>
