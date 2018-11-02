@@ -180,11 +180,11 @@
                                             menu <i
                                                     class="fas fa-angle-down"></i>
                                         </button>
-                                        <button class="dropdown-toggle__desk" type="button" id="dropdownMenuButton"
+                                        <!-- <button class="dropdown-toggle__desk" type="button" id="dropdownMenuButton"
                                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             menu <i
                                                     class="fas fa-angle-down"></i>
-                                        </button>
+                                        </button> -->
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <ul class="dropdown-menu__section">
                                                 @if(auth()->guest())

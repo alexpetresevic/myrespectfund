@@ -449,7 +449,7 @@
 .navbar-menu__button {
   .dropdown {
     .dropdown-toggle__mobile {
-      display: none;
+      display: inline-block;
       .menu-open {
         display: inline-block;
       }
