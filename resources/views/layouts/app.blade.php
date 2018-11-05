@@ -550,7 +550,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">email<span>(your primary email)</span></label>
+                                        <label for="email">email<span> (your primary email)</span></label>
                                         <input type="email"
                                                class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                                                name="email" value="{{ old('email') }}"
@@ -565,7 +565,7 @@
                                         <label for="password">password</label>
                                         <input type="password"
                                                class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                               name="password">
+                                               name="password" required>
                                         @if ($errors->has('password'))
                                             <div class="invalid-feedback">
                                                 <strong>{{ $errors->first('password') }}</strong>
