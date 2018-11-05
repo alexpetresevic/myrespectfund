@@ -140,7 +140,7 @@
                                                     <img class="img-avatar48 rounded-circle"
                                                         src="{{ asset('uploads/users/' . auth()->user()->image->filename) }}">
                                                 @else
-                                                    <img class="img-avatar48 rounded-circle" src="{{asset('/img/default-profile.svg')}}">
+                                                    <img class="img-avatar48 rounded-circle" src="{{asset('/img/default-profile.svg')}}" alt="profile image">
                                                 @endif
                                                 <p>Hello {{ auth()->user()->first_name }}</p><i
                                                         class="fas fa-angle-down"></i>

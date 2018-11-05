@@ -169,7 +169,7 @@
         </script>
     @endif
     <script type="text/javascript" src="https://static.wepay.com/min/js/tokenization.3.latest.js"></script>
-    <script type="text/javascript">
+    <script>
         (
             function (){
                 WePay.set_endpoint("production"); // change to "production" when live

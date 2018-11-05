@@ -10694,7 +10694,7 @@ header {
   background: #ccb256;
   height: 3px;
   width: 30px;
-  content: '';
+  content: "";
 }
 
 .menu-trigger:before {
@@ -10749,7 +10749,7 @@ header {
   top: 2px;
 }
 
-a:not([href]):not([tabindex]) {
+footer a:not([href]):not([tabindex]) {
   display: inline-block;
   text-transform: capitalize;
   font-family: "Roboto";
@@ -10762,7 +10762,7 @@ a:not([href]):not([tabindex]) {
   cursor: pointer;
 }
 
-a:not([href]):not([tabindex]):hover {
+footer a:not([href]):not([tabindex]):hover {
   text-decoration: none;
   color: #d0b041;
 }
@@ -11466,7 +11466,7 @@ a:not([href]):not([tabindex]):hover {
 }
 
 .control__indicator:after {
-  content: '';
+  content: "";
   position: absolute;
   display: none;
 }
