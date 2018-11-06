@@ -445,6 +445,11 @@
                                                class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                                                name="email"
                                                value="{{ old('email') }}" required>
+                                        @if ($errors->has('email'))
+                                            <div class="invalid-feedback">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </div>
+                                        @endif                                               
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -453,7 +458,12 @@
                                         <input id="password" type="password"
                                                class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                                name="password" required>
-                                    </div>
+                                        @if ($errors->has('password'))
+                                            <div class="invalid-feedback">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </div>
+                                        @endif                                                   
+                                    </div>                                
                                 </div>
                             </div>
                         </div>
