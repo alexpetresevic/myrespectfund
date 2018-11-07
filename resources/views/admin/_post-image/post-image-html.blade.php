@@ -14,12 +14,22 @@
 @if($postHasImage)
     <p id="image-message">Delete current image to upload a new one</p>
     <div class="admin-image__block">
-        @isset($post)
+        {{-- @isset($post)
             <img id="post-image" src="{{ asset('uploads/posts/' . $post->image->filename) }}" alt="">
         @endisset
         @isset($testimonial)
             <img id="post-image" src="{{ asset('uploads/testimonials/' . $testimonial->image->filename) }}" alt="">        
+        @endisset --}}
+        <img id="post-image"
+
+        @isset($post)
+            src="{{ asset('uploads/posts/' . $post->image->filename) }}"
         @endisset
+        @isset($testimonial)
+            src="{{ asset('uploads/testimonials/' . $testimonial->image->filename) }}"       
+        @endisset
+        
+        alt="">
         <span id="remove-uploaded-image" class="img-remove">&times;</span>
         <img id="funeral-home-image-preview" src="#" alt="" style="display: none">
     </div>

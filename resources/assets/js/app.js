@@ -73,25 +73,42 @@ $(function () {
         }
     });
 
+    //Modal switch
+
+    $("#signUpButton").on( "click", function() {
+        $('#signInModal').modal('hide');
+        $('#signUpModal').modal('show');
+        $('body').addClass('no-scroll');
+    });
+
     //Search dropdown
 
     $('a[href="#search"]').on('click', function (event) {
         $('#search').addClass('open');
         $('body').addClass('no-scroll');
+        $('#signInModal').modal('hide');
+        $('#signUpModal').modal('hide');
+        $('.modal-backdrop').hide();
         var $searchInput = $('#campaign-search-input');
-
         setTimeout(function () {
             $searchInput.focus();
         }, 500);
 
     });
-    $('#search, #search button.close').on('click keyup', function (event) {
+    $('#search, #search .close').on('click keyup', function (event) {
         if (event.target.className == 'close') {
             $(this).removeClass('open');
             setTimeout(function () {
                 $('body').removeClass('no-scroll');
             }, 500);
         }
+    });
+
+    $('.close').on('click', function(){    
+        $('#search').removeClass('open');
+        setTimeout(function () {
+            $('body').removeClass('no-scroll');
+        }, 500);
     });
 
     if ($('.funeral-alert')) {

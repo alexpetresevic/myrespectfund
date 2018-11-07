@@ -198,10 +198,10 @@
         </script>
     @endif
     <script type="text/javascript" src="https://static.wepay.com/min/js/tokenization.3.latest.js"></script>
-    <script type="text/javascript">
+    <script>
         (
             function (){
-                WePay.set_endpoint("stage"); // change to "production" when live
+                WePay.set_endpoint("staging"); // change to "production" when live
                 // Shortcuts
                 var d = document;
                 d.id = d.getElementById, valueById = function (id){
