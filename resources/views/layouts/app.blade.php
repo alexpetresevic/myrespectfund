@@ -140,7 +140,7 @@
                                                     <img class="img-avatar48 rounded-circle"
                                                         src="{{ asset('uploads/users/' . auth()->user()->image->filename) }}">
                                                 @else
-                                                    <img class="img-avatar48 rounded-circle" src="{{asset('/img/default-profile.svg')}}">
+                                                    <img class="img-avatar48 rounded-circle" src="{{asset('/img/default-profile.svg')}}" alt="profile image">
                                                 @endif
                                                 <p>Hello {{ auth()->user()->first_name }}</p><i
                                                         class="fas fa-angle-down"></i>
@@ -445,6 +445,11 @@
                                                class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                                                name="email"
                                                value="{{ old('email') }}" required>
+                                        @if ($errors->has('email'))
+                                            <div class="invalid-feedback">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </div>
+                                        @endif                                               
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -453,7 +458,12 @@
                                         <input id="password" type="password"
                                                class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
                                                name="password" required>
-                                    </div>
+                                        @if ($errors->has('password'))
+                                            <div class="invalid-feedback">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </div>
+                                        @endif                                                   
+                                    </div>                                
                                 </div>
                             </div>
                         </div>
@@ -550,7 +560,7 @@
                                         @endif
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">email<span>(your primary email)</span></label>
+                                        <label for="email">email<span> (your primary email)</span></label>
                                         <input type="email"
                                                class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                                                name="email" value="{{ old('email') }}"
@@ -565,7 +575,7 @@
                                         <label for="password">password</label>
                                         <input type="password"
                                                class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                                               name="password">
+                                               name="password" required>
                                         @if ($errors->has('password'))
                                             <div class="invalid-feedback">
                                                 <strong>{{ $errors->first('password') }}</strong>
